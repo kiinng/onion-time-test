@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/LocationPark.unity
+- path: Assets/Scenes/YarnTesting.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
