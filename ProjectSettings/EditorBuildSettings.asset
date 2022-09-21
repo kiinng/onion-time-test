@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: b0cc274723b6f104d9173ccc90798a17
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/LocationPark.unity
+    guid: d6bb9f571dbe2ae44913c48e436f624e
+  - enabled: 1
+    path: Assets/Scenes/LocationStreet.unity
+    guid: 156a61b664873944fa3073ed6d483e70
+  - enabled: 1
+    path: Assets/Scenes/LocationParty1.unity
+    guid: 52be3a62caed4a148afd06a2f660598b
+  - enabled: 1
+    path: Assets/Scenes/LocationCafe.unity
+    guid: da12b3f2495b91641a4058c6921a8cb8
+  m_configObjects: {}
