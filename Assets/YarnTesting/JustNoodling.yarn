@@ -1,0 +1,26 @@
+﻿title: Start
+---
+Angles: This is line 1
+Angles: And this is line 2
+<<jump Node2>>
+===
+title: Node2
+---
+Angles: This is the first line of Node 2!
+Angles: And now the second line of Node 2.
+<<jump Node3>>
+===
+title: Node3
+---
+Angles: You got to Node 3! Wow!
+Angles: Is this long enough for a testing file?
+-> Yes
+    Angles: Yeah, I guess that's enough!
+-> No
+    Angles: Ok, Let's keep going!
+===
+title: Node4
+---
+Killy: Here's the start of Node 4.
+Killy: Here, I want to test triggering a node from within Unity.
+===
