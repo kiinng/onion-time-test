@@ -1,7 +1,8 @@
 title: Pumpkin_phonecall
-tags:
 ---
+<<load_cafe>>
 //phonecall where pumpkin asks for angles band to play
+//<<disable_playercontrol>>
 Phone: RING RING RIIIIING! #gen_phone
 
 Angles: ..Hello? #protag
@@ -23,6 +24,8 @@ Pumpkin: if there's no issue..? #phone_pumpkin
 Angles: I will talk to my band. #protag
 
 Pumpkin: A-oh-kay! I will text you the details!! #phone_pumpkin
+<<enable_playercontrol>>
+
 ===
 
 
@@ -40,7 +43,7 @@ sick #bandrats
 yeah!! #protag
 
 no bro
-we are sick (shows selfie of them in bed) #bandrats
+we are sick /shows selfie of them in bed/ #bandrats
 
 …
 well shite 

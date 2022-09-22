@@ -507,17 +507,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4051241748438458576, guid: 9fa024e72c7e4c0468cda9b57c961d4a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4051241748438458578, guid: 9fa024e72c7e4c0468cda9b57c961d4a, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4051241748438458578, guid: 9fa024e72c7e4c0468cda9b57c961d4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.32
+      value: -8.14
       objectReference: {fileID: 0}
     - target: {fileID: 4051241748438458578, guid: 9fa024e72c7e4c0468cda9b57c961d4a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.89
+      value: 2.08
       objectReference: {fileID: 0}
     - target: {fileID: 4051241748438458578, guid: 9fa024e72c7e4c0468cda9b57c961d4a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1095,6 +1099,7 @@ GameObject:
   - component: {fileID: 1726539229}
   - component: {fileID: 1726539228}
   - component: {fileID: 1726539227}
+  - component: {fileID: 1726539231}
   m_Layer: 0
   m_Name: temp_madeline
   m_TagString: Untagged
@@ -1116,6 +1121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1779218825}
   canTalk: 0
+  yarnInteract: {fileID: 1726539231}
 --- !u!61 &1726539228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1208,6 +1214,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1726539231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726539226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c6ff5c95fa454886bd32fb72332d5c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conversationStartNode: madelineStart
 --- !u!1 &1779218824
 GameObject:
   m_ObjectHideFlags: 0

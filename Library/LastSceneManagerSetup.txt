@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Samples/Yarn Spinner/2.2.1/Phone Chat/PhoneChatExampleScene.unity
+- path: Assets/Scenes/IntroScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -1,21 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Yarn.Unity;
 
 public class YarnFunctions1 : MonoBehaviour
 {
-   //disable and enable player controller, only for intro sections (otherwise YarnInteractable script handles it)
+    [YarnCommand("load_cafe")]
+    public static void LoadCafe()
+    {
+        SceneManager.LoadScene("LocationCafe");
+    }
+    //disable and enable player controller, only for intro sections (otherwise YarnInteractable script handles it)
     [YarnCommand("disable_playercontrol")]
     public static void DisablePlayer()
     {
-        FindObjectOfType<PlayerController>().enabled = false;
+        FindObjectOfType<PlayerController>().GetComponent<PlayerController>().enabled = false;
     }
 
     [YarnCommand("enable_playercontrol")]
     public static void EnablePlayer()
     {
-        FindObjectOfType<PlayerController>().enabled = true;
+        FindObjectOfType<PlayerController>().GetComponent<PlayerController>().enabled = true;
     }
 
     //enable and disable call indicator

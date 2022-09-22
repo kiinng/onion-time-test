@@ -4440,8 +4440,8 @@ MonoBehaviour:
   goToScene: LocationCafe
   canEnter: 0
   doorIndicator: {fileID: 8190451649223181074}
-  usePosition: 0
-  newPosition: {x: 0, y: 0}
+  usePosition: 1
+  newPosition: {x: -12.35, y: -1.92}
 --- !u!1 &8190451648964083390
 GameObject:
   m_ObjectHideFlags: 0
