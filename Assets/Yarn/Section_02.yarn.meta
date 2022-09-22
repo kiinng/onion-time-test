@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 62976afdffa10f94b8098e397bd6f5b5
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  LastImportHadImplicitStringIDs: 0
+  LastImportHadAnyStrings: 0
+  isSuccessfullyParsed: 0
+  parseErrorMessages:
+  - "Assets/Yarn/Section_02.yarn: 224:30: Error: Unexpected \"is\" while reading
+    a set statement\r\n    <<set $puppyBattle_win_01 is true>>\r\r\n                             
+    ^^\r\n"
+  - "Assets/Yarn/Section_02.yarn: 344:28: Error: Unexpected \"is\" while reading
+    a set statement\r\n    <<set $gabBattle_win_01 is true>>\r\r\n                           
+    ^^\r\n"
+  - "Assets/Yarn/Section_02.yarn: 345:19: Error: Unexpected \"is\" while reading
+    a set statement\r\n    <<set $gab2_01 is false>>\r\r\n                   ^^\r\n"
+  - "Assets/Yarn/Section_02.yarn: 536:30: Error: Unexpected \"is\" while reading
+    a set statement\r\n    <<set $angelBattle_win_01 is true>>\r\r\n                             
+    ^^\r\n"

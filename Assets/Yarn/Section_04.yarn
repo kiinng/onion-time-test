@@ -1,0 +1,273 @@
+title: MadelineSection4_01
+tags:
+---
+//
+<<if $madeline4_01 is true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<else>>
+<<set $madeline4_01 to true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<endif>>
+===
+
+
+
+title: EmiliaSection4_01
+tags:
+---
+//BANJO
+//
+<<if $emilia4_01 is true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<else>>
+ <<disable_playercontrol>>
+
+    -> Challenge Emilia to a music battle!
+    <<jump EmiliaBattle1>>
+    -> ..Nah, if they aren't sure, maybe I should look for someone else..
+    <<set $emilia4_01 to true>>
+    Angles: 
+    <<enable_playercontrol>>
+<<else>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<endif>>
+===
+
+title: EmiliaBattle1
+tags:
+---
+//action to move to npc battle room?
+Angles: ..Well okay, here we go..
+
+//gaming lol
+
+Conclusion
+    -> Win
+    <<set $emiliaBattle_win_01 is true>>
+    <<set $emilia4_01 is false>>
+    <<jump EmiliaSection2_02>>
+    -> Lose
+    Angles: ..Well dang.
+===
+
+title: EmiliaSection2_02
+tags:
+---
+//won the battle
+<<if $emilia4_02 is true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<else>>
+<<set $emilia4_02 to true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<endif>>
+===
+
+
+
+
+title: ChristinaSection4_01
+tags:
+---
+//HARP
+//
+<<if $christina4_01 is true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<else>>
+ <<disable_playercontrol>>
+
+    -> Challenge Christina to a music battle!
+    <<jump ChristinaBattle1>>
+    -> ..Nah, if they aren't sure, maybe I should look for someone else..
+    <<set $christina4_01 to true>>
+    Angles: 
+    <<enable_playercontrol>>
+<<else>>
+
+<<endif>>
+===
+
+title: ChristinaBattle1
+tags:
+---
+//action to move to npc battle room?
+Angles: ..Well okay, here we go..
+
+//gaming lol
+
+Conclusion
+    -> Win
+    <<set $christinaBattle_win_01 is true>>
+    <<set $christina4_01 is false>>
+    <<jump ChristinaSection2_02>>
+    -> Lose
+    Angles: ..Well dang.
+===
+
+title: ChristinaSection2_02
+tags:
+---
+//won the battle
+<<if $christina4_02 is true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<else>>
+<<set $christina4_02 to true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<endif>>
+===
+
+
+
+title: FreddieSection4_01
+tags:
+---
+//UKULELE
+<<if $freddie4_01 is true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<else>>
+ <<disable_playercontrol>>
+
+    -> Challenge Freddie to a music battle!
+    <<jump FreddieBattle1>>
+    -> ..Nah, if they aren't sure, maybe I should look for someone else..
+    <<set $freddie4_01 to true>>
+    Angles: 
+    <<enable_playercontrol>>
+<<else>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<endif>>
+===
+
+title: FreddieBattle1
+tags:
+---
+//action to move to npc battle room?
+Angles: ..Well okay, here we go..
+
+//gaming lol
+
+Conclusion
+    -> Win
+    <<set $freddieBattle_win_01 is true>>
+    <<set $freddie4_01 is false>>
+    <<jump FreddieSection2_02>>
+    -> Lose
+    Angles: ..Well dang.
+===
+
+title: FreddieSection2_02
+tags:
+---
+//won the battle
+<<if $freddie4_02 is true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<else>>
+<<set $freddie4_02 to true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<endif>>
+===
+
+
+
+
+title: RedSection4_01
+tags:
+---
+//
+<<if $red4_01 is true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<else>>
+<<set $red4_01 to true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<endif>>
+===
+
+
+title: PumpkinSection4_01
+tags:
+---
+//
+<<if $pumpkin4_01 is true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<else>>
+<<set $pumpkin4_01 to true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<endif>>
+===
+
+
+title: SkullySection4_01
+tags:
+---
+<<if $skully4_01 is true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<else>>
+<<set $skully4_01 to true>>
+<<disable_playercontrol>>
+
+Skully: Are you ready 
+    -> Yeah, 
+    //load to A outside the party building door
+    //changing variables to section4 dialogues 
+    <<set $section4 to false>>
+    <<set $section5 to true>>
+    -> Ah, no, just give me another moment.
+    Skully: No problem. 
+    Skully: Speak to me again soon.
+    <<enable_playercontrol>>
+<<endif>>
+===
+
+
+
+
+title: SashaSection4_01
+tags:
+---
+//
+<<if $bunny4_01 is true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<else>>
+<<set $bunny4_01 to true>>
+<<disable_playercontrol>>
+
+<<enable_playercontrol>>
+<<endif>>
+===

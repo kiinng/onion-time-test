@@ -5,7 +5,7 @@ using Yarn.Unity;
 
 public class YarnFunctions1 : MonoBehaviour
 {
-   
+   //disable and enable player controller, only for intro sections (otherwise YarnInteractable script handles it)
     [YarnCommand("disable_playercontrol")]
     public static void DisablePlayer()
     {
@@ -17,4 +17,17 @@ public class YarnFunctions1 : MonoBehaviour
     {
         FindObjectOfType<PlayerController>().enabled = true;
     }
+
+    //enable and disable call indicator
+    [YarnCommand("call_bubble_on")]
+    public static void CallBubbleOn()
+    {
+        FindObjectOfType<IndicatorCall>().GetComponent<SpriteRenderer>().enabled = true;
+    }
+    [YarnCommand("call_bubble_off")]
+    public static void CallBubbleOff()
+    {
+        FindObjectOfType<IndicatorCall>().GetComponent<SpriteRenderer>().enabled = false;
+    }
+
 }

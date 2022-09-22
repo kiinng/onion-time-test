@@ -1,0 +1,17 @@
+title: emiliaStart
+tags:
+---
+<<if !visited("emiliaStart")>>
+    <<jump EmiliaSection3_01>>
+<<elseif $section3 is true>>
+    <<jump EmiliaSection3_01>>
+<<elseif $section4 is true>>
+    <<jump EmiliaSection4_01>>
+<<elseif $emiliaBattle_win_01 is true and $section4 is true>>
+    <<jump EmiliaSection4_02>>
+<<elseif $section5 is true>>
+    <<jump EmiliaSection5_01>>
+<<Else>>
+
+<<endif>>
+===

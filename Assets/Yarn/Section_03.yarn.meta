@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 5ee62ef88b10cfc4d85e6e54c2e608a8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  LastImportHadImplicitStringIDs: 0
+  LastImportHadAnyStrings: 0
+  isSuccessfullyParsed: 0
+  parseErrorMessages:
+  - "Assets/Yarn/Section_03.yarn: 242:28: Error: Unexpected \"is\" while reading
+    a set statement\r\n    <<set $ratBattle_win_01 is true>>\r\r\n                           
+    ^^\r\n"
+  - "Assets/Yarn/Section_03.yarn: 243:19: Error: Unexpected \"is\" while reading
+    a set statement\r\n    <<set $rat3_01 is false>>\r\r\n                   ^^\r\n"
+  - "Assets/Yarn/Section_03.yarn: 323:30: Error: Unexpected \"is\" while reading
+    a set statement\r\n    <<set $tommyBattle_win_01 is true>>\r\r\n                             
+    ^^\r\n"
+  - "Assets/Yarn/Section_03.yarn: 324:21: Error: Unexpected \"is\" while reading
+    a set statement\r\n    <<set $tommy3_01 is false>>\r\r\n                    
+    ^^\r\n"
+  - "Assets/Yarn/Section_03.yarn: 380:30: Error: Unexpected \"is\" while reading
+    a set statement\r\n    <<set $sevenBattle_win_01 is true>>\r\r\n                             
+    ^^\r\n"
+  - "Assets/Yarn/Section_03.yarn: 381:21: Error: Unexpected \"is\" while reading
+    a set statement\r\n    <<set $seven3_01 is false>>\r\r\n                    
+    ^^\r\n"
+  - "Assets/Yarn/Section_03.yarn: 421:2: Error: More than one <<else>> statement
+    in an <<if>> statement isn't allowed\r\n<<else>>\r\r\n  ^^^^\r\n"

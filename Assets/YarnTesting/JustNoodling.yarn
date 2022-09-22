@@ -1,9 +1,34 @@
 ﻿title: Start
 ---
 <<disable_playercontrol>>
-Angles: This is line 1
-Angles: And this is line 2
-<<jump Node2>>
+<<call_bubble_on>>
+You have a call! It's Pumpkin!
+->Answer the call
+    Hello???
+->Don't answer
+    HAha, no, she'd be so mad...
+Pumpkin: Hey Angles!
+Pumpkin: Skully and I are organizing an event for tonight, and we want a live band.
+Pumpkin: I knnow it's short notice, are you available to help out?
+Angles: Hey, no prob! I'll ask the boys and we'll stop by.
+Pumpkin: Thanks so much!!! You're an ANGEL, Angles.
+<<call_bubble_off>>
+<<phone_convo_on>>
+Angles: yoooo Pumpkin has a gig for us tonight
+Angles: how we doin
+Bandrats: sick
+Angles: sweet, meet me at the cafe and we'll head over?
+Bandrats: no,,, we're SICK sick
+Bandrats: photo attached
+<<phone_convo_photo>>
+Angles: o no :CCC
+Bandrats: it ok, go on without us
+Angles: ok...
+Angles: I'll talk to Pumpkin
+Angles: feel better!!!
+<<phone_convo_thumbsup>>
+<<phone_convo_off>>
+<<enable_playercontrol>>
 ===
 title: Node2
 ---
@@ -19,7 +44,6 @@ Angles: Is this long enough for a testing file?
     Angles: Yeah, I guess that's enough!
 -> No
     Angles: Ok, Let's keep going!
-<<enable_playercontrol>>
 ===
 title: Node4
 ---

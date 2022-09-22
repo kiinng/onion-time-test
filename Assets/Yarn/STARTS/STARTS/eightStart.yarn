@@ -1,0 +1,15 @@
+title: eightStart
+tags:
+---
+<<if !visited("eightStart")>>
+    <<jump EightSection3_01>>
+<<elseif $section3 is true>>
+    <<jump EightSection3_01>>
+<<elseif $sevenBattle_win_01 is true and $section3 is true>>
+    <<jump EightSection3_02>>
+<<elseif $section5 is true>>
+    <<jump EightSection5_01>>
+<<Else>>
+
+<<endif>>
+===
