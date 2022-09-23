@@ -1,0 +1,503 @@
+title: EmiliaSection3_01
+tags:
+---
+//just rude lol
+<<if $emilia3_01 is true>>
+Angles: H—
+Emilia: No.
+<<else>>
+<<set $emilia3_01 to true>>
+Angles: Hey—
+Emilia: Hmmp!
+Angles: ...
+Angles: Okay.....
+<<endif>>
+===
+title: MadelineSection3_01
+tags:
+---
+//M is reading the werewolf cop book series i like lol
+<<if $madeline3_01 is true>>
+Madeline: Alright.
+Madeline: You focus on the party and I'm going to focus on my paper.
+Angles: Solid plan.
+Angles: We'll settle the book business later.
+<<elseif $madeline2_01 is true and $madeline3_01 is false>>
+<<set $madeline3_01 to true>>
+Angles: Hey again..
+Madeline: Mmm.
+Angles: So did you end up trying the new drink?
+Madeline: I did!
+Madeline: It was... pretty good.
+Madeline: I definitely recommend it.
+Angles: Mm..
+Angles: Oh is that a new book you're reading?
+Madeline: !!
+Madeline: Uh, no!
+Madeline: I'm working on my paper!
+Angles: ..Mm sure.
+Madeline: ...
+Madeline: So I've taken a small break to read a chapter... or two...
+Madeline: Who could blame me.
+Angles: Is it good?
+Madeline: Yeah...
+Madeline: It's these detectives who team up and one of them is a werewolf.
+Madeline: And they fall in love.
+Angles: Of course.
+Madeline: It's very much something you'd enjoy.
+Madeline: I'm already on the second book so I can lend you the second one if you want.
+Angles: Hell yeah!
+Angles: Later though.
+Angles: Gotta focus on this party first..
+Madeline: No prob.
+<<else>>
+<<set $madeline3_01 to true>>
+Angles: How's it going?
+Madeline: ...
+Angles: Maddy?
+Madeline: ...
+Angles: Oh is that a new book you're reading?
+Madeline: !!
+Madeline: Uh, no!
+Madeline: I'm working on my paper!
+Angles: ..Mm sure.
+Madeline: ...
+Madeline: So I've taken a small break to read a chapter... or two...
+Madeline: Who could blame me.
+Angles: Is it good?
+Madeline: Yeah...
+Madeline: It's these detectives who team up and one of them is a werewolf.
+Madeline: And they fall in love.
+Angles: Of course.
+Madeline: It's very much something you'd enjoy.
+Madeline: I'm already on the second book so I can lend you the second one if you want.
+Angles: Hell yeah!
+Angles: Later though.
+Angles: Gotta focus on this party first..
+Madeline: No prob.
+<<endif>>
+===
+title: JessSection3_01
+tags:
+---
+//comment that jess's costume has flimsy fabric, jess admits she's cold
+<<if $jess3_01 is true>>
+Jess: Oh come on!
+Jess: My admirers are all pretty good looking!
+Jess: You might find yourself a joyfriend, or something.
+Angles: ...
+Angles: Just stop talking, please.
+<<else>>
+<<set $jess3_01 to true>>
+Jess: And what are you doing out on this fine day?
+Angles: ...
+Angles: How are you not cold..
+Angles: That material looks so flimsy..
+Jess: Oh, I'm freezing!
+Jess: But sacrifices must be made to look hot.
+Angles: ...Sure.
+Jess: Of course you wouldn't understand it.
+Angles: ...
+Angles: I'm going to pretend I did not hear you.
+Jess: LOL
+Jess: You are going to be at the party, right?
+Angles: Yeah.
+Jess: Good.
+Jess: I'll need someone to fend off my admirers.
+Angles: ...
+Angles: And we are done here.
+<<endif>>
+===
+title: RatSection3_01
+tags:
+---
+//MODIFIED GAMEBOY
+//rat challenges Angles to a music battle lol
+<<if $rat3_01 is true>>
+Gameboy Rat challenges you to a music battle!
+AGAIN!
+    -> Accept it??
+    <<jump RatBattle1>>
+    -> Just.. Still no...
+    Rat: Squeak!! Squeak!!! SQUEAK!!!!
+    Angles: ...they seem really mad but still just,, no..
+<<else>>
+Angles: Oh hey there.. #protag
+Rat: Squeak! #game_rat
+Rat: Squeak squeeeeeak squeak! #game_rat
+Angles: Wait, what..? #protag
+Gameboy Rat challenges you to a music battle!
+    -> Accept it??
+    <<jump RatBattle1>>
+    -> Wth?!! No...
+    Rat: Squeak!!! Squeak!!
+    Angles: ...they seem really mad but uh,, no.. 
+<<endif>>
+===
+title: RatBattle1
+tags:
+---
+//action to move to npc battle room?
+Angles: ..Well okay, here we go..
+//gaming lol
+
+Conclusion
+    -> Win
+    <<set $ratBattle_win_01 is true>>
+    <<set $rat3_01 is false>>
+    <<jump RatSection2_02>>
+    -> Lose
+    Angles: ..I lost to a rat… #protag
+    Rat: Squeak!
+    Angles: ..This rat looks awfully smug...
+===
+title: RatSection3_02
+tags:
+---
+//
+<<if $rat3_02 is true>>
+Rat: Squeak squeak!
+Rat: Squeeeeak!!
+Angles: ..Ok.
+<<else>>
+<<set $rat3_02 to true>>
+Rat: Squeeeak!
+Angles: ..Shocked and outraged...
+Angles: This rat is very expressive...
+//(received Gameboy Rat's contact number)
+Angles: Thanks but also what?? #protag
+<<endif>>
+===
+title: TommySection3_01
+tags:
+---
+//MARACAS
+//tommy and tuppence, have them help you find ppl (they dont actually help lol)
+<<if $tommy3_01 is true>>
+Tuppence: Haven't found anyone yet!
+Tommy: But we are still looking!
+Angles: ..Thanks.
+    -> Challenge Tommy and Tuppence to a music battle!
+    <<jump TommyBattle1>>
+    -> ..Nah, just run away...
+    Tommy: See ya—
+    Tuppence: —Later, boss!
+<<else>>
+Angles: ...Hi.
+Tuppence: HEY!
+Tommy: HI!
+Angles: ..You're all chipper...
+Angles: And matching..
+Tommy: We are—
+Tuppence: —Undercover!
+Angles: ...Why?
+Tuppence: We are on a case!
+Tommy: It's overtaxing all our little grey cells..
+Angles: What's the mystery?
+Tuppence: It's very secret!
+Tommy: Very hush hush!
+Angles: I can be very discreet.
+Tuppence: ...
+Tommy: ...
+Tommy: Okay..
+Tommy: Have you noticed—
+Tuppence: —How everyone is in costumes?
+Angles: ...
+Angles: ..You're also in costumes...
+Tuppence: Oh we're just—
+Tommy: —Undercover!
+Angles: ...
+Tuppence: Very exciting, right!
+Angles: ...
+Angles: I'm going to have to dampen your excitement.
+Angles: There's a costume party later tonight.
+Tommy: ...
+Tuppence: ...
+Tommy: ..Darn.
+Angles: ...
+Angles: I do have a mission for you..
+Tuppence: !
+Tommy: !
+Angles: I can see you are people of culture.
+Angles: You have some lovely maracas with you...
+Angles: And I need some temporary band members...
+    -> Challenge Tommy and Tuppence to a music battle!
+    <<jump TommyBattle1>>
+    -> ..Maybe they are too annoying to actually work with...
+    <<set $tommy3_01 to true>>
+    Angles: So if you see anyone, will you let me know?
+    Tommy: Sure!
+    Tuppence: No problem, boss!
+<<endif>>
+===
+title: TommyBattle1
+tags:
+---
+//action to move to npc battle room?
+Angles: ..Well okay, here we go..
+//gaming lol
+
+Conclusion
+    -> Win
+    <<set $tommyBattle_win_01 is true>>
+    <<set $tommy3_01 is false>>
+    <<jump TommySection2_02>>
+    -> Lose
+    Angles: ..Well dang.
+===
+title: TommySection3_02
+tags:
+---
+//
+<<if $tommy3_02 is true>>
+Tuppence: Time for—
+Tommy: —Practice yet?
+Angles: Not yet, but soon!
+<<else>>
+<<set $tommy3_02 to true>>
+Angles: And you are in my temporary band!
+Tommy: Yay!
+Tuppence: Woo!
+Angles: Practice... will happen as soon as I find some more people!
+Tommy: Cool!
+Tuppence: Sounds great!
+<<endif>>
+===
+title: SevenSection3_01
+tags:
+---
+//BONGO DRUMS
+// eight helps him talk
+<<if $seven3_01 is true>>
+Angles: Alright, I'm back.
+Angles: Let's do this!
+    -> Challenge Seven to a music battle!
+    <<jump SevenBattle1>>
+    -> ..Maybe this still isn't the best idea..
+    Angles: Hey, actually can you just give me a moment.
+    Angles: I just need to—
+    Eight: Yeah, no problem.
+    Seven: *thumbs up*
+<<else>>
+ Angles: Hey, Seven and Eight.
+Seven: :)
+Eight: Hey.
+Angles: Just taking a stroll?
+Eight: Basically.
+Eight: Seven want to play their bongo drums but is not allowed at home.
+Eight: Too noisy.
+Seven: :'|
+Angles: Aww!
+Angles: That sucks.
+Angles: But!
+Angles: If you want, I'm looking for temporary band members.
+Angles: I could use someone with your talent, kiddo!
+Seven: !!
+Seven: :D
+Eight: Sounds like a great idea.
+Angles: Awesome!
+Angles: Now show me what you got!
+    -> Challenge Seven to a music battle!
+    <<jump SevenBattle1>>
+    -> ..Maybe this isn't the best idea..
+    <<set $seven3_01 to true>>
+    <<set $eight3_01 to true>>
+    Angles: Hey, actually can you just give me a moment.
+    Angles: I just need to go to the bathroom real quick!
+    Eight: Yeah, no problem.
+    Seven: *thumbs up*
+<<endif>>
+===
+title: SevenBattle1
+tags:
+---
+//action to move to npc battle room?
+Angles: ..Well okay, here we go..
+//gaming lol
+
+Conclusion
+    -> Win
+    <<set $sevenBattle_win_01 is true>>
+    <<set $seven3_01 is false>>
+    <<jump SevenSection2_02>>
+    -> Lose
+    Angles: ..Well dang.
+===
+title: SevenSection3_02
+tags:
+---
+//
+<<if $seven3_02 is true>>
+Angles: See you at practice!
+Seven: *thumbs up*
+Eight: And when is that?
+Angles: As soon as I find more people!
+<<else>>
+<<set $seven3_02 to true>>
+Seven: !!!!
+Seven: :D
+Angles: Yeah!!
+Angles: You're so good, kiddo!
+Eight: It was a very good battle.
+Eight: Not sure if that was needed.
+Eight: But that was fun to watch.
+<<endif>>
+===
+title: PumpkinSection3_01
+tags:
+---
+<<if $pumpkin3_01 is true>>
+Pumpkin: I'm working!
+Pumpkin: Not reading!!!
+Angles: ...
+<<elseif $madeline3_01 is true and $pumpkin3_01 is false>>
+//P reads the werewolf cop books too
+<<set $pumpkin3_01 to true>>
+Angles: ..Are you reading?
+Pumpkin: !
+Pumpkin: NOPE!!!
+Pumpkin: I'm just going through the contents of this box!!
+Angles: ...
+Angles: Is that one of those werewolve detective something books?
+Pumpkin:!!!!
+Pumpkin: Do you also read it?!
+Angles: Ah no, I just saw Madeline reading it too.
+Pumpkin: Oh my gawd!
+Pumpkin: I'm so happy someone else likes these books!!
+Pumpkin: They are sooooo good!
+Pumpkin: Yet it seems like no one knows them..
+Angles: It does sound fun.
+Angles: I might try reading it..
+Pumpkin: YESSSSS!!
+Pumpkin: DO IT!!
+Angles: ...I might.
+<<else>>
+//you dont find out what pumpkin is reading
+<<set $pumpkin3_01 to true>>
+Angles: ..Are you reading?
+Pumpkin: !
+Pumpkin: NOPE!!!
+Pumpkin: I'm just going through the contents of this box!!
+Angles: ...
+Pumpkin: Aaaaanywaaaaaay!
+Pumpkin: Did you need something?
+Angles: ..Not really.
+Angles: I'll leave you be..
+<<endif>>
+===
+title: FreddieSection3_01
+tags:
+---
+<<if $freddie3_01 is true>>
+Freddie: Welp, I'm going to go see if I can find any lights..
+Angles: Good luck!
+<<else>>
+<<set $freddie3_01 to true>>
+Angles: Oh hey.. I didn't know you were helping out with the party!
+Freddie: Ah, I wasn't meant to but Pumpkin and Skully needed some more help so..
+Angles: Yeah there's still quite a bit to do, huh..
+Freddie: The joy of party setup..
+Freddie: It always looks like crap until the fun lights get turned on.
+Angles: Oooh..
+Angles: Will there be colourful lighting?
+Freddie: Maybe..?
+Angles: Ah, well I hope so.
+Freddie: Me too...
+<<endif>>
+===
+title: FishSection3_01
+tags:
+---
+<<if $fish3_01 is true>>
+Angles: Ah still busy..
+Fish: Glub..
+<<else>>
+<<set $fish3_01 to true>>
+Angles: They really have you working hard, eh?
+Fish: Glub glub..
+Angles: I guess there are downsides to having muscles..
+Fish: Glub glub glub..
+Angles: Yeah..
+<<endif>>
+===
+title: SkullySection3_01
+tags:
+---
+<<if $skully3_01 is true>>
+Skully: You good to check the stage setup now?
+    -> Yeah!
+    //load to A outside the party building door
+    //changing variables to section3 dialogues 
+    <<set $section3 to false>>
+    <<set $section4 to true>>
+    -> Ah, no, just give me another moment..
+    Skully: No problem. 
+    Skully: Speak to me again soon.
+<<elseif $ratBattle_win_01 is true or $tommyBattle_win_01 is true or $sevenBattle_win_01 is true>>
+<<set $skully3_01 to true>>
+Angles: Hey again..
+Skully: Search still going well?
+Angles: Yeah..
+Skully: Good.
+Skully: Can you just check with me that the stage setup looks good for you?
+    -> Yeah, of course!
+    //load to A outside the party building door
+    //changing variables to section3 dialogues 
+    <<set $section3 to false>>
+    <<set $section4 to true>>
+    -> Ah, just give me another moment..
+    Skully: No problem. 
+    Skully: Speak to me again soon.
+<<else>>
+Angles: Hey Skulls..
+Skully: Is the search going well?
+Angles: Uh.. mostly?
+Skully: Good.
+Skully: I'm sure you'll have everything ready soon.
+<<endif>>
+===
+title: SashaSection3_01
+tags:
+---
+<<if $bunny3_02 is true>>
+Sasha: Alright, run along!
+Sasha: I know you still have a lot to do.
+Angles: Yeah, sorry, I'll see you later!
+<<elseif $bunny3_01 is true>>
+Sasha: See you later!
+Angles: Maybe!
+<<elseif $emilia3_01 is true>>
+<<set $bunny3_02 to true>>
+//if talked to emilia first
+Angles: Ugh..
+Sasha: Oh hey, Angles!
+Sasha: What's wrong?
+Angles: Ah, it's nothing much really..
+Angles: I just know that Emilia plays an instrument but she wouldn't even talk to me..
+Sasha: ...
+Sasha: Yeah, she's like that,,
+Sasha: She's not bad underneath all that prickliness though!
+Angles: ..Kinda hard to believe that...
+Sasha: She's just easily embarrassed.
+Sasha: She's a huge nerd and has like fifty anime girl figures.
+Angles: ..Whoa.
+Angles: That's cool.
+Angles: I have a bunch of Demon Clock plushies myself.
+Sasha: Oh is that an anime?
+Angles: Yeah, it's a cartoon and a game too.
+Angles: I actually own the second game but still haven't played it..
+Angles: But the cartoon is really cute!
+Sasha: Maybe I'll check it out!
+<<else>>
+<<set $bunny3_01 to true>>
+Angles: Oh, you're still here..
+Sasha: Yep!
+Sasha: I want to say I'm enjoying the nature— and I am!
+Sasha: But honestly I've just been browsing twitter for a while now..
+Angles: Mood.
+Angles: I'll let you continue in peace.
+Angles: I've got to run.
+Sasha: See you later!
+Angles: Maybe!
+<<endif>>
+===

@@ -1,0 +1,21 @@
+title: pumpkinStart
+tags:
+---
+<<if !visited("pumpkinStart")>>
+    <<jump PumpkinSection1_01>>
+<<elseif $section1 is true>>
+    <<jump PumpkinSection1_01>>
+<<elseif $section1_1 is true>>
+    <<jump PumpkinSection1_02>>
+<<elseif $section2 is true>>
+    <<jump PumpkinSection2_01>>
+<<elseif $section3 is true>>
+    <<jump PumpkinSection3_01>>
+<<elseif $section4 is true>>
+    <<jump PumpkinSection4_01>>
+<<elseif $section5 is true>>
+    <<jump PumpkinSection5_01>>
+<<Else>>
+
+<<endif>>
+===
