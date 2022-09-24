@@ -1,0 +1,238 @@
+title: MadelineSection5_01
+tags:
+---
+//
+<<if $madeline5_01 is true>>
+
+<<else>>
+<<set $madeline5_01 to true>>
+
+<<endif>>
+===
+
+title: PuppySection5_01
+tags:
+---
+//
+<<if $puppy5_01 is true>>
+
+<<else>>
+<<set $puppy5_01 to true>>
+
+<<endif>>
+===
+
+
+
+
+title: SammySection5_01
+tags:
+---
+//
+<<if $sammy5_01 is true>>
+
+<<else>>
+<<set $sammy5_01 to true>>
+
+<<endif>>
+===
+
+title: GabSection5_01
+tags:
+---
+//
+<<if $gab5_01 is true>>
+
+<<else>>
+<<set $gab5_01 to true>>
+
+<<endif>>
+===
+
+title: SevenSection5_01
+tags:
+---
+//
+<<if $seven5_01 is true>>
+
+<<else>>
+<<set $seven5_01 to true>>
+
+<<endif>>
+===
+
+title: EightSection5_01
+tags:
+---
+//
+<<if $eight5_01 is true>>
+
+<<else>>
+<<set $eight5_01 to true>>
+
+<<endif>>
+===
+
+title: AngelSection5_01
+tags:
+---
+//
+<<if $angel5_01 is true>>
+
+<<else>>
+<<set $angel5_01 to true>>
+
+<<endif>>
+===
+
+title: RatSection5_01
+tags:
+---
+//
+<<if $rat5_01 is true>>
+
+<<else>>
+<<set $rat5_01 to true>>
+
+<<endif>>
+===
+
+title: TommySection5_01
+tags:
+---
+//
+<<if $tommy5_01 is true>>
+
+<<else>>
+<<set $tommy5_01 to true>>
+
+<<endif>>
+===
+
+
+
+
+title: PumpkinSection5_01
+tags:
+---
+//
+<<if $pumpkin5_01 is true>>
+
+<<else>>
+<<set $pumpkin5_01 to true>>
+
+<<endif>>
+===
+
+
+title: FishSection5_01
+tags:
+---
+//
+<<if $fish5_01 is true>>
+
+<<else>>
+<<set $fish5_01 to true>>
+
+<<endif>>
+===
+
+
+title: FreddieSection5_01
+tags:
+---
+//
+<<if $freddie5_01 is true>>
+
+<<else>>
+<<set $freddie5_01 to true>>
+
+<<endif>>
+===
+
+
+title: JessSection5_01
+tags:
+---
+//
+<<if $jess5_01 is true>>
+
+<<else>>
+<<set $jess5_01 to true>>
+
+<<endif>>
+===
+
+title: RedSection5_01
+tags:
+---
+//
+<<if $red5_01 is true>>
+
+<<else>>
+<<set $red5_01 to true>>
+
+<<endif>>
+===
+
+title: ChristinaSection5_01
+tags:
+---
+//
+<<if $christina5_01 is true>>
+
+<<else>>
+<<set $christina5_01 to true>>
+
+<<endif>>
+===
+
+
+
+title: SkullySection5_01
+tags:
+---
+//START THE PERFORMANCE 
+<<if $skully5_01 is true>>
+
+<<else>>
+<<set $skully5_01 to true>>
+
+Skully: Are you ready 
+    -> Yeah, 
+    //load to A outside the party building door
+    //changing variables to section4 dialogues 
+    <<set $section5 to false>>
+    <<set $section6 to true>>
+    -> Ah, no, just give me another moment.
+    Skully: No problem. 
+    Skully: Speak to me again soon.
+<<endif>>
+===
+
+
+
+
+title: EmiliaSection5_01
+tags:
+---
+//depending on if they dating sasha, they will be in the cafe or park
+<<if $emilia5_01 is true>>
+
+<<else>>
+<<set $emilia5_01 to true>>
+
+<<endif>>
+===
+
+title: SashaSection5_01
+tags:
+---
+//
+<<if $bunny5_01 is true>>
+
+<<else>>
+<<set $bunny5_01 to true>>
+
+<<endif>>
+===

@@ -1,0 +1,19 @@
+title: freddieStart
+tags:
+---
+<<if !visited("freddieStart")>>
+    <<jump FreddieSection2_01>>
+<<elseif $section2 is true>>
+    <<jump FreddieSection2_01>>
+<<elseif $section3 is true>>
+    <<jump FreddieSection3_01>>
+<<elseif $section4 is true>>
+    <<jump FreddieSection4_01>>
+<<elseif $freddieBattle_win_01 is true and $section4 is true>>
+    <<jump FreddieSection4_02>>
+<<elseif $section5 is true>>
+    <<jump FreddieSection5_01>>
+<<Else>>
+
+<<endif>>
+===

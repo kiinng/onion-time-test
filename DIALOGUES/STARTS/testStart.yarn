@@ -1,0 +1,14 @@
+title: testStart
+tags:
+---
+<<if !visited("testStart")>>
+    <<jump PuppySection1_01>>
+<<elseif $section1 is true>>
+    <<jump PuppySection1_01>>
+<<elseif $section1_1 is true>>
+    <<jump PuppySection1_02>>
+<<elseif $section2 is true>>
+    <<jump PuppySection2_01>>
+<<Else>>
+
+<<endif>>

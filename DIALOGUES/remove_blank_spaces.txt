@@ -1,0 +1,6 @@
+“how to remove empty lines in visual studio”
+
+1. Press Ctrl + H (quick replace).
+2. Click "Use Regular Expressions".
+3. In Find specify "^$\n"
+4. Click "Replace All". All Blank lines will be deleted.

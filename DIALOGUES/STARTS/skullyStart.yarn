@@ -1,0 +1,21 @@
+title: skullyStart
+tags:
+---
+<<if !visited("skullyStart")>>
+    <<jump SkullySection1_01>>
+<<elseif $section1 is true>>
+    <<jump SkullySection1_01>>
+<<elseif $section1_1 is true>>
+    <<jump SkullySection1_02>>
+<<elseif $section2 is true>>
+    <<jump SkullySection2_01>>
+<<elseif $section3 is true>>
+    <<jump SkullySection3_01>>
+<<elseif $section4 is true>>
+    <<jump SkullySection4_01>>
+<<elseif $section5 is true>>
+    <<jump SkullySection5_01>>
+<<Else>>
+
+<<endif>>
+===
