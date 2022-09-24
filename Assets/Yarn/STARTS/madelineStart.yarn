@@ -1,7 +1,8 @@
 title: madelineStart
 tags:
+tracking: always
 ---
-<<if !visited("madelineStart")>>
+<<if visited("madelineStart") == false>>
     <<jump MadelineSection1_01>>
 <<elseif $section1 is true>>
     <<jump MadelineSection1_01>>
@@ -15,8 +16,8 @@ tags:
     <<jump MadelineSection4_01>>
 <<elseif $section5 is true>>
     <<jump MadelineSection5_01>>
-<<Else>>
-Madeline: Seriously, go away.
-Madeline: I really need to finish this!
+<<else>>
+    Madeline: Seriously, go away.
+    Madeline: I really need to finish this!
 <<endif>>
 ===

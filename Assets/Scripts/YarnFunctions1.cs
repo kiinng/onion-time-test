@@ -6,11 +6,14 @@ using Yarn.Unity;
 
 public class YarnFunctions1 : MonoBehaviour
 {
+    public GameObject prefabToSpawn;
+    //gotta load the cafe scene after the dummy intro scene where you get the dialogue runner open
     [YarnCommand("load_cafe")]
     public static void LoadCafe()
     {
         SceneManager.LoadScene("LocationCafe");
     }
+
     //disable and enable player controller, only for intro sections (otherwise YarnInteractable script handles it)
     [YarnCommand("disable_playercontrol")]
     public static void DisablePlayer()
@@ -36,4 +39,17 @@ public class YarnFunctions1 : MonoBehaviour
         FindObjectOfType<IndicatorCall>().GetComponent<SpriteRenderer>().enabled = false;
     }
 
+    //instantiate PhoneChatPrefab (only used for into conversation)
+    [YarnCommand("text_rats_on")]
+    public static void LoadPhoneConvo()
+    {
+        GameObject newConvo = (GameObject)Instantiate(Resources.Load("PhoneChatPrefab"));
+    }
+
+    //destroy PhoneChatPrefab (only used for into conversation)
+    [YarnCommand("text_rats_off")]
+    public static void DestroyPhoneConvo()
+    {
+        Destroy(GameObject.Find("PhoneChatPrefab(Clone)"));
+    }
 }

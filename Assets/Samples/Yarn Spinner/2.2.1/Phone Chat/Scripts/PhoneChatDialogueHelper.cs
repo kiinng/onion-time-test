@@ -12,7 +12,9 @@ namespace Yarn.Unity.Example
     public class PhoneChatDialogueHelper : DialogueViewBase
     {
         DialogueRunner runner;
-
+        [SerializeField]
+        internal GameObject continueButton = null;
+        public bool autoAdvance;
         public TMPro.TextMeshProUGUI text;
 
         public GameObject optionsContainer;
@@ -107,6 +109,12 @@ namespace Yarn.Unity.Example
 
         public override void RunLine(LocalizedLine dialogueLine, Action onDialogueLineFinished)
         {
+            // Hide the continue button until presentation is complete (if
+            // we have one).
+            /*if (continueButton != null)
+            {
+                continueButton.SetActive(false);
+            }*/
             if (currentTypewriterEffect != null)
             {
                 StopCoroutine(currentTypewriterEffect);
@@ -121,6 +129,18 @@ namespace Yarn.Unity.Example
             IEnumerator ShowTextAndNotify() {
                 yield return StartCoroutine(Effects.Typewriter(text, lettersPerSecond, null));
                 currentTypewriterEffect = null;
+
+                // Show the continue button, if we have one.
+                if (continueButton != null)
+                {
+                    continueButton.SetActive(true);
+                }
+                //I think I need to add something here if I want it to wait before proceeding to hte next line?
+
+                if (autoAdvance == false)
+                {
+                    yield break;
+                }
                 onDialogueLineFinished();
             }
         }
@@ -143,12 +163,30 @@ namespace Yarn.Unity.Example
 
                 optionView.Option = option;
 
+                if (i == 0)
+                {
+                    optionView.Select();
+                }
+
                 optionView.OnOptionSelected = (selectedOption) =>
                 {
                     optionsContainer.SetActive(false);
                     onOptionSelected(selectedOption.DialogueOptionID);
                 };
             }
+        }
+        public override void UserRequestedViewAdvancement()
+        {
+            // No animation is now running. Signal that we want to
+            // interrupt the line instead.
+            requestInterrupt();
+        }
+        public void OnContinueClicked()
+        {
+            // When the Continue button is clicked, we'll do the same thing as
+            // if we'd received a signal from any other part of the game (for
+            // example, if a DialogueAdvanceInput had signalled us.)
+            UserRequestedViewAdvancement();
         }
     }
 

@@ -40,6 +40,7 @@ public class YarnInteractable : MonoBehaviour {
         //     lightIndicatorObject.intensity = defaultIndicatorIntensity;
         // }
         dialogueRunner.StartDialogue(conversationStartNode);
+        FindObjectOfType<PlayerController>().GetComponent<PlayerController>().enabled = false;
     }
 
     private void EndConversation() {
@@ -47,6 +48,7 @@ public class YarnInteractable : MonoBehaviour {
             // if (lightIndicatorObject != null) {
             //     lightIndicatorObject.intensity = 0;
             // }
+            FindObjectOfType<PlayerController>().GetComponent<PlayerController>().enabled = true;
             isCurrentConversation = false;
             Debug.Log($"Ended conversation with {name}.");
         }
