@@ -187,27 +187,27 @@ Skully: Are you proficient in the art of persuasion?
 title: Skully_tutorial
 tags:
 ---
-Skully: 
-<<set $skully1 to 0>>
-<<set $angles1 to 0>>
-
-
-<<set $angles1 = $angles1 + 2>>
-<<set $skully1 = $skully1 + 1>>
-
-Angles plays their triangle!
--> 
--> 
-skully
--> 
--> 
-
-<<jump Skully_tutorial_after>>
+Skully: So what you need to do is challenge someone to a music battle.
+Skully: They play a note..
+Skully: Like this..
+Skully hums a little tune.
+Hum!
+Skully: And now you choice what note to play.
+Angles.. awkwardly plays their triangle.
+-> Ting ting!
+-> Cling cling!
+Skully: Good.
+Skully: So you do that for a while.
+Skully: The universe calculates your vibes..
+Skully: And then you get a feeling where you just know the outcome.
+Skully: ..And that's how it works.
+Angles: ..I see.
+<<jump SkullySection1_02>>
 ===
-title: Skully_tutorial_after
+title: SkullySection1_02
 tags:
 ---
-Skully: Fantastic.
+SKully: So.
 Skully: Are you ready to go out into the world and find individuals?
 -> Yeah, I'll start now.
     //load to A outside the party building door
@@ -216,19 +216,6 @@ Skully: Are you ready to go out into the world and find individuals?
     <<set $section2 to true>>
 -> Ah, no, just give me another moment.
     <<set $section1_1 to true>>
-    Skully: No problem. 
-    Skully: Speak to me again soon.
-===
-title: SkullySection1_02
-tags:
----
-Skully: Are you ready to go out into the world and find individuals?
--> Yeah, I'll start now.
-    //load to A outside the party building door
-    //changing variables to section2 dialogues 
-    <<set $section1 to false>>
-    <<set $section2 to true>>
--> Ah, no, just give me another moment.
     Skully: No problem. 
     Skully: Speak to me again soon.
 ===
