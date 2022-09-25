@@ -39,14 +39,14 @@ public class YarnFunctions1 : MonoBehaviour
         FindObjectOfType<IndicatorCall>().GetComponent<SpriteRenderer>().enabled = false;
     }
 
-    //instantiate PhoneChatPrefab (only used for into conversation)
+    //instantiate PhoneChatPrefab (only used for intro conversation)
     [YarnCommand("text_rats_on")]
     public static void LoadPhoneConvo()
     {
         GameObject newConvo = (GameObject)Instantiate(Resources.Load("PhoneChatPrefab"));
     }
 
-    //destroy PhoneChatPrefab (only used for into conversation)
+    //destroy PhoneChatPrefab (only used for intro conversation)
     [YarnCommand("text_rats_off")]
     public static void DestroyPhoneConvo()
     {

@@ -603,7 +603,7 @@ Sasha: I hope you get to experience it too!
 Angles: ..I don't think I could wake up that early,,
 Sasha: ...
 <<set $smiley1 to ":)">>
-Sasha: You could do it on a morning after you stay up the whole night $smiley1
+Sasha: You could do it on a morning after you stay up the whole night {$smiley1}
 Angles: ..Ouch.
 <<endif>>
 ===

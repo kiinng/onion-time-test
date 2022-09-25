@@ -1,5 +1,6 @@
 title: Pumpkin_phonecall
 ---
+<<set $section1 to true>>
 <<load_cafe>>
 <<wait .5>>
 //phonecall where pumpkin asks for angles band to play
@@ -9,7 +10,7 @@ Phone: RING RING RIIIIING! #gen_phone
 	it's Pumpkin!
 ->ignore
 	no,, it's Pumpkin, she'd get mad...
-Angles: ..Hello? #protag
+Angles: ...Hello? #protag
 <<set $blushes to "O////O">>
 Angles: {$blushes} O\/\/\/\/O
 
@@ -30,7 +31,6 @@ Angles: {$blushes} O\/\/\/\/O
 Angles: I will talk to my band. #protag
 
 Pumpkin: A-oh-kay! I will text you the details!! #phone_pumpkin
-<<set $section1 to true>>
 <<enable_playercontrol>>
 <<text_rats_on>>
 ===

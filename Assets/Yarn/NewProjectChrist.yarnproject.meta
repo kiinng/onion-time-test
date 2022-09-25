@@ -12,6 +12,7 @@ ScriptedImporter:
   - {fileID: 6391573757903218779, guid: e13867859a1b51b40adff3e864f32710, type: 3}
   - {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
   - {fileID: 6391573757903218779, guid: 756021a6622990843a8c3bdb9ac4e4e9, type: 3}
+  - {fileID: 6391573757903218779, guid: d4a617b1c1dfd4245ad4d0b0dc51097c, type: 3}
   compileErrors: []
   serializedDeclarations:
   - name: $blushes
@@ -94,6 +95,14 @@ ScriptedImporter:
     description: Implicitly declared in Section_01.yarn, node PumpkinSection1_02
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - name: $smiley
+    typeName: String
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_01.yarn, node PumpkinSection1_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
   - name: $puppy1_02
     typeName: Bool
     defaultValueBool: 0
@@ -110,6 +119,30 @@ ScriptedImporter:
     description: Implicitly declared in Section_01.yarn, node MadelineSection1_02
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - name: $section3
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in madelineStart.yarn, node madelineStart
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 756021a6622990843a8c3bdb9ac4e4e9, type: 3}
+  - name: $section4
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in madelineStart.yarn, node madelineStart
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 756021a6622990843a8c3bdb9ac4e4e9, type: 3}
+  - name: $section5
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in madelineStart.yarn, node madelineStart
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 756021a6622990843a8c3bdb9ac4e4e9, type: 3}
   defaultLanguage: en-US
   languagesToSourceAssets: []
   useAddressableAssets: 0
