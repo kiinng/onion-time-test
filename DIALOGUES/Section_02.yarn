@@ -68,6 +68,7 @@ Angles: It definitely will!
 -> ..Nah, if they aren't sure, maybe I should look for someone else..
     Angles: Alright, while it will probably work.. I guess I'll let it be.
 <<elseif $puppy1_01 is true and $puppy2_01 is false>>
+<<set $puppy2_01 to true>>
 Angles: ...
 Puppy: ...
 Angles: YOU PLAY THE CLARINET??
@@ -88,9 +89,9 @@ Angles: It definitely will!
 -> Challenge Puppy to a music battle!
     <<jump PuppyBattle1>>
 -> ..Nah, if they aren't sure, maybe I should look for someone else..
-    <<set $puppy2_01 to true>>
     Angles: Alright, while it will probably work.. I guess I'll let it be.
 <<else>>
+<<set $puppy2_01 to true>>
 Angles: Oh hey, Pup..
 Puppy: ...
 Angles: ...
@@ -112,7 +113,6 @@ Angles: It definitely will!
 -> Challenge Puppy to a music battle!
     <<jump PuppyBattle1>>
 -> ..Nah, if they aren't sure, maybe I should look for someone else..
-    <<set $puppy2_01 to true>>
     Angles: Alright, while it will probably work.. I guess I'll let it be.
 <<endif>>
 ===
@@ -128,41 +128,36 @@ Angles plays their triangle!
     <<set $angles1 = $angles1 + 2>>
 -> Cling cling!
 Puppy plays a clarinet note!
--> Mmmmmmmm!
--> MMMmmmmm! 
-    <<set $pup1 = $pup1 + 1>>
+Mmmmmmmm!
+<<set $pup1 = $pup1 + 1>>
 Angles plays their triangle!
 -> Ting ting! 
-    <<set $angles1 = $angles1 + 1>>
+    <<set $angles1 = $angles1 + 2>>
 -> Ting ting ting!
 Puppy plays a clarinet note!
--> TTTtttt! 
-    <<set $pup1 = $pup1 + 1>>
--> Ttttttt!
+<<set $pup1 = $pup1 + 1>>
+Ttttttt!
 Angles plays their triangle!
 -> Cling!
 -> Ting! 
     <<set $angles1 = $angles1 + 2>>
 Puppy plays a clarinet note!
--> MMMMMMMMmmm!
--> TTTtttttttt! 
-    <<set $pup1 = $pup1 + 1>>
+MMMMMMMMmmm!
+<<set $pup1 = $pup1 + 1>>
 Angles plays their triangle!
 -> Cling ting!
 -> Ting cling! 
-    <<set $angles1 = $angles1 + 1>>
+    <<set $angles1 = $angles1 + 2>>
 Puppy plays a clarinet note!
--> Mmm!
--> MMMmmmmmmm! 
-    <<set $pup1 = $pup1 + 1>>
+MMMmmmmmmm! 
+<<set $pup1 = $pup1 + 1>>
 Angles plays their triangle!
 -> Ting ting! 
     <<set $angles1 = $angles1 + 2>>
 -> Cling!
 Puppy plays a clarinet note!
--> Ttttt! 
-    <<set $pup1 = $pup1 + 1>>
--> TTTTttt!
+Ttttt! 
+<<set $pup1 = $pup1 + 1>>
 <<jump PuppyBattle1_result>>
 ===
 title: PuppyBattle1_result
@@ -219,6 +214,7 @@ Angles: Uh...
     Gab: ...
     Gab: Well, I'll be here...... I guesssss..
 <<else>>
+<<set $gab2_01 to true>>
 Angles: Hey, Gab.
 Gab: Ugh..
 Angles: ...
@@ -249,7 +245,6 @@ Angles: I am going to need you to prove that...
 -> Challenge Gab to a music battle... I guess..
     <<jump GabBattle1>>
 -> ..That really does sound kinda farfetched, doesn't it..
-    <<set $gab2_01 to true>>
     Angles: ..But maybe another time..
     Gab: ...
     Gab: Well, I'll be here...... I guesssss..
@@ -267,50 +262,50 @@ Angles plays their triangle!
     <<set $angles1 = $angles1 + 2>>
 -> Cling cling!
 Gab hums!
--> Mmmmmmmm!
--> Hummmmmm! 
-    <<set $gab1 = $gab1 + 1>>
+Huuummmm! 
+<<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
--> 
--> 
+-> Cling cling!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
 Gab hums!
--> 
-->
+Hmmmmmmmmm!
+<<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
--> 
--> 
-
+-> Ting cling!
+-> Cling ting!
+    <<set $angles1 = $angles1 + 2>>
 Gab hums!
--> 
-->
+Mmmmm!
+<<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
--> 
--> 
-
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting ting ting!
 Gab hums!
--> 
-->
+Mmmmhh!
+<<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
--> 
--> 
-
+-> Cling!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 2>>
 Gab hums!
--> 
-->
+MMmmmmmmMMmmmm!
+<<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
--> 
--> 
-
+-> Cling!
+-> Ting!
+    <<set $angles1 = $angles1 + 2>>
 Gab hums!
--> 
-->
+<<set $gab1 = $gab1 + 1>>
+HHHHuuummmmmmm!
 Angles plays their triangle!
--> 
--> 
-
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting cling!
 Gab hums!
--> 
-->
+Hummm!
+<<set $gab1 = $gab1 + 1>>
 <<jump GabBattle1_result>>
 ===
 title: GabBattle1_result
@@ -329,7 +324,11 @@ ANGLES WON!
 <<set $gab1 to 0>>
 <<set $angles1 to 0>>
 ANGLES..... LOST!
-Angles:
+Angles: ..Well..um...
+Angles: That wasn't bad but like..
+Angles: Could be better?
+Gab: Oh, I'll show you!
+Angles: ...Ok.
 <<endif>>
 ===
 title: GabSection2_02
@@ -375,6 +374,7 @@ Angles: I'll show you!
 <<elseif $sammy2_01 is true and $angel2_01 is false>>
 //A remembers Sammy's instrument being fake and offends Angel that theirs is fake, then blackmails them into a music battle
 //saying they will tell Skully they broke Skully's fountain pen
+<<set $angel2_01 to true>>
 Angles: ..Don't tell me the trumpet is just part of your costume...
 Angel: What? No.
 Angel: That's such a rude assumption to make!
@@ -406,12 +406,12 @@ Angles: Yes, yes I am.
 -> Challenge Angel to a music battle!
     <<jump AngelBattle1>>
 -> ..Maybe I should just leave them alone
-    <<set $angel2_01 to true>>
     Angles: ..Ah.. I changed my mind..
     Angles: Sorry, I've been rude enough.
     Angles: I'll leave you alone..
 <<else>>
 //A meets Angel before sammy, just tells them their costume is cool, Angel doesn't think they will work out with the band
+<<set $angel2_02 to true>>
 Angles: Hey Angel.
 Angles: Cute costume!
 Angel: Thanks....
@@ -435,7 +435,6 @@ Angles: How about I show you!
 -> Challenge Angel to a music battle!
     <<jump AngelBattle1>>
 -> ..Or I can find someone else...
-    <<set $angel2_02 to true>>
     Angles: Ah but if you don't want to, that's alright.
     Angles: I'll go look others.
 <<endif>>
@@ -447,18 +446,62 @@ tags:
 Angles: 
 <<set $angel1 to 0>>
 <<set $angles1 to 0>>
-
-
-<<set $angles1 = $angles1 + 2>>
-<<set $angel1 = $angel1 + 1>>
-
 Angles plays their triangle!
--> 
--> 
-Angel
--> 
--> 
-
+-> Cling cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling!
+Angel plays their trumpet!
+HHHHHHHHHHH!
+<<set $angel1 = $angel1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Angel plays their trumpet!
+HHHHHHHMMM!
+<<set $angel1 = $angel1 + 1>>
+Angles plays their triangle!
+-> Chink ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting ting!
+Angel plays their trumpet!
+-> KKKKKKKKK!
+<<set $angel1 = $angel1 + 1>>
+Angles plays their triangle!
+-> Cling!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Angel plays their trumpet!
+MMMMMMMMM!
+<<set $angel1 = $angel1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Angel plays their trumpet!
+HHHHMMMM!
+<<set $angel1 = $angel1 + 1>>
+Angles plays their triangle!
+-> Cling ting ting!
+-> Ting cling cling!
+    <<set $angles1 = $angles1 + 2>>
+Angel plays their trumpet!
+<<set $angel1 = $angel1 + 1>>
+KKKHHHK!
+Angles plays their triangle!
+-> Ting!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+Angel plays their trumpet!
+<<set $angel1 = $angel1 + 1>>
+MMMMMMMMMKKK!
+Angles plays their triangle!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling cling!
+Angel plays their trumpet!
+<<set $angel1 = $angel1 + 1>>
+HHHHHHHHHHHHH!
 <<jump AngelBattle1_result>>
 ===
 title: AngelBattle1_result
@@ -479,7 +522,9 @@ ANGLES WON!
 <<set $angel1 to 0>>
 <<set $angles1 to 0>>
 ANGLES..... LOST!
-Angles:
+Angles: ..Okay, I will leave you alone...
+Angles: For now!!
+Angel: >.>
 <<endif>>
 ===
 title: AngelSection2_02
