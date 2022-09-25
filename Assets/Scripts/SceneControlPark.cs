@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 
@@ -9,7 +7,7 @@ public class SceneControlPark : MonoBehaviour
     public GameObject sasha1;
     public GameObject sasha2;
 
-    private void Start()
+    private void Awake()
     {
         emilia.SetActive(false);
         sasha1.SetActive(false);

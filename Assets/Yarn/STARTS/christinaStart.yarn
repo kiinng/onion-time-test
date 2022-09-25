@@ -1,0 +1,13 @@
+title: christinaStart
+tracking: always
+---
+<<if visited("christinaStart") is true>>
+    <<jump ChristinaSection4_01>>
+<<elseif $section4 is true>>
+    <<jump ChristinaSection4_01>>
+<<elseif $christinaBattle_win_01 is true and $section4 is true>>
+    <<jump ChristinaSection4_02>>
+<<elseif $section5 is true>>
+    <<jump ChristinaSection5_01>>
+<<endif>>
+===

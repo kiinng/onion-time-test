@@ -13,18 +13,20 @@ ScriptedImporter:
   - {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
   - {fileID: 6391573757903218779, guid: 756021a6622990843a8c3bdb9ac4e4e9, type: 3}
   - {fileID: 6391573757903218779, guid: d4a617b1c1dfd4245ad4d0b0dc51097c, type: 3}
+  - {fileID: 6391573757903218779, guid: a9036c5fb0b5d8d4f91b61cab0ba52cc, type: 3}
+  - {fileID: 6391573757903218779, guid: e2af7a744b2a2f04c9ddd90278c31014, type: 3}
   compileErrors: []
   serializedDeclarations:
-  - name: $blushes
-    typeName: String
+  - name: $section1
+    typeName: Bool
     defaultValueBool: 0
     defaultValueNumber: 0
     defaultValueString: 
     description: Implicitly declared in Intro.yarn, node Pumpkin_phonecall
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: e13867859a1b51b40adff3e864f32710, type: 3}
-  - name: $section1
-    typeName: Bool
+  - name: $blushes
+    typeName: String
     defaultValueBool: 0
     defaultValueNumber: 0
     defaultValueString: 
@@ -143,6 +145,14 @@ ScriptedImporter:
     description: Implicitly declared in madelineStart.yarn, node madelineStart
     isImplicit: 1
     sourceYarnAsset: {fileID: 6391573757903218779, guid: 756021a6622990843a8c3bdb9ac4e4e9, type: 3}
+  - name: $bunny4_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in CheckSection.yarn, node CheckPark
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: d4a617b1c1dfd4245ad4d0b0dc51097c, type: 3}
   defaultLanguage: en-US
   languagesToSourceAssets: []
   useAddressableAssets: 0
