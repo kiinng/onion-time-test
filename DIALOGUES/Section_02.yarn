@@ -229,6 +229,7 @@ Gab: You know..
 Gab: I hear you're looking for band members..
 Gab: Well......
 //action for gab sprite to change to singing one
+<<ShowSprite2 GabInst>>
 Gab: I can sing!
 Angles: ...
 Angles: Oh neat.
