@@ -1,19 +1,17 @@
 title: puppyStart
-tags:
+tracking: always
 ---
-<<if !visited("puppyStart")>>
+<<if visited("puppyStart") == false>>
     <<jump PuppySection1_01>>
 <<elseif $section1 is true>>
     <<jump PuppySection1_01>>
 <<elseif $section1_1 is true>>
     <<jump PuppySection1_02>>
-<<elseif $section2 is true>>
+<<elseif $section2 is true and $puppyBattle_win_01 is false>>
     <<jump PuppySection2_01>>
 <<elseif $puppyBattle_win_01 is true and $section2 is true>>
     <<jump PuppySection2_02>>
 <<elseif $section5 is true>>
     <<jump PuppySection5_01>>
-<<Else>>
-
 <<endif>>
 ===

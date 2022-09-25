@@ -1,7 +1,7 @@
 title: skullyStart
-tags:
+tracking: always
 ---
-<<if !visited("skullyStart")>>
+<<if visited("skullyStart") == false>>
     <<jump SkullySection1_01>>
 <<elseif $section1 is true>>
     <<jump SkullySection1_01>>
@@ -15,7 +15,5 @@ tags:
     <<jump SkullySection4_01>>
 <<elseif $section5 is true>>
     <<jump SkullySection5_01>>
-<<Else>>
-
 <<endif>>
 ===

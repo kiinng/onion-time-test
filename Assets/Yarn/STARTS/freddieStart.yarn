@@ -1,7 +1,7 @@
 title: freddieStart
-tags:
+tracking: always
 ---
-<<if !visited("freddieStart")>>
+<<if visited("freddieStart") == false>>
     <<jump FreddieSection2_01>>
 <<elseif $section2 is true>>
     <<jump FreddieSection2_01>>
@@ -13,7 +13,5 @@ tags:
     <<jump FreddieSection4_02>>
 <<elseif $section5 is true>>
     <<jump FreddieSection5_01>>
-<<Else>>
-
 <<endif>>
 ===

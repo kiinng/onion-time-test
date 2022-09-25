@@ -1,0 +1,77 @@
+﻿title: GabBattle1
+tags:
+---
+//action to move to gab battle room?
+Angles: ..Well okay, here we go..
+<<set $gab1 to 0>>
+<<set $angles1 to 0>>
+Angles plays their triangle!
+-> Ting cling! 
+    <<set $angles1 = $angles1 + 2>>
+-> Cling cling!
+Gab hums!
+-> Mmmmmmmm!
+-> Hummmmmm! 
+    <<set $gab1 = $gab1 + 1>>
+Angles plays their triangle!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+Gab hums!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+Angles plays their triangle!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+Gab hums!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+Angles plays their triangle!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+Gab hums!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+Angles plays their triangle!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+Gab hums!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+Angles plays their triangle!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+Gab hums!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+Angles plays their triangle!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+Gab hums!
+-> choice 1
+    result 1
+-> choice 2
+    result 1
+<<jump GabBattle1_result>>
+===

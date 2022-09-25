@@ -279,7 +279,7 @@ tags:
     Skully: Are you proficient in the art of persuasion?
         -> Yeah, I'm actually not that bad at it.
         -> Uh.. no...
-        <<jump Skully_tutorial>>
+            <<jump Skully_tutorial>>
 
     Skully: Fantastic.
 
@@ -290,6 +290,7 @@ tags:
             <<set $section1 to false>>
             <<set $section2 to true>>
         -> Ah, no, just give me another moment.
+            <<set $section1 to false>>
             <<set $section1_1 to true>>
         Skully: No problem. 
         Skully: Speak to me again soon.
@@ -337,6 +338,7 @@ tags:
         <<set $section1 to false>>
         <<set $section2 to true>>
     -> Ah, no, just give me another moment.
+        <<set $section1 to false>>
         <<set $section1_1 to true>>
         Skully: No problem. 
         Skully: Speak to me again soon.
@@ -348,7 +350,7 @@ tags:
 ---
 Skully: 
 
-<<jump Done>>
+//<<jump Done>>
 ===
 
 title: SkullySection1_02
@@ -406,7 +408,7 @@ tags:
 
     Puppy: Yeah..
 <<else>>
-<<set $puppy1_02 to true>>
+    <<set $puppy1_02 to true>>
     Puppy: ...
 
     Angles: Okay I'm not doing that again.

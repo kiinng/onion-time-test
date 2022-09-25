@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 679be437b277b8a47924d17005824fb8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  LastImportHadImplicitStringIDs: 0
+  LastImportHadAnyStrings: 0
+  isSuccessfullyParsed: 0
+  parseErrorMessages:
+  - "Assets/Yarn/STARTS/gabStart.yarn: 8:6: Error: Unexpected \"elseif \" while reading
+    a statement\r\n    <<elseif $gabBattle_win_01 is true and $section2 is true>>\r\r\n     
+    ^^^^^^^\r\n"

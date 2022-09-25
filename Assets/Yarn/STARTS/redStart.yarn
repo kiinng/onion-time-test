@@ -1,7 +1,7 @@
 title: redStart
-tags:
+tracking: always
 ---
-<<if !visited("redStart")>>
+<<if visited("redStart") == false>>
     <<jump RedSection2_01>>
 <<elseif $section2 is true>>
     <<jump RedSection2_01>>
@@ -9,7 +9,5 @@ tags:
     <<jump RedSection4_01>>
 <<elseif $section5 is true>>
     <<jump RedSection5_01>>
-<<Else>>
-
 <<endif>>
 ===

@@ -1,0 +1,13 @@
+title: gabStart
+tracking: always
+---
+<<if visited("gabStart") == false>>
+    <<jump GabSection2_01>>
+<<elseif $section2 is true>>
+    <<jump GabSection2_01>>
+<<elseif $gabBattle_win_01 is true and $section2 is true>>
+    <<jump GabSection2_02>>
+<<elseif $section5 is true>>
+    <<jump GabSection5_01>>
+<<endif>>
+===

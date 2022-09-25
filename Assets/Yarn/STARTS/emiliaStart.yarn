@@ -1,11 +1,11 @@
 title: emiliaStart
-tags:
+tracking: always
 ---
-<<if !visited("emiliaStart")>>
+<<if visited("emiliaStart") is false>>
     <<jump EmiliaSection3_01>>
 <<elseif $section3 is true>>
     <<jump EmiliaSection3_01>>
-<<elseif $section4 is true>>
+<<elseif $section4 is true and $emiliaBattle_win_01 is false>>
     <<jump EmiliaSection4_01>>
 <<elseif $emiliaBattle_win_01 is true and $section4 is true>>
     <<jump EmiliaSection4_02>>
@@ -13,7 +13,5 @@ tags:
     <<jump EmiliaSection4_03>>
 <<elseif $section5 is true>>
     <<jump EmiliaSection5_01>>
-<<Else>>
-
 <<endif>>
 ===

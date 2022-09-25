@@ -1,15 +1,13 @@
 title: tommyTuppenceStart
-tags:
+tracking: always
 ---
-<<if !visited("tommyTuppenceStart")>>
+<<if visited("tommyTuppenceStart") == false>>
     <<jump TommySection3_01>>
-<<elseif $section3 is true>>
+<<elseif $section3 is true and $tommyBattle_win_01 is false>>
     <<jump TommySection3_01>>
 <<elseif $tommyBattle_win_01 is true and $section3 is true>>
     <<jump TommySection3_02>>
 <<elseif $section5 is true>>
     <<jump TommySection5_01>>
-<<Else>>
-
 <<endif>>
 ===

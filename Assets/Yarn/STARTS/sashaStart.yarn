@@ -1,7 +1,7 @@
 title: sashaStart
-tags:
+tracking: always
 ---
-<<if !visited("sashaStart")>>
+<<if visited("sashaStart") == false>>
     <<jump SashaSection2_01>>
 <<elseif $section2 is true>>
     <<jump SashaSection2_01>>
@@ -11,7 +11,5 @@ tags:
     <<jump SashaSection4_01>>
 <<elseif $section5 is true>>
     <<jump SashaSection5_01>>
-<<Else>>
-
 <<endif>>
 ===

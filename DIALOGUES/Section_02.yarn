@@ -3,27 +3,27 @@ tags:
 ---
 //Angles loves F's costume, F thinks A isn't rly in a costume, F made their costume out of a sheet
 <<if $freddie2_01 is true>>
-Angles: Guess I'll see you at the party.
-Freddie: I guess so.
+    Angles: Guess I'll see you at the party.
+    Freddie: I guess so.
 <<else>>
-<<set $freddie2_01 to true>>
-Angles: Freddie!
-Freddie: Ey..
-Angles: You're a ghost!
-Freddie: ...
-Freddie: It's for the party.
-Angles: Oh yeah I'm gonna be there.
-Freddie: ...
-Freddie: Don't tell me that's your costume??
-Angles: ..I guess?
-Freddie: ...
-Angles: I've been told that my normal clothes look costumey.
-Freddie: ...
-Freddie: Well I guess they aren't like completely wrong.
-Angles: Your's looks great though.
-Freddie: Ah.. My mom, like, threw out a bunch of my old costume stuff so all I had was like some old sheet.
-Angles: It's so retro in a good way.
-Freddie: ..Thanks.
+    <<set $freddie2_01 to true>>
+    Angles: Freddie!
+    Freddie: Ey..
+    Angles: You're a ghost!
+    Freddie: ...
+    Freddie: It's for the party.
+    Angles: Oh yeah I'm gonna be there.
+    Freddie: ...
+    Freddie: Don't tell me that's your costume??
+    Angles: ..I guess?
+    Freddie: ...
+    Angles: I've been told that my normal clothes look costumey.
+    Freddie: ...
+    Freddie: Well I guess they aren't like completely wrong.
+    Angles: Your's looks great though.
+    Freddie: Ah.. My mom, like, threw out a bunch of my old costume stuff so all I had was like some old sheet.
+    Angles: It's so retro in a good way.
+    Freddie: ..Thanks.
 <<endif>>
 ===
 title: MadelineSection2_01
@@ -68,52 +68,52 @@ Angles: It definitely will!
 -> ..Nah, if they aren't sure, maybe I should look for someone else..
     Angles: Alright, while it will probably work.. I guess I'll let it be.
 <<elseif $puppy1_01 is true and $puppy2_01 is false>>
-Angles: ...
-Puppy: ...
-Angles: YOU PLAY THE CLARINET??
-Puppy: ..Yes.
-Angles: You never told me!
-Puppy: I learned a bit in high school..
-Puppy: Now I sometimes practice..
-Angles: Okay, okay..
-Angles: I can't blame you if I never told you..
-Angles: But Spots, Willy, and Ben are sick!
-Angles: I'm looking for band members that could just help me play at the park tonight.
-Puppy: Oh..
-Angles: Yeah, so if you could just help me out—
-Puppy: Don't you play a triangle?
-Angles: Ah yes—
-Puppy: I'm not sure if it will work.
-Angles: It definitely will!
--> Challenge Puppy to a music battle!
-    <<jump PuppyBattle1>>
--> ..Nah, if they aren't sure, maybe I should look for someone else..
-    <<set $puppy2_01 to true>>
-    Angles: Alright, while it will probably work.. I guess I'll let it be.
+    Angles: ...
+    Puppy: ...
+    Angles: YOU PLAY THE CLARINET??
+    Puppy: ..Yes.
+    Angles: You never told me!
+    Puppy: I learned a bit in high school..
+    Puppy: Now I sometimes practice..
+    Angles: Okay, okay..
+    Angles: I can't blame you if I never told you..
+    Angles: But Spots, Willy, and Ben are sick!
+    Angles: I'm looking for band members that could just help me play at the park tonight.
+    Puppy: Oh..
+    Angles: Yeah, so if you could just help me out—
+    Puppy: Don't you play a triangle?
+    Angles: Ah yes—
+    Puppy: I'm not sure if it will work.
+    Angles: It definitely will!
+    -> Challenge Puppy to a music battle!
+        <<jump PuppyBattle1>>
+    -> ..Nah, if they aren't sure, maybe I should look for someone else..
+        <<set $puppy2_01 to true>>
+        Angles: Alright, while it will probably work.. I guess I'll let it be.
 <<else>>
-Angles: Oh hey, Pup..
-Puppy: ...
-Angles: ...
-Angles: YOU PLAY THE CLARINET??
-Puppy: ..Yes.
-Angles: You never told me!
-Puppy: I learned a bit in high school..
-Puppy: Now I sometimes practice..
-Angles: Okay, okay..
-Angles: I can't blame you if I never told you..
-Angles: But Spots, Willy, and Ben are sick!
-Angles: I'm looking for band members that could just help me play at the park tonight.
-Puppy: Oh..
-Angles: Yeah, so if you could just help me out—
-Puppy: Don't you play a triangle?
-Angles: Ah yes—
-Puppy: I'm not sure if it will work.
-Angles: It definitely will!
--> Challenge Puppy to a music battle!
-    <<jump PuppyBattle1>>
--> ..Nah, if they aren't sure, maybe I should look for someone else..
-    <<set $puppy2_01 to true>>
-    Angles: Alright, while it will probably work.. I guess I'll let it be.
+    Angles: Oh hey, Pup..
+    Puppy: ...
+    Angles: ...
+    Angles: YOU PLAY THE CLARINET??
+    Puppy: ..Yes.
+    Angles: You never told me!
+    Puppy: I learned a bit in high school..
+    Puppy: Now I sometimes practice..
+    Angles: Okay, okay..
+    Angles: I can't blame you if I never told you..
+    Angles: But Spots, Willy, and Ben are sick!
+    Angles: I'm looking for band members that could just help me play at the park tonight.
+    Puppy: Oh..
+    Angles: Yeah, so if you could just help me out—
+    Puppy: Don't you play a triangle?
+    Angles: Ah yes—
+    Puppy: I'm not sure if it will work.
+    Angles: It definitely will!
+    -> Challenge Puppy to a music battle!
+        <<jump PuppyBattle1>>
+    -> ..Nah, if they aren't sure, maybe I should look for someone else..
+        <<set $puppy2_01 to true>>
+        Angles: Alright, while it will probably work.. I guess I'll let it be.
 <<endif>>
 ===
 title: PuppyBattle1
@@ -169,23 +169,23 @@ title: PuppyBattle1_result
 tags:
 ---
 <<if $angles1 >= $pup1>>
-//win
-<<set $puppyBattle_win_01 to true>>
-<<set $puppy2_01 to false>>
-<<set $pup1 to 0>>
-<<set $angles1_1 to 0>>
-ANGLES WON!
-<<jump PuppySection2_02>>
+    //win
+    <<set $puppyBattle_win_01 to true>>
+    <<set $puppy2_01 to false>>
+    <<set $pup1 to 0>>
+    <<set $angles1_1 to 0>>
+    ANGLES WON!
+    <<jump PuppySection2_02>>
 <<else>>
-//lose
-<<set $pup1 to 0>>
-<<set $angles1_1 to 0>>
-ANGLES..... LOST!
-Angles: ..Well dang.
-Angles: Just you wait!
-Angles: I'm not gonna leave it like this!
-Puppy: ...
-Puppy: Ok..
+    //lose
+    <<set $pup1 to 0>>
+    <<set $angles1_1 to 0>>
+    ANGLES..... LOST!
+    Angles: ..Well dang.
+    Angles: Just you wait!
+    Angles: I'm not gonna leave it like this!
+    Puppy: ...
+    Puppy: Ok..
 <<endif>>
 ===
 title: PuppySection2_02
@@ -337,15 +337,15 @@ tags:
 ---
 //won the battle
 <<if $gab2_02 is true>>
-Gab: Just let me know when practice is.
-Gab: I'm going to do some voice warm ups.
+    Gab: Just let me know when practice is.
+    Gab: I'm going to do some voice warm ups.
 <<else>>
-<<set $gab2_02 to true>>
-Angles: Well wow.
-Angles: You were not lying.
-Angles: You got some major skills!
-Gab: I don't want to say I told you so..
-Gab: But I told you so.
+    <<set $gab2_02 to true>>
+    Angles: Well wow.
+    Angles: You were not lying.
+    Angles: You got some major skills!
+    Gab: I don't want to say I told you so..
+    Gab: But I told you so.
 <<endif>>
 ===
 title: AngelSection2_01
@@ -611,45 +611,46 @@ tags:
 <<if $bunny2_01 is true>>
 //it should loop
     <<if $bun1 is true>>
-    <<set $bun1 to false>>
-    <<set $bun2 to true>>
-    Sasha: See over there? #bunny
-    Sasha: That's a Scarlet Tanager up there in the canopy. #bunny
-    Sasha: A little hard to see but it does have such a bright red colour! #bunny
+        <<set $bun1 to false>>
+        <<set $bun2 to true>>
+        Sasha: See over there? #bunny
+        Sasha: That's a Scarlet Tanager up there in the canopy. #bunny
+        Sasha: A little hard to see but it does have such a bright red colour! #bunny
     <<elseif $bun2 is true>>
-    <<set $bun2 to false>>
-    <<set $bun3 to true>>
-    Sasha: Oh look! #bunny
-    Sasha: It's a little mouse! #bunny
-    Sasha: I actually saw a dead one last winter.. but you don't want to hear about that ha.. ha.. #bunny
+        <<set $bun2 to false>>
+        <<set $bun3 to true>>
+        Sasha: Oh look! #bunny
+        Sasha: It's a little mouse! #bunny
+        Sasha: I actually saw a dead one last winter.. but you don't want to hear about that ha.. ha.. #bunny
     <<elseif $bun3 is true>>
-    <<set $bun3 to false>>
-    <<set $bun1 to true>>
-    Sasha: Last time I was here, I saw so much litter.. #bunny
-    Sasha: People throw small parties here and then just don't bother to even clean up. #bunny
-    Sasha: There were some balloons that stayed for a month until I finally did something about it! #bunny
+        <<set $bun3 to false>>
+        <<set $bun1 to true>>
+        Sasha: Last time I was here, I saw so much litter.. #bunny
+        Sasha: People throw small parties here and then just don't bother to even clean up. #bunny
+        Sasha: There were some balloons that stayed for a month until I finally did something about it! #bunny
     <<else>>
-    Sasha: The weather today is really quite nice :)
+        Sasha: The weather today is really quite nice {$smiley}
     <<endif>>
 <<else>>
-<<set $bunny2_01 to true>>
-<<set $bun1 to true>>
-Sasha: Oh hello! #bunny
-Sasha: Quite a nice day out here, isn't it? #bunny
-Angles: ..I suppose #protag
-Angles: I didn't know there was a park here.. #protag
-Sasha: It's a bit hidden, eh #bunny
-Sasha: That's maybe part of what I like about it. #bunny
-Sasha: Very peaceful and even though the actual street is so near, it still feels very isolated. #bunny
-Sasha: You can hear all the birds and everything! #bunny
-Angles: Yeah, it's honestly quite nice. #protag
-Sasha: I'm glad you think so :D #bunny
-Sasha: Feel free to relax and enjoy the park with me. #bunny
-Angles: You don't mind? #protag
-Sasha: Not at all! #bunny
-Sasha: It's actually nice to have some company. #bunny
-Sasha: I usually come out with a friend here— sometimes I even bully her to play me something >:) #bunny
-Angles: Oh.. #protag
+    <<set $bunny2_01 to true>>
+    <<set $bun1 to true>>
+    Sasha: Oh hello! #bunny
+    Sasha: Quite a nice day out here, isn't it? #bunny
+    Angles: ..I suppose #protag
+    Angles: I didn't know there was a park here.. #protag
+    Sasha: It's a bit hidden, eh #bunny
+    Sasha: That's maybe part of what I like about it. #bunny
+    Sasha: Very peaceful and even though the actual street is so near, it still feels very isolated. #bunny
+    Sasha: You can hear all the birds and everything! #bunny
+    Angles: Yeah, it's honestly quite nice. #protag
+    Sasha: I'm glad you think so :D #bunny
+    Sasha: Feel free to relax and enjoy the park with me. #bunny
+    Angles: You don't mind? #protag
+    Sasha: Not at all! #bunny
+    Sasha: It's actually nice to have some company. #bunny
+    <<set $evilsmile to ">:)">>
+    Sasha: I usually come out with a friend here— sometimes I even bully her to play me something {$evilsmile} #bunny
+    Angles: Oh.. #protag
 <<endif>>
 ===
 title: PumpkinSection2_01
