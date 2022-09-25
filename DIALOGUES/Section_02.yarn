@@ -229,6 +229,7 @@ Gab: You know..
 Gab: I hear you're looking for band members..
 Gab: Well......
 //action for gab sprite to change to singing one
+<<ShowSprite2 GabInst>>
 Gab: I can sing!
 Angles: ...
 Angles: Oh neat.
@@ -339,12 +340,15 @@ tags:
     Gab: Just let me know when practice is.
     Gab: I'm going to do some voice warm ups.
 <<else>>
-    <<set $gab2_02 to true>>
-    Angles: Well wow.
-    Angles: You were not lying.
-    Angles: You got some major skills!
-    Gab: I don't want to say I told you so..
-    Gab: But I told you so.
+
+<<set $gab2_02 to true>>
+//go back to non singing sprite
+<<ShowSprite1 GabInst>>
+Angles: Well wow.
+Angles: You were not lying.
+Angles: You got some major skills!
+Gab: I don't want to say I told you so..
+Gab: But I told you so.
 <<endif>>
 ===
 title: AngelSection2_01
