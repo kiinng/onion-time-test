@@ -1,0 +1,15 @@
+title: redStart
+tags:
+---
+<<if !visited("redStart")>>
+    <<jump RedSection2_01>>
+<<elseif $section2 is true>>
+    <<jump RedSection2_01>>
+<<elseif $section4 is true>>
+    <<jump RedSection4_01>>
+<<elseif $section5 is true>>
+    <<jump RedSection5_01>>
+<<Else>>
+
+<<endif>>
+===
