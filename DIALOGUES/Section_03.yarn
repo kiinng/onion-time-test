@@ -122,6 +122,7 @@ AGAIN!
     Rat: Squeak!! Squeak!!! SQUEAK!!!!
     Angles: ...they seem really mad but still just,, no..
 <<else>>
+<<set $rat3_01 to true>>
 Angles: Oh hey there.. #protag
 Rat: Squeak! #game_rat
 Rat: Squeak squeeeeeak squeak! #game_rat
@@ -141,18 +142,48 @@ tags:
 Angles: ..Well here we go....
 <<set $rat1 to 0>>
 <<set $angles1 to 0>>
-
-
-<<set $angles1 = $angles1 + 2>>
-<<set $rat1 = $rat1 + 1>>
-
 Angles plays their triangle!
--> 
--> 
-Rat 
--> 
--> 
-
+-> Ting!
+-> Cling!
+    <<set $angles1 = $angles1 + 2>>
+Rat plays a note on their gameboy!
+Hhhhhhhhhhhhhnnnnnn!
+<<set $rat1 = $rat1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling ting!
+Rat plays a note on their gameboy!
+Mmmmmmmmmmmmnnnnnnn!
+<<set $rat1 = $rat1 + 1>>
+Angles plays their triangle!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting ting!
+Rat plays some notes on their gameboy!
+Mmmmm! MMM! Mmmmm!
+<<set $rat1 = $rat1 + 1>>
+Angles plays their triangle!
+-> Cling!
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Rat plays a note on their gameboy!
+HHHHHHHHHHHHHHHH!
+<<set $rat1 = $rat1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+Rat plays some notes on their gameboy!
+Hhh! MMMMMmm! Hm!
+<<set $rat1 = $rat1 + 1>>
+Angles plays their triangle!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling ting!
+Rat plays a sound effect on their gameboy!
+KaChing! KaChing!
+<<set $rat1 = $rat1 + 1>>
 <<jump RatBattle1_result>>
 ===
 title: RatBattle1_result
@@ -189,7 +220,7 @@ Angles: ..Ok.
 Rat: Squeeeak!
 Angles: ..Shocked and outraged...
 Angles: This rat is very expressive...
-//(received Gameboy Rat's contact number)
+*receive Gameboy Rat's contact number*
 Angles: Thanks but also what??
 <<endif>>
 ===
@@ -208,6 +239,7 @@ Angles: ..Thanks.
     Tommy: See ya—
     Tuppence: —Later, boss!
 <<else>>
+<<set $tommy3_01 to true>>
 Angles: ...Hi.
 Tuppence: HEY!
 Tommy: HI!
@@ -249,7 +281,6 @@ Angles: And I need some temporary band members...
 -> Challenge Tommy and Tuppence to a music battle!
     <<jump TommyBattle1>>
 -> ..Maybe they are too annoying to actually work with...
-    <<set $tommy3_01 to true>>
     Angles: So if you see anyone, will you let me know?
     Tommy: Sure!
     Tuppence: No problem, boss!
@@ -262,18 +293,76 @@ tags:
 Angles: 
 <<set $tommy1 to 0>>
 <<set $angles1 to 0>>
-
-
-<<set $angles1 = $angles1 + 2>>
-<<set $tommy1 = $tommy1 + 1>>
-
 Angles plays their triangle!
--> 
--> 
-Tommy and Tuppence
--> 
--> 
-
+-> Ting cling!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+Tommy and Tuppence shake their maracas!
+Shhk! Shhk! Shhk! Shhk!
+<<set $tommy1 = $tommy1 + 1>>
+Angles plays their triangle!
+-> Ting cling cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting ting cling!
+Tommy and Tuppence shake their maracas!
+Shhk! Shek! Shhk! Shek! 
+<<set $tommy1 = $tommy1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling cling!
+Tommy and Tuppence shake their maracas!
+Shhk! Shhk! Shhk! Shhk!
+<<set $tommy1 = $tommy1 + 1>>
+Angles plays their triangle!
+-> Cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling ting!
+Tommy and Tuppence shake their maracas!
+Shhk! Shhk! Shhk! Shhk!
+<<set $tommy1 = $tommy1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Tommy and Tuppence shake their maracas!
+Shhk! Shek! Shhk! Shek!
+<<set $tommy1 = $tommy1 + 1>>
+Angles plays their triangle!
+-> Ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling!
+Tommy and Tuppence shake their maracas!
+ Shhk! Shhk! Shhk! Shhk!
+<<set $tommy1 = $tommy1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+-> Cling cling cling!
+    <<set $angles1 = $angles1 + 2>>
+Tommy and Tuppence shake their maracas!
+Shhk! Shek! Shhk! Shek!
+<<set $tommy1 = $tommy1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting cling!
+Tommy and Tuppence shake their maracas!
+Shhk! Shek! Shhk! Shek!
+<<set $tommy1 = $tommy1 + 1>>
+Angles plays their triangle!
+-> Ting cling ting!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Tommy and Tuppence shake their maracas!
+ Shhk! Shhk! Shhk! Shhk!
+<<set $tommy1 = $tommy1 + 1>>
+Angles plays their triangle!
+-> Ting!
+-> Cling!
+    <<set $angles1 = $angles1 + 2>>
+Tommy and Tuppence shake their maracas!
+Shhk! Shek! Shhk! Shek!
+<<set $tommy1 = $tommy1 + 1>>
 <<jump TommyBattle1_result>>
 ===
 title: TommyBattle1_result
@@ -292,7 +381,10 @@ ANGLES WON!
 <<set $tommy1 to 0>>
 <<set $angles1 to 0>>
 ANGLES..... LOST!
-Angles: 
+Angles: Oh...
+Tommy: We can—
+Tuppence: —Try again!
+Angles: ..Maybe...
 <<endif>>
 ===
 title: TommySection3_02
@@ -329,6 +421,8 @@ Angles: Let's do this!
     Eight: Yeah, no problem.
     Seven: *thumbs up*
 <<else>>
+<<set $seven3_01 to true>>
+<<set $eight3_01 to true>>
 Angles: Hey, Seven and Eight.
 <<set $smiley2 to ":)">>
 Seven: $smiley2
@@ -351,8 +445,6 @@ Angles: Now show me what you got!
 -> Challenge Seven to a music battle!
     <<jump SevenBattle1>>
 -> ..Maybe this isn't the best idea..
-    <<set $seven3_01 to true>>
-    <<set $eight3_01 to true>>
     Angles: Hey, actually can you just give me a moment.
     Angles: I just need to go to the bathroom real quick!
     Eight: Yeah, no problem.
@@ -366,18 +458,83 @@ tags:
 Angles: 
 <<set $seven1 to 0>>
 <<set $angles1 to 0>>
-
-
-<<set $angles1 = $angles1 + 2>>
-<<set $seven1 = $seven1 + 1>>
-
 Angles plays their triangle!
--> 
--> 
-Seven
--> 
--> 
-
+-> Ting ting!
+-> Cling!
+    <<set $angles1 = $angles1 + 2>>
+Seven plays on their bongo drums!
+Clang! clong!
+<<set $seven1 = $seven1 + 1>> 
+Angles plays their triangle!
+-> Cling cling ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling ting!
+Seven plays on their bongo drums!
+Clang! Clang! Clong!
+<<set $seven1 = $seven1 + 1>>
+Angles plays their triangle!
+-> Cling Cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting ting!
+Seven plays on their bongo drums!
+Clong! CLONG! Clong!
+<<set $seven1 = $seven1 + 1>>
+Angles plays their triangle!
+-> Ting cling ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling ting!
+Seven plays on their bongo drums!
+Clang! Clang!
+<<set $seven1 = $seven1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+Seven plays on their bongo drums!
+Clang! Clang! Clong! Clong!
+<<set $seven1 = $seven1 + 1>>
+Angles plays their triangle!
+-> Ting!
+-> Cling!
+    <<set $angles1 = $angles1 + 2>>
+Seven plays on their bongo drums!
+Clang! Clong! Clong!
+<<set $seven1 = $seven1 + 1>>
+Angles plays their triangle!
+-> Cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling cling ting!
+Seven plays on their bongo drums!
+Clong! Clang!
+<<set $seven1 = $seven1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+Seven plays on their bongo drums!
+Clong! Clang! Clong!
+<<set $seven1 = $seven1 + 1>>
+Angles plays their triangle!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling cling cling!
+Seven plays on their bongo drums!
+Clong! Clong!
+<<set $seven1 = $seven1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Seven plays on their bongo drums!
+Clong! Clang! Clong! Clong!
+<<set $seven1 = $seven1 + 1>>
+Angles plays their triangle!
+-> Ting cling!
+-> Cling!
+    <<set $angles1 = $angles1 + 2>>
+Seven plays on their bongo drums!
+Clang! Clang!
+<<set $seven1 = $seven1 + 1>>
 <<jump SevenBattle1_result>>
 ===
 title: SevenBattle1_result
@@ -396,7 +553,12 @@ ANGLES WON!
 <<set $seven1 to 0>>
 <<set $angles1 to 0>>
 ANGLES..... LOST!
-Angles: 
+Angles: Huh..
+Angles: You know what,,
+Angles: That was so much fun, how about we go again?
+Seven: !!
+Seven: :D
+Eight: Why not!
 <<endif>>
 ===
 title: SevenSection3_02
@@ -506,6 +668,12 @@ Skully: You good to check the stage setup now?
     //changing variables to section3 dialogues 
     <<set $section3 to false>>
     <<set $section4 to true>>
+    <<load_street>>
+    <<Street_Section4_Setup SceneChecker>>
+    <<wait .1>>
+    <<disable_playercontrol>>
+    15 MINS LATER
+    <<enable_playercontrol>>
 -> Ah, no, just give me another moment..
     Skully: No problem. 
     Skully: Speak to me again soon.
@@ -514,13 +682,43 @@ Skully: You good to check the stage setup now?
 Angles: Hey again..
 Skully: Search still going well?
 Angles: Yeah..
-Skully: Good.
-Skully: Can you just check with me that the stage setup looks good for you?
+Angles: I've got..
+-> ..a rat <<if $ratBattle_win_01 is true>>
+    <<set $beat_player to "rat">>
+    Angles: ..who's rather good at making notes and tunes on a modified gameboy it found??
+    Skully: ...
+    Skully: Great.
+    Skully: Looking forward to it.
+    Angles: It will be interesting!
+    Skully: Mm.
+-> Tommy and Tuppence <<if $tommyBattle_win_01 is true>>
+    <<set $beat_player to "tommy">>
+    Angles: ..the twins.
+    Angles: They might be a little annoying but they shake those maracas good!
+    Skully: Mm.
+-> Seven <<if $sevenBattle_win_01 is true>>
+    <<set $beat_player to "seven">>
+    Angles: Eight's sibling is real good at those bongo drums.
+    Skully: Ah yes.
+    Skully: They are but they definitely have been banned from playing at home.
+    Skully: We are neighbours and it does get irritating.
+    Angles: Oof..
+    Angles: Yeah.. I can understand that...
+    Skully: Should be fun at the party though.
+    Skully: ...
+Skully: Actually, do you have time right now?
+Skully: Thought you could check the stage setup to see if you need anything else.
 -> Yeah, of course!
     //load to A outside the party building door
     //changing variables to section3 dialogues 
     <<set $section3 to false>>
     <<set $section4 to true>>
+    <<load_street>>
+    <<Street_Section4_Setup SceneChecker>>
+    <<wait .1>>
+    <<disable_playercontrol>>
+    15 MINS LATER
+    <<enable_playercontrol>>
 -> Ah, just give me another moment..
     Skully: No problem. 
     Skully: Speak to me again soon.
