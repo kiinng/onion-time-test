@@ -1,0 +1,26 @@
+title: SelectionTest
+tags:
+---
+//for testing purposes
+<<set $puppyBattle_win_01 to true>>
+//<<set $gabBattle_win_01 to true>>
+//<<set $angelBattle_win_01 to true>>
+Skully: who joining you?
+-> Puppy <<if $puppyBattle_win_01 is true>>
+    <<set $melody_player == $puppy_player>>
+    Skully: Nice.
+    Skully: They were quite good at the clarinet at school.
+-> Gab <<if $gabBattle_win_01 is true>>
+    <<set $melody_player == $gab_player>>
+    Skully: I had no idea Gab played anything.
+    Angles: Oh.. they sing.
+    Skully: ..Your music has no lyrics?
+    Angles: They can hum real good!
+-> Angel <<if $angelBattle_win_01 is true>>
+    <<set $melody_player == $angel_player>>
+    Skully: My sibling?
+    Skully: Did you blackmail them or something?
+    Angles: H-Ha ha!
+    Angles: I would never do such a thing!
+    Skully: ...
+===
