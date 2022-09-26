@@ -446,7 +446,7 @@ title: AngelBattle1
 tags:
 ---
 //action to move to angel battle room?
-Angles: 
+Angles: Okay!!!
 <<set $angel1 to 0>>
 <<set $angles1 to 0>>
 Angles plays their triangle!

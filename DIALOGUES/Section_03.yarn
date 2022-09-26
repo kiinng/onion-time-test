@@ -290,7 +290,7 @@ title: TommyBattle1
 tags:
 ---
 //action to move to npc battle room?
-Angles: 
+Angles: Well, let's do this!
 <<set $tommy1 to 0>>
 <<set $angles1 to 0>>
 Angles plays their triangle!
@@ -455,7 +455,7 @@ title: SevenBattle1
 tags:
 ---
 //action to move to npc battle room?
-Angles: 
+Angles: Here we go!
 <<set $seven1 to 0>>
 <<set $angles1 to 0>>
 Angles plays their triangle!
