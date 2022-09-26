@@ -87,6 +87,7 @@ Angles: Nope!
     Angles: But I will be back!
     Emilia: Don't.
 <<else>>
+<<set $emilia4_01 to true>>
 Angles: Hey Emilia!
 Angles: I'm looking for some temporary band members and I know you play the banjo..
 Angles: So I wanted to ask if you wouldn't mind playing in my band?
@@ -101,7 +102,6 @@ Emilia: Ugh..
 -> Challenge Emilia to a music battle!
     <<jump EmiliaBattle1>>
 -> ..Maybe I better not.. 
-    <<set $emilia4_01 to true>>
     Angles: ...Something has come up..
     Angles: But!
     Angles: I will be back!
@@ -112,21 +112,205 @@ title: EmiliaBattle1
 tags:
 ---
 //action to move to npc battle room?
-Angles: 
+Angles: I'll show you!
 <<set $emilia1 to 0>>
 <<set $angles1 to 0>>
-
-
-<<set $angles1 = $angles1 + 2>>
-<<set $emilia1 = $emilia1 + 1>>
-
 Angles plays their triangle!
--> 
--> 
-Emilia
--> 
--> 
-
+-> Cling!
+    <<set $angles1 = $angles1 + 1>>
+-> Ting!
+Emilia plays a note on the banjo!
+Tring tring tring!
+<<set $emilia1 = $emilia1 + 2>>
+Angles plays their triangle!
+-> Ting ting!
+-> Cling cling ting!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays a note on the banjo!
+Bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+-> Cling!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays a note on the banjo!
+Briing briing!
+<<set $emilia1 = $emilia1 + 2>>
+Angles plays their triangle!
+-> Cling cling cling!
+    <<set $angles1 = $angles1 + 1>>
+-> Ting ting ting!
+Emilia plays a note on the banjo!
+Brumg brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting!
+    <<set $angles1 = $angles1 + 1>>
+-> Ting ting!
+Emilia plays some notes on the banjo!
+Tring tring! Brumg!
+<<set $emilia1 = $emilia1 + 2>>
+Angles plays their triangle!
+-> Ting cling!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays some notes on the banjo!
+Bring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+    <<set $angles1 = $angles1 + 1>>
+-> Ting ting ting!
+Emilia plays a note on the banjo!
+Tring tring tring!
+<<set $emilia1 = $emilia1 + 2>>
+Angles plays their triangle!
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 1>>
+-> Cling cling!
+Emilia plays some notes on the banjo!
+Bring! Briing briing!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting cling ting!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays a note on the banjo!
+Tring! Bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling!
+-> Ting cling cling!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays a note on the banjo!
+Brumg brumg!
+<<set $emilia1 = $emilia1 + 2>>
+Angles plays their triangle!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 1>>
+-> Cling ting!
+Emilia plays a note on the banjo!
+Bring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 1>>
+-> Cling cling cling!
+Emilia plays a note on the banjo!
+Tring tring tring!
+<<set $emilia1 = $emilia1 + 2>>
+Angles plays their triangle!
+-> Cling cling ting!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays a note on the banjo!
+Bring bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays a note on the banjo!
+Bring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 1>>
+-> Cling cling!
+Emilia plays a note on the banjo!
+Tring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 2>>
+Angles plays their triangle!
+-> Ting ting!
+-> Cling cling cling!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays a note on the banjo!
+Bring bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+    <<set $angles1 = $angles1 + 1>>
+-> Ting!
+Emilia plays a note on the banjo!
+Bring! Briing! Bring!
+<<set $emilia1 = $emilia1 + 2>>
+Angles plays their triangle!
+-> Ting cling!
+-> Cling!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays a note on the banjo!
+Brumg brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting ting!
+    <<set $angles1 = $angles1 + 1>>
+-> Cling ting!
+Emilia plays a note on the banjo!
+Tring! Brumg!
+<<set $emilia1 = $emilia1 + 2>>
+Angles plays their triangle!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 1>>
+-> Cling cling ting!
+Emilia plays a note on the banjo!
+Tring! Bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays a note on the banjo!
+Briing briing!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays a note on the banjo!
+Tring tring tring!
+<<set $emilia1 = $emilia1 + 2>>
+Angles plays their triangle!
+-> Cling!
+    <<set $angles1 = $angles1 + 1>>
+-> Cling cling ting!
+Emilia plays a note on the banjo!
+Bring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting ting!
+    <<set $angles1 = $angles1 + 1>>
+-> Ting ting cling!
+Emilia plays a note on the banjo!
+Brumg brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 1>>
+-> Ting!
+Emilia plays a note on the banjo!
+Tring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 2>>
+Angles plays their triangle!
+-> Ting ting!
+-> Cling cling cling!
+    <<set $angles1 = $angles1 + 1>>
+Emilia plays a note on the banjo!
+Tring! Bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 1>>
+-> Cling ting!
+Emilia plays a note on the banjo!
+Briing briing!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling!
+    <<set $angles1 = $angles1 + 1>>
+-> Ting ting!
+Emilia plays a note on the banjo!
+Bring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 2>>
 <<jump EmiliaBattle1_result>>
 ===
 title: EmiliaBattle1_result
@@ -145,7 +329,7 @@ ANGLES WON!
 <<set $emilia1 to 0>>
 <<set $angles1 to 0>>
 ANGLES..... LOST!
-Angles: 
+Angles: ..Somehow I don't think I could win this....
 <<endif>>
 ===
 title: EmiliaSection4_02
@@ -174,6 +358,7 @@ Angles: ...I don't know if I regret this or not.......
 <<else>>
 <<set $emilia4_04 to true>>
 <<set $bunny4_03 to true>>
+<<set $emiliaBattle_win_02 to true>>
 Angles: Hey—
 Emilia: D-Did you ask??!!
 Angles: Yes—
@@ -209,6 +394,7 @@ Angles: Eh...
     Angles: But think it over.
     Angles: Again.
 <<else>>
+<<set $christina4_01 to true>>
 Angles: Oh cool!
 Angles: That's a ballerina costume, right?
 Angles: I actually did some ballet when I was little..
@@ -232,7 +418,6 @@ Angles: Aw come on!
 -> Challenge Christina to a music battle!
     <<jump ChristinaBattle1>>
 -> ..Leave them alone.
-    <<set $christina4_01 to true>>
     Angles: Alright, I won't make you..
     Angles: But think it over.
 <<endif>>
@@ -241,21 +426,79 @@ title: ChristinaBattle1
 tags:
 ---
 //action to move to npc battle room?
-Angles: 
+Angles: This will be good!
 <<set $christina1 to 0>>
 <<set $angles1 to 0>>
-
-
-<<set $angles1 = $angles1 + 2>>
-<<set $christina1 = $christina1 + 1>>
-
 Angles plays their triangle!
--> 
--> 
-Christina
--> 
--> 
-
+-> Ting ting!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 2>>
+Christina plays a note on the harp!
+Tiiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Ting ting ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling cling ting!
+Christina plays a note on the harp!
+Biiiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling cling!
+Christina plays a note on the harp!
+Tiiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Ting!
+-> Ting ting ting!
+    <<set $angles1 = $angles1 + 2>>
+Christina plays a note on the harp!
+Kliiiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Cling cling ting!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Christina plays a note on the harp!
+Tiiing! Kliiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling ting!
+Christina plays a note on the harp!
+Biiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Ting ting cling!
+-> Ting ting ting!
+    <<set $angles1 = $angles1 + 2>>
+Christina plays a note on the harp!
+Kliiing! Biiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting!
+Christina plays a note on the harp!
+Tiiiiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting ting cling!
+Christina plays a note on the harp!
+Kliiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+Christina plays a note on the harp!
+Tiiing! Biiiing! Kliiiing!
+<<set $christina1 = $christina1 + 1>>
 <<jump ChristinaBattle1_result>>
 ===
 title: ChristinaBattle1_result
@@ -274,7 +517,8 @@ ANGLES WON!
 <<set $christina1 to 0>>
 <<set $angles1 to 0>>
 ANGLES..... LOST!
-Angles: 
+Angles: ..I guess I'm not sure what I expected...
+Christina: Well, this has been a waste of time.
 ===
 title: ChristinaSection4_02
 tags:
@@ -306,6 +550,7 @@ Angles: I'm back and I will prove we sound good together!
     Angles: Ah.. sorry, I need another moment,,
     Freddie: ..Alright.
 <<else>>
+<<set $freddie4_01 to true>>
 Angles: ...Freddie.
 Freddie: Yeah?
 Angles: You play a ukulele...
@@ -326,7 +571,6 @@ Angles: I'll prove it!
 -> Challenge Freddie to a music battle!
     <<jump FreddieBattle1>>
 -> ..Maybe not.
-    <<set $freddie4_01 to true>>
     Angles: Ah actually just give me a moment!
     Angles: I'll be back in a bit.
 <<endif>>
@@ -335,21 +579,72 @@ title: FreddieBattle1
 tags:
 ---
 //action to move to npc battle room?
-Angles: 
+Angles: I'll show you!
 <<set $freddie1 to 0>>
 <<set $angles1 to 0>>
-
-
-<<set $angles1 = $angles1 + 2>>
-<<set $freddie1 = $freddie1 + 1>>
-
 Angles plays their triangle!
--> 
--> 
-Freddie
--> 
--> 
-
+-> Ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling!
+Freddie plays a note on the ukulele!
+Bling! Bling! 
+<<set $freddie1 = $freddie1 + 1>> 
+Angles plays their triangle!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling cling ting!
+Freddie plays a note on the ukulele!
+Tiing! Tiing!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling cling!
+Freddie plays a note on the ukulele!
+Brung! Brung!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Ting ting ting!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Freddie plays a note on the ukulele!
+Tiing! Tiing! Brung!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Cling cling ting!
+-> Ting!
+    <<set $angles1 = $angles1 + 2>>
+Freddie plays a note on the ukulele!
+Bling! Bling! Brung!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Freddie plays a note on the ukulele!
+Tiing! Tiing!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting ting!
+Freddie plays a note on the ukulele!
+Bling! Bling! Bling!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Ting!
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Freddie plays a note on the ukulele!
+Brung! Brung!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Cling cling ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting cling!
+Freddie plays a note on the ukulele!
+Bling! Brung! Tiing!
+<<set $freddie1 = $freddie1 + 1>>
 <<jump FreddieBattle1_result>>
 ===
 title: FreddieBattle1_result
@@ -368,7 +663,9 @@ ANGLES WON!
 <<set $freddie1 to 0>>
 <<set $angles1 to 0>>
 ANGLES..... LOST!
-Angles: 
+Angles: ..Well drats..
+Angles: Come on, let's just go again!
+Freddie: ...
 <<endif>>
 ===
 title: FreddieSection4_02
@@ -470,6 +767,12 @@ Skully: Are you ready to practice using the stage now?
     //changing variables to section5 dialogues 
     <<set $section4 to false>>
     <<set $section5 to true>>
+    <<load_street>>
+    <<Street_Section5_Setup SceneChecker>>
+    <<wait .1>>
+    <<disable_playercontrol>>
+    HOURS LATER
+    <<enable_playercontrol>>
 -> Oh, well.. almost! Just give me a bit of time..
     Skully: Sure.
     Skully: Just let me know when your band is ready.
@@ -478,12 +781,56 @@ Skully: Are you ready to practice using the stage now?
 Angles: Skulls!
 Angles: I think I've found all the people I need..
 Skully: Fantastic.
+Skully: Who's the last member?
+-> Emilia <<if $emiliaBattle_win_01 is true>>
+    //if u somehow manage to beat emilia in the music battle lol
+    <<set $harmony_player to "emilia">>
+    Angles: And god was that battle grueling!
+    Skully: I can imagine.
+    Skully: She can be very vindictive and stubborn.
+    Angles: ..Yeah.
+    Angles: Rude too.
+    Skully: And yet you got her to play in your band.
+    Angles: ...
+    Skully: Well.
+-> Emilia <<if $emiliaBattle_win_02 is true>>
+    //if you set up the date with sasha
+    <<set $harmony_player to "emilia">>
+    Angles: Did you know they could be kinda cute?
+    Skully: Yeah.
+    Skully: It's very amusing to watch her interact with Sasha.
+    Angles: Ah, so you knew about her crush?
+    Skully: Yep.
+    Skully: They ain't subtle.
+    Angles: Oh.
+    Skully: So.
+-> Christina <<if $christinaBattle_win_01 is true>>
+    <<set $harmony_player to "christina">>
+    Skully: How did you even convince Christina to go for it?
+    Angles: I won the music battle!
+    Angles: ..They really didn't want to do this.
+    Skully: I'm not surprised.
+    Skully: ...
+-> Freddie <<if $freddieBattle_win_01 is true>>
+    <<set $harmony_player to "freddie">>
+    Skully: Oh.
+    Skully: I'm glad Freddie joined you.
+    Angles: Me too!
+    Angles: We're gonna have a lot of fun.
+    Skully: For sure.
+    Skully: ...
 Skully: Are you ready to practice using the stage? 
 -> Yeah! Just let me call everyone to let them know. 
     //load to A outside the party building door
     //changing variables to section5 dialogues 
     <<set $section4 to false>>
     <<set $section5 to true>>
+    <<load_street>>
+    <<Street_Section5_Setup SceneChecker>>
+    <<wait .1>>
+    <<disable_playercontrol>>
+    HOURS LATER
+    <<enable_playercontrol>>
 -> Oh, well.. almost! Just give me a bit of time..
     Skully: Sure.
     Skully: Just let me know when your band is ready.
@@ -603,7 +950,7 @@ Sasha: I hope you get to experience it too!
 Angles: ..I don't think I could wake up that early,,
 Sasha: ...
 <<set $smiley1 to ":)">>
-Sasha: You could do it on a morning after you stay up the whole night {$smiley1}
+Sasha: You could do it on a morning after you stay up the whole night $smiley1
 Angles: ..Ouch.
 <<endif>>
 ===
