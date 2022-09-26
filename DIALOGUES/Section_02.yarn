@@ -3,27 +3,27 @@ tags:
 ---
 //Angles loves F's costume, F thinks A isn't rly in a costume, F made their costume out of a sheet
 <<if $freddie2_01 is true>>
-    Angles: Guess I'll see you at the party.
-    Freddie: I guess so.
+Angles: Guess I'll see you at the party.
+Freddie: I guess so.
 <<else>>
-    <<set $freddie2_01 to true>>
-    Angles: Freddie!
-    Freddie: Ey..
-    Angles: You're a ghost!
-    Freddie: ...
-    Freddie: It's for the party.
-    Angles: Oh yeah I'm gonna be there.
-    Freddie: ...
-    Freddie: Don't tell me that's your costume??
-    Angles: ..I guess?
-    Freddie: ...
-    Angles: I've been told that my normal clothes look costumey.
-    Freddie: ...
-    Freddie: Well I guess they aren't like completely wrong.
-    Angles: Your's looks great though.
-    Freddie: Ah.. My mom, like, threw out a bunch of my old costume stuff so all I had was like some old sheet.
-    Angles: It's so retro in a good way.
-    Freddie: ..Thanks.
+<<set $freddie2_01 to true>>
+Angles: Freddie!
+Freddie: Ey..
+Angles: You're a ghost!
+Freddie: ...
+Freddie: It's for the party.
+Angles: Oh yeah I'm gonna be there.
+Freddie: ...
+Freddie: Don't tell me that's your costume??
+Angles: ..I guess?
+Freddie: ...
+Angles: I've been told that my normal clothes look costumey.
+Freddie: ...
+Freddie: Well I guess they aren't like completely wrong.
+Angles: Your's looks great though.
+Freddie: Ah.. My mom, like, threw out a bunch of my old costume stuff so all I had was like some old sheet.
+Angles: It's so retro in a good way.
+Freddie: ..Thanks.
 <<endif>>
 ===
 title: MadelineSection2_01
@@ -164,23 +164,23 @@ title: PuppyBattle1_result
 tags:
 ---
 <<if $angles1 >= $pup1>>
-    //win
-    <<set $puppyBattle_win_01 to true>>
-    <<set $puppy2_01 to false>>
-    <<set $pup1 to 0>>
-    <<set $angles1_1 to 0>>
-    ANGLES WON!
-    <<jump PuppySection2_02>>
+//win
+<<set $puppyBattle_win_01 to true>>
+<<set $puppy2_01 to false>>
+<<set $pup1 to 0>>
+<<set $angles1_1 to 0>>
+ANGLES WON!
+<<jump PuppySection2_02>>
 <<else>>
-    //lose
-    <<set $pup1 to 0>>
-    <<set $angles1_1 to 0>>
-    ANGLES..... LOST!
-    Angles: ..Well dang.
-    Angles: Just you wait!
-    Angles: I'm not gonna leave it like this!
-    Puppy: ...
-    Puppy: Ok..
+//lose
+<<set $pup1 to 0>>
+<<set $angles1_1 to 0>>
+ANGLES..... LOST!
+Angles: ..Well dang.
+Angles: Just you wait!
+Angles: I'm not gonna leave it like this!
+Puppy: ...
+Puppy: Ok..
 <<endif>>
 ===
 title: PuppySection2_02
@@ -337,10 +337,9 @@ tags:
 ---
 //won the battle
 <<if $gab2_02 is true>>
-    Gab: Just let me know when practice is.
-    Gab: I'm going to do some voice warm ups.
+Gab: Just let me know when practice is.
+Gab: I'm going to do some voice warm ups.
 <<else>>
-
 <<set $gab2_02 to true>>
 //go back to non singing sprite
 <<ShowSprite1 GabInst>>
@@ -660,46 +659,45 @@ tags:
 <<if $bunny2_01 is true>>
 //it should loop
     <<if $bun1 is true>>
-        <<set $bun1 to false>>
-        <<set $bun2 to true>>
-        Sasha: See over there? #bunny
-        Sasha: That's a Scarlet Tanager up there in the canopy. #bunny
-        Sasha: A little hard to see but it does have such a bright red colour! #bunny
+    <<set $bun1 to false>>
+    <<set $bun2 to true>>
+    Sasha: See over there? #bunny
+    Sasha: That's a Scarlet Tanager up there in the canopy. #bunny
+    Sasha: A little hard to see but it does have such a bright red colour! #bunny
     <<elseif $bun2 is true>>
-        <<set $bun2 to false>>
-        <<set $bun3 to true>>
-        Sasha: Oh look! #bunny
-        Sasha: It's a little mouse! #bunny
-        Sasha: I actually saw a dead one last winter.. but you don't want to hear about that ha.. ha.. #bunny
+    <<set $bun2 to false>>
+    <<set $bun3 to true>>
+    Sasha: Oh look! #bunny
+    Sasha: It's a little mouse! #bunny
+    Sasha: I actually saw a dead one last winter.. but you don't want to hear about that ha.. ha.. #bunny
     <<elseif $bun3 is true>>
-        <<set $bun3 to false>>
-        <<set $bun1 to true>>
-        Sasha: Last time I was here, I saw so much litter.. #bunny
-        Sasha: People throw small parties here and then just don't bother to even clean up. #bunny
-        Sasha: There were some balloons that stayed for a month until I finally did something about it! #bunny
+    <<set $bun3 to false>>
+    <<set $bun1 to true>>
+    Sasha: Last time I was here, I saw so much litter.. #bunny
+    Sasha: People throw small parties here and then just don't bother to even clean up. #bunny
+    Sasha: There were some balloons that stayed for a month until I finally did something about it! #bunny
     <<else>>
-        Sasha: The weather today is really quite nice {$smiley}
+    Sasha: The weather today is really quite nice :)
     <<endif>>
 <<else>>
-    <<set $bunny2_01 to true>>
-    <<set $bun1 to true>>
-    Sasha: Oh hello! #bunny
-    Sasha: Quite a nice day out here, isn't it? #bunny
-    Angles: ..I suppose #protag
-    Angles: I didn't know there was a park here.. #protag
-    Sasha: It's a bit hidden, eh #bunny
-    Sasha: That's maybe part of what I like about it. #bunny
-    Sasha: Very peaceful and even though the actual street is so near, it still feels very isolated. #bunny
-    Sasha: You can hear all the birds and everything! #bunny
-    Angles: Yeah, it's honestly quite nice. #protag
-    Sasha: I'm glad you think so :D #bunny
-    Sasha: Feel free to relax and enjoy the park with me. #bunny
-    Angles: You don't mind? #protag
-    Sasha: Not at all! #bunny
-    Sasha: It's actually nice to have some company. #bunny
-    <<set $evilsmile to ">:)">>
-    Sasha: I usually come out with a friend here— sometimes I even bully her to play me something {$evilsmile} #bunny
-    Angles: Oh.. #protag
+<<set $bunny2_01 to true>>
+<<set $bun1 to true>>
+Sasha: Oh hello! #bunny
+Sasha: Quite a nice day out here, isn't it? #bunny
+Angles: ..I suppose #protag
+Angles: I didn't know there was a park here.. #protag
+Sasha: It's a bit hidden, eh #bunny
+Sasha: That's maybe part of what I like about it. #bunny
+Sasha: Very peaceful and even though the actual street is so near, it still feels very isolated. #bunny
+Sasha: You can hear all the birds and everything! #bunny
+Angles: Yeah, it's honestly quite nice. #protag
+Sasha: I'm glad you think so :D #bunny
+Sasha: Feel free to relax and enjoy the park with me. #bunny
+Angles: You don't mind? #protag
+Sasha: Not at all! #bunny
+Sasha: It's actually nice to have some company. #bunny
+Sasha: I usually come out with a friend here— sometimes I even bully her to play me something >:) #bunny
+Angles: Oh.. #protag
 <<endif>>
 ===
 title: PumpkinSection2_01
@@ -755,7 +753,12 @@ Skully: Do you have some time to help right now?
     //changing variables to section2 dialogues 
     <<set $section2 to false>>
     <<set $section3 to true>>
+    <<load_street>>
+    <<Street_Section3_Setup SceneChecker>>
+    <<wait .1>>
+    <<disable_playercontrol>>
     10 MINS LATER
+    <<enable_playercontrol>>
 -> Ah, I promised to talk to someone just now but I'll be back real soon to help you!
     Skully: No problem. 
     Skully: It's not that time sensitive.
@@ -768,13 +771,38 @@ Angles: Well I found at least one person to help out..
 Skully: That's good.
 Angles: It's a start...
 Skully: It is.
-Skully: Oh, I was wondering— do you mind helping out a bit in here?
+Skully: So, who's joining you?
+-> Puppy <<if $puppyBattle_win_01 is true>>
+    <<set $melody_player to "puppy">>
+    Skully: Nice.
+    Skully: They were quite good at the clarinet at school.
+-> Gab <<if $gabBattle_win_01 is true>>
+    <<set $melody_player to "gab">>
+    Skully: I had no idea Gab played anything.
+    Angles: Oh.. they sing.
+    Skully: ..Your music has no lyrics?
+    Angles: They can hum real good!
+-> Angel <<if $angelBattle_win_01 is true>>
+    <<set $melody_player to "angel">>
+    Skully: My sibling?
+    Skully: Did you blackmail them or something?
+    Angles: H-Ha ha!
+    Angles: I would never do such a thing!
+    Skully: ...
+Skully: Oh.
+Skully: I was wondering— do you mind helping out a bit in here?
 Skully: Nothing too major, I just need a few minutes of your time.
 -> Yeah, sure!
     //load to A outside the party building door
     //changing variables to section2 dialogues 
     <<set $section2 to false>>
     <<set $section3 to true>>
+    <<load_street>>
+    <<Street_Section3_Setup SceneChecker>>
+    <<wait .1>>
+    <<disable_playercontrol>>
+    10 MINS LATER
+    <<enable_playercontrol>>
 -> Ah, I promised to talk to someone just now but I'll be back real soon to help you!
     Skully: No problem. 
     Skully: It's not that time sensitive.
