@@ -14,9 +14,12 @@ public class PlayerController : MonoBehaviour
 
     private SpriteRenderer mySpriteRenderer;
 
+    private Animator myAnimator;
+
     void Start()
     {
         mySpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        myAnimator = GetComponent<Animator>();
     }
 
     
@@ -36,6 +39,9 @@ public class PlayerController : MonoBehaviour
                 myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpSpeed);
             }
         }
+
+        myAnimator.SetBool("isGrounded", isGrounded);
+        myAnimator.SetFloat("moveSpeed", Mathf.Abs(myRigidbody.velocity.x));
 
         //check if rigidbody velocity is negative (left). If yes, flips spriterenderer direction
         //flips back when rigidbody velocity is positive
