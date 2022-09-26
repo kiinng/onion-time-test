@@ -71,7 +71,11 @@ title: GabSection5_01
 tags:
 ---
 //
-<<if $gab5_01 is true>>
+<<if $melody_player is "gab" and $gab5_01 is false>>
+Gab: Do you think I have time to go grab some coffee?
+Angles: No??!!
+Gab: ...Fine.
+<<elseif $gab5_01 is true>>
 Angles: Well hurry if you don't want to be late!
 Gab: I can't hurry that much, otherwise I'll be too sweaty!
 Angles: Gross.. 
@@ -89,30 +93,44 @@ title: SevenSection5_01
 tags:
 ---
 //
+<<if $beat_player is "seven">>
+Angles: Looking forward to the performance?
+Seven: !!
+Seven: :D
+<<else>>
 Angles: Looking forward to the party?
 Seven: !!
 Seven: :D
 Eight: Yeah, it's gonna be so fun.
 Angles: It will!
+<<endif>>
 ===
 title: AngelSection5_01
 tags:
 ---
 //
+<<if $melody_player is "angel">>
+Angles: Excited to play like your life depends on it?
+Angel: ...No.
+<<else>>
 Angles: Are you excited for the party?
 Angel: Yeah I guess..
 Angles: It's gonna be fun!
 Angles: We'll make it fun!
 Angel: Yeah..
+<<endif>>
 ===
 title: RatSection5_01
 tags:
 ---
 //
-<<if $rat5_01 is true>>
+<<if $beat_player is "rat">>
+Rat: Squeak squeak!
+Angles: ..Yeah, we're gonna rock this!
+<<elseif $rat5_01 is true>>
 Rat: Squeak squeak!
 Angles: ...Cool.
-<<elseif $ra3_01 is true and $rat5_01 is false>>
+<<elseif $rat3_01 is true and $rat5_01 is false>>
 Angles: Hey buddy..
 Rat: Squeak!
 Angles: Just chilling here..
@@ -129,10 +147,15 @@ title: TommySection5_01
 tags:
 ---
 //
+<<if $beat_player is "tommy">>
+Tommy: This is—
+Tuppence: —Going to be so fun!
+<<else>>
 Angles: Going to the party?
 Tommy: Yeah!
 Tuppence: Yep!
 Angles: Nice..
+<<endif>>
 ===
 title: PumpkinSection5_01
 tags:
@@ -172,10 +195,15 @@ title: FreddieSection5_01
 tags:
 ---
 //
+<<if $harmony_player is "freddie">>
+Freddie: We are going to kill this!!!
+Angles: Hell yeah!!
+<<else>>
 Freddie: The lights at this party are pretty nice..
 Angles: Yeah...
 Freddie: I managed to find them in an old box at the back of the storage.
 Angles: Nice!
+<<endif>>
 ===
 title: JessSection5_01
 tags:
@@ -248,6 +276,10 @@ title: ChristinaSection5_01
 tags:
 ---
 //
+<<if $harmony_player is "christina">>
+Angles: This is gonna be good!
+Christina: ..Sure.
+<<else>>
 Angles: Party time!
 Christina: Yeah.
 CHRISTINA left the chat.
@@ -262,10 +294,10 @@ tags:
 <<if $skully5_01 is true>>
 Skully: Are you ready to go on stage?
 -> HELL YEAH!!!! 
-    //load to performance
     //changing variables to section5 dialogues 
     <<set $section5 to false>>
-    <<set $section6 to true>>
+    //load to performance
+    
 -> Oh no, give us all a few minutes more,,
     Skully: Of course. 
     Skully: Just tell me when you all are ready.
@@ -290,15 +322,31 @@ Angles: But not that often, ha ha!
 Skully: ...
 Angles: Anyway I guess we should be getting close to starting, eh..
 Skully: Yeah, you did the final checks already.
-Skully: Are you ready to go on stage now?
--> HELL YEAH!!!! 
-    //load to performance
-    //changing variables to section5 dialogues 
-    <<set $section5 to false>>
-    <<set $section6 to true>>
--> Oh no, give us all a few minutes more,,
-    Skully: Of course. 
-    Skully: Just tell me when you all are ready.
+    <<if $harmony_player is "emilia">>
+    Skully: Are you ready to go on stage?
+    Skully: Though I don't see Emilia.
+    Angles: Oh yeah, they texted that they are super close!
+    Skully: Good.
+    Skully: You want to get on the stage now?
+    -> HELL YEAH!!!! 
+        //changing variables to section5 dialogues 
+        <<set $section5 to false>>
+        //load to performance
+
+    -> Oh no, give us all a few minutes more,,
+        Skully: Of course. 
+        Skully: Just tell me when you all are ready.
+        <<else>>
+        Skully: Are you ready to go on stage now?
+    -> HELL YEAH!!!! 
+        //changing variables to section5 dialogues 
+        <<set $section5 to false>>
+        //load to performance
+
+    -> Oh no, give us all a few minutes more,,
+        Skully: Of course. 
+        Skully: Just tell me when you all are ready.
+        <<endif>>
 <<endif>>
 ===
 title: EmiliaSection5_01
@@ -340,12 +388,54 @@ Sasha: Then I might come around!
 title: ParkDate1
 tags:
 ---
-<<if $date5_01 is true>>
-
+<<if $harmony_player is "emilia">>
+    <<if $date5_02 is true>>
+    Angles: Don't be late!
+    Sasha: We won't be!
+    Emilia: H-Hmmp!
+    <<else>>
+    <<set $date5_02 to true>>
+    Angles: Oh hey!!
+    Sasha: Hey, Angles!
+    Emilia: Hmmp,,
+    Sasha: $smiley1
+    Emilia: ,,,
+    Emilia: ..Hey.
+    Emilia: Again.
+    Sasha: Oh yeah, you just saw each other at practice, eh..
+    Angles: Yep!
+    Sasha: The performance is gonna be real good!
+    Emilia: Y-You really think so?
+    Sasha: Of course!
+    Sasha: You're playing in it <3
+    Emilia: $blush
+    Angles: I'm gonna run now..
+    Angles: And leave you all alone~
+    Angles: But like the party will be starting soon..
+    Angles: So, Emilia..
+    Angles: Don't be late!!
+    Emilia: >.>
+    Sasha: She won't be!
+    Angles: Great!
+    <<endif>>
+<<elseif $date5_01 is true>>
+Angles: I better see you at the party!
+Sasha: You will $smiley1
+Emilia: Maybe!
 <<else>>
 <<set $date5_01 to true>>
-Angles: 
-Sasha:
-Emilia:
+Angles: Oh hey!!
+Sasha: Hey, Angles!
+Emilia: Hmmp,,
+Sasha: $smiley1
+Emilia: ,,,
+Emilia: ..Hey.
+Angles: You're coming to the party, right?
+Angles: It'll be fun!
+Sasha: Yeah, we'll come.
+Sasha: Though we might stay here for a little bit longer..
+Angles: It is rather nice..
+Emilia: Of course it is!
+Angles: Yeah, well I gotta run, but I'll be looking for you both!
 <<endif>>
 ===
