@@ -1,4 +1,4 @@
-﻿title: FreddieSection2_01
+title: FreddieSection2_01
 tags:
 ---
 //Angles loves F's costume, F thinks A isn't rly in a costume, F made their costume out of a sheet
@@ -61,13 +61,14 @@ tags:
 //CLARINET
 //puppy is not confident it would sound good so u can challenge them and make them join u
 <<if $puppy2_01 is true>>
-Puppy: I really don't think it will work..
-Angles: It definitely will!
--> Challenge Puppy to a music battle!
-    <<jump PuppyBattle1>>
--> ..Nah, if they aren't sure, maybe I should look for someone else..
-    Angles: Alright, while it will probably work.. I guess I'll let it be.
+    Puppy: I really don't think it will work..
+    Angles: It definitely will!
+    -> Challenge Puppy to a music battle!
+        <<jump PuppyBattle1>>
+    -> ..Nah, if they aren't sure, maybe I should look for someone else..
+        Angles: Alright, while it will probably work.. I guess I'll let it be.
 <<elseif $puppy1_01 is true and $puppy2_01 is false>>
+    <<set $puppy2_01 to true>>
     Angles: ...
     Puppy: ...
     Angles: YOU PLAY THE CLARINET??
@@ -88,9 +89,9 @@ Angles: It definitely will!
     -> Challenge Puppy to a music battle!
         <<jump PuppyBattle1>>
     -> ..Nah, if they aren't sure, maybe I should look for someone else..
-        <<set $puppy2_01 to true>>
         Angles: Alright, while it will probably work.. I guess I'll let it be.
 <<else>>
+    <<set $puppy2_01 to true>>
     Angles: Oh hey, Pup..
     Puppy: ...
     Angles: ...
@@ -112,7 +113,6 @@ Angles: It definitely will!
     -> Challenge Puppy to a music battle!
         <<jump PuppyBattle1>>
     -> ..Nah, if they aren't sure, maybe I should look for someone else..
-        <<set $puppy2_01 to true>>
         Angles: Alright, while it will probably work.. I guess I'll let it be.
 <<endif>>
 ===
@@ -128,41 +128,36 @@ Angles plays their triangle!
     <<set $angles1 = $angles1 + 2>>
 -> Cling cling!
 Puppy plays a clarinet note!
--> Mmmmmmmm!
--> MMMmmmmm! 
-    <<set $pup1 = $pup1 + 1>>
+Mmmmmmmm!
+<<set $pup1 = $pup1 + 1>>
 Angles plays their triangle!
 -> Ting ting! 
-    <<set $angles1 = $angles1 + 1>>
+    <<set $angles1 = $angles1 + 2>>
 -> Ting ting ting!
 Puppy plays a clarinet note!
--> TTTtttt! 
-    <<set $pup1 = $pup1 + 1>>
--> Ttttttt!
+<<set $pup1 = $pup1 + 1>>
+Ttttttt!
 Angles plays their triangle!
 -> Cling!
 -> Ting! 
     <<set $angles1 = $angles1 + 2>>
 Puppy plays a clarinet note!
--> MMMMMMMMmmm!
--> TTTtttttttt! 
-    <<set $pup1 = $pup1 + 1>>
+MMMMMMMMmmm!
+<<set $pup1 = $pup1 + 1>>
 Angles plays their triangle!
 -> Cling ting!
 -> Ting cling! 
-    <<set $angles1 = $angles1 + 1>>
+    <<set $angles1 = $angles1 + 2>>
 Puppy plays a clarinet note!
--> Mmm!
--> MMMmmmmmmm! 
-    <<set $pup1 = $pup1 + 1>>
+MMMmmmmmmm! 
+<<set $pup1 = $pup1 + 1>>
 Angles plays their triangle!
 -> Ting ting! 
     <<set $angles1 = $angles1 + 2>>
 -> Cling!
 Puppy plays a clarinet note!
--> Ttttt! 
-    <<set $pup1 = $pup1 + 1>>
--> TTTTttt!
+Ttttt! 
+<<set $pup1 = $pup1 + 1>>
 <<jump PuppyBattle1_result>>
 ===
 title: PuppyBattle1_result
@@ -210,15 +205,16 @@ tags:
 //SINGING
 //gab hates their costume, A doesn't believe Gab can vocalize i guess lol
 <<if $gab2_01 is true>>
-Gab: Are you ready to hear me now?
-Angles: Uh...
--> Challenge Gab to a music battle... I guess..
-    <<jump GabBattle1>>
--> ..It really did sound kinda farfetched, uh..
-    Angles: ..Maybe another time..
-    Gab: ...
-    Gab: Well, I'll be here...... I guesssss..
+    Gab: Are you ready to hear me now?
+    Angles: Uh...
+    -> Challenge Gab to a music battle... I guess..
+        <<jump GabBattle1>>
+    -> ..It really did sound kinda farfetched, uh..
+        Angles: ..Maybe another time..
+        Gab: ...
+        Gab: Well, I'll be here...... I guesssss..
 <<else>>
+    <<set $gab2_01 to true>>
     Angles: Hey, Gab.
     Gab: Ugh..
     Angles: ...
@@ -233,6 +229,7 @@ Angles: Uh...
     Gab: I hear you're looking for band members..
     Gab: Well......
     //action for gab sprite to change to singing one
+    <<ShowSprite2 GabInst>>
     Gab: I can sing!
     Angles: ...
     Angles: Oh neat.
@@ -249,7 +246,6 @@ Angles: Uh...
     -> Challenge Gab to a music battle... I guess..
         <<jump GabBattle1>>
     -> ..That really does sound kinda farfetched, doesn't it..
-        <<set $gab2_01 to true>>
         Angles: ..But maybe another time..
         Gab: ...
         Gab: Well, I'll be here...... I guesssss..
@@ -267,39 +263,73 @@ Angles plays their triangle!
     <<set $angles1 = $angles1 + 2>>
 -> Cling cling!
 Gab hums!
--> Mmmmmmmm!
--> Hummmmmm! 
-    <<set $gab1 = $gab1 + 1>>
+Huuummmm! 
+<<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
--> choice 1
-    result 1
--> choice 2
-    result 1
+-> Cling cling!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
 Gab hums!
--> choice 1
-    result 1
--> choice 2
-    result 1
+Hmmmmmmmmm!
+<<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
+-> Ting cling!
+-> Cling ting!
+    <<set $angles1 = $angles1 + 2>>
+Gab hums!
+Mmmmm!
+<<set $gab1 = $gab1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting ting ting!
+Gab hums!
+Mmmmhh!
+<<set $gab1 = $gab1 + 1>>
+Angles plays their triangle!
+-> Cling!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 2>>
+Gab hums!
+MMmmmmmmMMmmmm!
+<<set $gab1 = $gab1 + 1>>
+Angles plays their triangle!
+-> Cling!
+-> Ting!
+    <<set $angles1 = $angles1 + 2>>
+Gab hums!
+<<set $gab1 = $gab1 + 1>>
+HHHHuuummmmmmm!
+Angles plays their triangle!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting cling!
+Gab hums!
+Hummm!
+<<set $gab1 = $gab1 + 1>>
 <<jump GabBattle1_result>>
 ===
 title: GabBattle1_result
 tags:
 ---
 <<if $angles1 >= $gab1>>
-//win
-<<set $gabBattle_win_01 to true>>
-<<set $gab2_01 to false>>
-<<set $gab1 to 0>>
-<<set $angles1 to 0>>
-ANGLES WON!
-<<jump GabSection2_02>>
+    //win
+    <<set $gabBattle_win_01 to true>>
+    <<set $gab2_01 to false>>
+    <<set $gab1 to 0>>
+    <<set $angles1 to 0>>
+    ANGLES WON!
+    <<jump GabSection2_02>>
 <<else>>
-//lose
-<<set $gab1 to 0>>
-<<set $angles1 to 0>>
-ANGLES..... LOST!
-Angles:
+    //lose
+    <<set $gab1 to 0>>
+    <<set $angles1 to 0>>
+    ANGLES..... LOST!
+    Angles: ..Well..um...
+    Angles: That wasn't bad but like..
+    Angles: Could be better?
+    Gab: Oh, I'll show you!
+    Angles: ...Ok.
 <<endif>>
 ===
 title: GabSection2_02
@@ -311,6 +341,8 @@ tags:
     Gab: I'm going to do some voice warm ups.
 <<else>>
     <<set $gab2_02 to true>>
+    //go back to non singing sprite
+    <<ShowSprite1 GabInst>>
     Angles: Well wow.
     Angles: You were not lying.
     Angles: You got some major skills!
@@ -343,8 +375,9 @@ tags:
         Angles: Ah but if you don't want to, that's alright.
         Angles: I'll go look others.
 <<elseif $sammy2_01 is true and $angel2_01 is false>>
-    //A remembers Sammy's instrument being fake and offends Angel that theirs is fake, then blackmails them into a music battle
-    //saying they will tell Skully they broke Skully's fountain pen
+//A remembers Sammy's instrument being fake and offends Angel that theirs is fake, then blackmails them into a music battle
+//saying they will tell Skully they broke Skully's fountain pen
+<<set $angel2_01 to true>>
     Angles: ..Don't tell me the trumpet is just part of your costume...
     Angel: What? No.
     Angel: That's such a rude assumption to make!
@@ -376,12 +409,12 @@ tags:
     -> Challenge Angel to a music battle!
         <<jump AngelBattle1>>
     -> ..Maybe I should just leave them alone
-        <<set $angel2_01 to true>>
         Angles: ..Ah.. I changed my mind..
         Angles: Sorry, I've been rude enough.
         Angles: I'll leave you alone..
 <<else>>
     //A meets Angel before sammy, just tells them their costume is cool, Angel doesn't think they will work out with the band
+    <<set $angel2_02 to true>>
     Angles: Hey Angel.
     Angles: Cute costume!
     Angel: Thanks....
@@ -405,7 +438,6 @@ tags:
     -> Challenge Angel to a music battle!
         <<jump AngelBattle1>>
     -> ..Or I can find someone else...
-        <<set $angel2_02 to true>>
         Angles: Ah but if you don't want to, that's alright.
         Angles: I'll go look others.
 <<endif>>
@@ -414,46 +446,88 @@ title: AngelBattle1
 tags:
 ---
 //action to move to angel battle room?
-Angles: 
+Angles: Okay!!!
 <<set $angel1 to 0>>
 <<set $angles1 to 0>>
-
-
-<<set $angles1 = $angles1 + 2>>
-<<set $angel1 = $angel1 + 1>>
-
 Angles plays their triangle!
--> choice 1
-    result 2
--> choice 1
-    result 2
-Angel
--> choice 1
-    result1
--> choice 2
-    result 2
-
+-> Cling cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling!
+Angel plays their trumpet!
+HHHHHHHHHHH!
+<<set $angel1 = $angel1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Angel plays their trumpet!
+HHHHHHHMMM!
+<<set $angel1 = $angel1 + 1>>
+Angles plays their triangle!
+-> Chink ting!
+    <<set $angles1 = $angles1 + 2>>
+-> Ting ting!
+Angel plays their trumpet!
+-> KKKKKKKKK!
+<<set $angel1 = $angel1 + 1>>
+Angles plays their triangle!
+-> Cling!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Angel plays their trumpet!
+MMMMMMMMM!
+<<set $angel1 = $angel1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 2>>
+Angel plays their trumpet!
+HHHHMMMM!
+<<set $angel1 = $angel1 + 1>>
+Angles plays their triangle!
+-> Cling ting ting!
+-> Ting cling cling!
+    <<set $angles1 = $angles1 + 2>>
+Angel plays their trumpet!
+<<set $angel1 = $angel1 + 1>>
+KKKHHHK!
+Angles plays their triangle!
+-> Ting!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+Angel plays their trumpet!
+<<set $angel1 = $angel1 + 1>>
+MMMMMMMMMKKK!
+Angles plays their triangle!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+-> Cling cling!
+Angel plays their trumpet!
+<<set $angel1 = $angel1 + 1>>
+HHHHHHHHHHHHH!
 <<jump AngelBattle1_result>>
 ===
 title: AngelBattle1_result
 tags:
 ---
 <<if $angles1 >= $angel1>>
-//win
-<<set $angelBattle_win_01 to true>>
-<<set $angel2_01 to false>>
-<<set $angel2_02 to false>>
-//reset variables
-<<set $angel1 to 0>>
-<<set $angles1 to 0>>
-ANGLES WON!
-<<jump AngelSection2_02>>
+    //win
+    <<set $angelBattle_win_01 to true>>
+    <<set $angel2_01 to false>>
+    <<set $angel2_02 to false>>
+    //reset variables
+    <<set $angel1 to 0>>
+    <<set $angles1 to 0>>
+    ANGLES WON!
+    <<jump AngelSection2_02>>
 <<else>>
-//lose
-<<set $angel1 to 0>>
-<<set $angles1 to 0>>
-ANGLES..... LOST!
-Angles:
+    //lose
+    <<set $angel1 to 0>>
+    <<set $angles1 to 0>>
+    ANGLES..... LOST!
+    Angles: ..Okay, I will leave you alone...
+    Angles: For now!!
+    Angel: >.>
 <<endif>>
 ===
 title: AngelSection2_02
@@ -622,8 +696,8 @@ tags:
     Angles: You don't mind? #protag
     Sasha: Not at all! #bunny
     Sasha: It's actually nice to have some company. #bunny
-    <<set $evilsmile to ">:)">>
-    Sasha: I usually come out with a friend here— sometimes I even bully her to play me something {$evilsmile} #bunny
+    <<set $evil_smiley to ">:)">>
+    Sasha: I usually come out with a friend here— sometimes I even bully her to play me something {$evil_smiley} #bunny
     Angles: Oh.. #protag
 <<endif>>
 ===
@@ -680,7 +754,12 @@ tags:
         //changing variables to section2 dialogues 
         <<set $section2 to false>>
         <<set $section3 to true>>
+        <<load_street>>
+        <<Street_Section3_Setup SceneChecker>>
+        <<wait .1>>
+        <<disable_playercontrol>>
         10 MINS LATER
+        <<enable_playercontrol>>
     -> Ah, I promised to talk to someone just now but I'll be back real soon to help you!
         Skully: No problem. 
         Skully: It's not that time sensitive.
@@ -693,13 +772,38 @@ tags:
     Skully: That's good.
     Angles: It's a start...
     Skully: It is.
-    Skully: Oh, I was wondering— do you mind helping out a bit in here?
+    Skully: So, who's joining you?
+    -> Puppy <<if $puppyBattle_win_01 is true>>
+        <<set $melody_player to "puppy">>
+        Skully: Nice.
+        Skully: They were quite good at the clarinet at school.
+    -> Gab <<if $gabBattle_win_01 is true>>
+        <<set $melody_player to "gab">>
+        Skully: I had no idea Gab played anything.
+        Angles: Oh.. they sing.
+        Skully: ..Your music has no lyrics?
+        Angles: They can hum real good!
+    -> Angel <<if $angelBattle_win_01 is true>>
+        <<set $melody_player to "angel">>
+        Skully: My sibling?
+        Skully: Did you blackmail them or something?
+        Angles: H-Ha ha!
+        Angles: I would never do such a thing!
+        Skully: ...
+    Skully: Oh.
+    Skully: I was wondering— do you mind helping out a bit in here?
     Skully: Nothing too major, I just need a few minutes of your time.
     -> Yeah, sure!
         //load to A outside the party building door
         //changing variables to section2 dialogues 
         <<set $section2 to false>>
         <<set $section3 to true>>
+        <<load_street>>
+        <<Street_Section3_Setup SceneChecker>>
+        <<wait .1>>
+        <<disable_playercontrol>>
+        10 MINS LATER
+        <<enable_playercontrol>>
     -> Ah, I promised to talk to someone just now but I'll be back real soon to help you!
         Skully: No problem. 
         Skully: It's not that time sensitive.

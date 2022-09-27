@@ -3,19 +3,19 @@ tags:
 ---
 //
 <<if $madeline5_01 is true>>
-Madeline: We are going to party so hard!
-Madeline: Woo!!!
+    Madeline: We are going to party so hard!
+    Madeline: Woo!!!
 <<else>>
-<<set $madeline5_01 to true>>
-Madeline: FINALLY!!
-Madeline: I'm done this stupid paper!!
-Angles: And just in time for the party.
-Madeline: Yeah!
-Madeline: I'll see you there!
-Madeline: And you will dance with me at least once!
-Angles: ..Ugh...Do I have to?
-Madeline: Yep!
-Angles: ..Fine.
+    <<set $madeline5_01 to true>>
+    Madeline: FINALLY!!
+    Madeline: I'm done this stupid paper!!
+    Angles: And just in time for the party.
+    Madeline: Yeah!
+    Madeline: I'll see you there!
+    Madeline: And you will dance with me at least once!
+    Angles: ..Ugh...Do I have to?
+    Madeline: Yep!
+    Angles: ..Fine.
 <<endif>>
 ===
 title: PuppySection5_01
@@ -23,48 +23,48 @@ tags:
 ---
 //
 <<if $puppy5_01 is true>>
-Angles does fingerguns at Puppy.
+    Angles does fingerguns at Puppy.
 <<else>>
-<<set $puppy5_01 to true>>
-Angles and Puppy fistbump and nod at each other.
-All is understood.
+    <<set $puppy5_01 to true>>
+    Angles and Puppy fistbump and nod at each other.
+    All is understood.
 <<endif>>
 ===
 title: SammySection5_01
 tags:
 ---
 //fanfic update A cant read yet...
-<<if $sammy5_01 is true>>
-Sammy: Stay strong!!
-Angles: T_T
-<<if $sammy2_01 is true and $sammy5_01 is false>>
-<<set $sammy5_01 to true>>
-Sammy: Did you see??
-Sammy: ShizunSlut69 dropped a new fanfic!
-Angles: !!
-Sammy: Yeah!
-Sammy: It's a canon divergence of if the disciple never had to go into the abyss!
-Angles: Oh I love their takes on those..
-Angles: God I wanna read it right now!!
-Sammy: Stay strong!
-Sammy: It's 35k!
-Angles: Hhhhhhhhhhh..
-Sammy: In— very, very painful— solidarity, I'm also not reading it until tomorrow..
-<<set $smileytear to ":')">>
-Angles: You're an amazing friend $smileytear
+<<if $sammy5_01 is true and $sammy5_01 is true>>
+    Sammy: Stay strong!!
+    Angles: T_T
+<<elseif $sammy2_01 is true and $sammy5_01 is false>>
+    <<set $sammy5_01 to true>>
+    Sammy: Did you see??
+    Sammy: ShizunSlut69 dropped a new fanfic!
+    Angles: !!
+    Sammy: Yeah!
+    Sammy: It's a canon divergence of if the disciple never had to go into the abyss!
+    Angles: Oh I love their takes on those..
+    Angles: God I wanna read it right now!!
+    Sammy: Stay strong!
+    Sammy: It's 35k!
+    Angles: Hhhhhhhhhhh..
+    Sammy: In— very, very painful— solidarity, I'm also not reading it until tomorrow..
+    <<set $smileytear to ":')">>
+    Angles: You're an amazing friend {$smileytear}
 <<else>>
-<<set $sammy5_01 to true>>
-Sammy: Don't look at your email!!
-Angles: ?
-Sammy: A new fanfic dropped but I'm not telling you anything..
-Sammy: Because then you'll want to read it!
-Angles: Ah god.. 
-Angles: Okay thanks.
-Angles: This does make me wanna go look though...
-Angles: But I really can't lose focus right now..
-Sammy: Yeah, you can read it tomorrow!
-<<set $frownie1 to ":(">>
-Angles: ..Yeah $frownie1
+    <<set $sammy5_01 to true>>
+    Sammy: Don't look at your email!!
+    Angles: ?
+    Sammy: A new fanfic dropped but I'm not telling you anything..
+    Sammy: Because then you'll want to read it!
+    Angles: Ah god.. 
+    Angles: Okay thanks.
+    Angles: This does make me wanna go look though...
+    Angles: But I really can't lose focus right now..
+    Sammy: Yeah, you can read it tomorrow!
+    <<set $frownie1 to ":(">>
+    Angles: ..Yeah {$frownie1}
 <<endif>>
 ===
 title: GabSection5_01
@@ -72,21 +72,21 @@ tags:
 ---
 //
 <<if $melody_player is "gab" and $gab5_01 is false>>
-Gab: Do you think I have time to go grab some coffee?
-Angles: No??!!
-Gab: ...Fine.
+    Gab: Do you think I have time to go grab some coffee?
+    Angles: No??!!
+    Gab: ...Fine.
 <<elseif $gab5_01 is true>>
-Angles: Well hurry if you don't want to be late!
-Gab: I can't hurry that much, otherwise I'll be too sweaty!
-Angles: Gross.. 
+    Angles: Well hurry if you don't want to be late!
+    Gab: I can't hurry that much, otherwise I'll be too sweaty!
+    Angles: Gross.. 
 <<else>>
-<<set $gab5_01 to true>>
-Gab: Do you think I have time to go grab some coffee?
-Angles: I'm sure there's drinks at the party..
-Gab: But no coffee.
-Angles: Probably not..
-Gab: ...
-Gab: Okay, I'm gonna go!
+    <<set $gab5_01 to true>>
+    Gab: Do you think I have time to go grab some coffee?
+    Angles: I'm sure there's drinks at the party..
+    Gab: But no coffee.
+    Angles: Probably not..
+    Gab: ...
+    Gab: Okay, I'm gonna go!
 <<endif>>
 ===
 title: SevenSection5_01
@@ -94,15 +94,15 @@ tags:
 ---
 //
 <<if $beat_player is "seven">>
-Angles: Looking forward to the performance?
-Seven: !!
-Seven: :D
+    Angles: Looking forward to the performance?
+    Seven: !!
+    Seven: :D
 <<else>>
-Angles: Looking forward to the party?
-Seven: !!
-Seven: :D
-Eight: Yeah, it's gonna be so fun.
-Angles: It will!
+    Angles: Looking forward to the party?
+    Seven: !!
+    Seven: :D
+    Eight: Yeah, it's gonna be so fun.
+    Angles: It will!
 <<endif>>
 ===
 title: AngelSection5_01
@@ -110,14 +110,14 @@ tags:
 ---
 //
 <<if $melody_player is "angel">>
-Angles: Excited to play like your life depends on it?
-Angel: ...No.
+    Angles: Excited to play like your life depends on it?
+    Angel: ...No.
 <<else>>
-Angles: Are you excited for the party?
-Angel: Yeah I guess..
-Angles: It's gonna be fun!
-Angles: We'll make it fun!
-Angel: Yeah..
+    Angles: Are you excited for the party?
+    Angel: Yeah I guess..
+    Angles: It's gonna be fun!
+    Angles: We'll make it fun!
+    Angel: Yeah..
 <<endif>>
 ===
 title: RatSection5_01
@@ -125,22 +125,22 @@ tags:
 ---
 //
 <<if $beat_player is "rat">>
-Rat: Squeak squeak!
-Angles: ..Yeah, we're gonna rock this!
+    Rat: Squeak squeak!
+    Angles: ..Yeah, we're gonna rock this!
 <<elseif $rat5_01 is true>>
-Rat: Squeak squeak!
-Angles: ...Cool.
+    Rat: Squeak squeak!
+    Angles: ...Cool.
 <<elseif $rat3_01 is true and $rat5_01 is false>>
-Angles: Hey buddy..
-Rat: Squeak!
-Angles: Just chilling here..
-Angles: Seems nice..
-Rat: Squeak squeak!
+    Angles: Hey buddy..
+    Rat: Squeak!
+    Angles: Just chilling here..
+    Angles: Seems nice..
+    Rat: Squeak squeak!
 <<else>>
-<<set $rat5_01 to true>>
-//never talked to the rat before lol
-Rat: Squeak!
-Angles: ..Seriously, why does this rat have a gameboy...?
+    <<set $rat5_01 to true>>
+    //never talked to the rat before lol
+    Rat: Squeak!
+    Angles: ..Seriously, why does this rat have a gameboy...?
 <<endif>>
 ===
 title: TommySection5_01
@@ -148,13 +148,13 @@ tags:
 ---
 //
 <<if $beat_player is "tommy">>
-Tommy: This is—
-Tuppence: —Going to be so fun!
+    Tommy: This is—
+    Tuppence: —Going to be so fun!
 <<else>>
-Angles: Going to the party?
-Tommy: Yeah!
-Tuppence: Yep!
-Angles: Nice..
+    Angles: Going to the party?
+    Tommy: Yeah!
+    Tuppence: Yep!
+    Angles: Nice..
 <<endif>>
 ===
 title: PumpkinSection5_01
@@ -165,30 +165,29 @@ Pumpkin: Are you exciteeed~?
 Angles: I guess..?
 Pumpkin: I'm suuuupppeeer excited!!!
 Pumpkin: This party is going to be a blast!!!!!
-<<endif>>
 ===
 title: FishSection5_01
 tags:
 ---
 //A gets fish to agree to help with their next show and promises to bake pizza
 <<if $fish5_01 is true>>
-Fish: Glub gluuub glub!
-Angles: Yeah!
+    Fish: Glub gluuub glub!
+    Angles: Yeah!
 <<else>>
-<<set $fish5_01 to true>>
-Fish: Glub glub!
-Angles: Hey hey!
-Angles: How's it been going?
-Fish: Glub gluuub glub..
-Fish: Glub glub gluuub glub gluub glub.
-Angles: Yeah, honestly it's impressive how fast it all got set up.
-Angles: I might just have to ask you to help out at whatever show my band is playing next time.
-Fish: Glub!
-Angles: I can't promise to pay in monies..
-Angles: I think our budget can't even buy you a pizza..
-Angles: But!
-Angles: I've been on a baking kick so I can make you a pizza!
-Fish: Glub gluuub $smiley1 
+    <<set $fish5_01 to true>>
+    Fish: Glub glub!
+    Angles: Hey hey!
+    Angles: How's it been going?
+    Fish: Glub gluuub glub..
+    Fish: Glub glub gluuub glub gluub glub.
+    Angles: Yeah, honestly it's impressive how fast it all got set up.
+    Angles: I might just have to ask you to help out at whatever show my band is playing next time.
+    Fish: Glub!
+    Angles: I can't promise to pay in monies..
+    Angles: I think our budget can't even buy you a pizza..
+    Angles: But!
+    Angles: I've been on a baking kick so I can make you a pizza!
+    Fish: Glub gluuub $smiley1 
 <<endif>>
 ===
 title: FreddieSection5_01
@@ -196,13 +195,13 @@ tags:
 ---
 //
 <<if $harmony_player is "freddie">>
-Freddie: We are going to kill this!!!
-Angles: Hell yeah!!
+    Freddie: We are going to kill this!!!
+    Angles: Hell yeah!!
 <<else>>
-Freddie: The lights at this party are pretty nice..
-Angles: Yeah...
-Freddie: I managed to find them in an old box at the back of the storage.
-Angles: Nice!
+    Freddie: The lights at this party are pretty nice..
+    Angles: Yeah...
+    Freddie: I managed to find them in an old box at the back of the storage.
+    Angles: Nice!
 <<endif>>
 ===
 title: JessSection5_01
@@ -210,40 +209,40 @@ tags:
 ---
 //
 <<if $jess5_01 is true>>
-Jess: If you change your mind, I'm always here!
+    Jess: If you change your mind, I'm always here!
 <<elseif $jess3_01 is true and $jess5_01 is false>>
-<<set $jess5_01 to true>>
-Jess: Great, you're here!
-Angles: ..I won't be in a moment.
-Jess: Har har!
-Jess: But like, come on, it's a good opportunity to find you a joyfriend.
-Angles: Have I ever expressed that I want to date?
-Jess: You read all that romance?
-Angles: That doesn't count!
-Jess: ..I mean you could make some new friends?
-Angles: I'm friends with everyone??
-Jess: ...
-Jes: You really get around, huh..
-Angles: Okay, I'm gonna go.
+    <<set $jess5_01 to true>>
+    Jess: Great, you're here!
+    Angles: ..I won't be in a moment.
+    Jess: Har har!
+    Jess: But like, come on, it's a good opportunity to find you a joyfriend.
+    Angles: Have I ever expressed that I want to date?
+    Jess: You read all that romance?
+    Angles: That doesn't count!
+    Jess: ..I mean you could make some new friends?
+    Angles: I'm friends with everyone??
+    Jess: ...
+    Jes: You really get around, huh..
+    Angles: Okay, I'm gonna go.
 <<else>>
-<<set $jess5_01 to true>>
-Jess: Great, you're here!
-Angles: ..I won't be in a moment.
-Jess: Har har!
-Jess: But you are going to be at the party, right?
-Angles: Yeah.
-Jess: Good.
-Jess: I'll need someone to fend off my admirers.
-Angles: No.
-Jess: It's a good opportunity to find you a joyfriend!
-Angles: Have I ever expressed that I want to date?
-Jess: You read all that romance?
-Angles: That doesn't count!
-Jess: ..I mean you could make some new friends?
-Angles: I'm friends with everyone??
-Jess: ...
-Jes: You really get around, huh..
-Angles: Okay, I'm gonna go.
+    <<set $jess5_01 to true>>
+    Jess: Great, you're here!
+    Angles: ..I won't be in a moment.
+    Jess: Har har!
+    Jess: But you are going to be at the party, right?
+    Angles: Yeah.
+    Jess: Good.
+    Jess: I'll need someone to fend off my admirers.
+    Angles: No.
+    Jess: It's a good opportunity to find you a joyfriend!
+    Angles: Have I ever expressed that I want to date?
+    Jess: You read all that romance?
+    Angles: That doesn't count!
+    Jess: ..I mean you could make some new friends?
+    Angles: I'm friends with everyone??
+    Jess: ...
+    Jes: You really get around, huh..
+    Angles: Okay, I'm gonna go.
 <<endif>>
 ===
 title: RedSection5_01
@@ -251,25 +250,25 @@ tags:
 ---
 //
 <<if $red5_01 is true>>
-Angles: See you around.. or at the party!
+    Angles: See you around.. or at the party!
 <<elseif $red4_01 is true and $red5_01 is false>>
-Red: The next SplattingFest has been announced~
-Red: Come on, come on!
-Red: You really should buy the game!
-Angles: ..Still thinking about it.
-Red: I could really use you on my team!
-Angles: Let me get this party over and with first.
-Angles: I'll think about it later, okay?
-Red: You better!
+    Red: The next SplattingFest has been announced~
+    Red: Come on, come on!
+    Red: You really should buy the game!
+    Angles: ..Still thinking about it.
+    Red: I could really use you on my team!
+    Angles: Let me get this party over and with first.
+    Angles: I'll think about it later, okay?
+    Red: You better!
 <<else>>
-<<set $red5_01 to true>>
-Angles: Oh hey!
-Angles: We should talk more at the party later!
-Red: Well maybe..
-Angles: You are literally in costume.
-Red: This is just my new aesthetic!
-Angles: ..Damn, that's real good.
-Red: Thanks!
+    <<set $red5_01 to true>>
+    Angles: Oh hey!
+    Angles: We should talk more at the party later!
+    Red: Well maybe..
+    Angles: You are literally in costume.
+    Red: This is just my new aesthetic!
+    Angles: ..Damn, that's real good.
+    Red: Thanks!
 <<endif>>
 ===
 title: ChristinaSection5_01
@@ -277,14 +276,14 @@ tags:
 ---
 //
 <<if $harmony_player is "christina">>
-Angles: This is gonna be good!
-Christina: ..Sure.
+    Angles: This is gonna be good!
+    Christina: ..Sure.
 <<else>>
-Angles: Party time!
-Christina: Yeah.
-CHRISTINA left the chat.
-Angles: ...
-Angles: How did she do that????
+    Angles: Party time!
+    Christina: Yeah.
+    CHRISTINA left the chat.
+    Angles: ...
+    Angles: How did she do that????
 <<endif>>
 ===
 title: SkullySection5_01
@@ -292,75 +291,73 @@ tags:
 ---
 //START THE PERFORMANCE 
 <<if $skully5_01 is true>>
-Skully: Are you ready to go on stage?
--> HELL YEAH!!!! 
-    //changing variables to section5 dialogues 
-    <<set $section5 to false>>
-    //load to performance
-    
--> Oh no, give us all a few minutes more,,
-    Skully: Of course. 
-    Skully: Just tell me when you all are ready.
-<<else>>
-<<set $skully5_01 to true>>
-Angles: The party looks great, Skulls!
-Skully: Thanks.
-Skully: I actually wasn't fully sure early today but we pulled through.
-Angles: You really did!
-Skully: You too.
-Skully: I'm sorry I dumped the whole mess of figuring out the band logistics.
-Angles: It's ok, I get it.
-Angles: You were very busy!
-Skully: I was.
-Angles: Plus it's all worked out!
-Skully: ..Yeah $smiley1
-Angles: !!!!!
-Angles: A rare Skulls smile!!
-Skully: I smile.
-Angles: You do!
-Angles: But not that often, ha ha!
-Skully: ...
-Angles: Anyway I guess we should be getting close to starting, eh..
-Skully: Yeah, you did the final checks already.
-    <<if $harmony_player is "emilia">>
     Skully: Are you ready to go on stage?
-    Skully: Though I don't see Emilia.
-    Angles: Oh yeah, they texted that they are super close!
-    Skully: Good.
-    Skully: You want to get on the stage now?
     -> HELL YEAH!!!! 
         //changing variables to section5 dialogues 
         <<set $section5 to false>>
         //load to performance
-
+        
     -> Oh no, give us all a few minutes more,,
         Skully: Of course. 
         Skully: Just tell me when you all are ready.
-        <<else>>
-        Skully: Are you ready to go on stage now?
-    -> HELL YEAH!!!! 
-        //changing variables to section5 dialogues 
-        <<set $section5 to false>>
-        //load to performance
-
-    -> Oh no, give us all a few minutes more,,
-        Skully: Of course. 
-        Skully: Just tell me when you all are ready.
-        <<endif>>
+<<else>>
+    <<set $skully5_01 to true>>
+    Angles: The party looks great, Skulls!
+    Skully: Thanks.
+    Skully: I actually wasn't fully sure early today but we pulled through.
+    Angles: You really did!
+    Skully: You too.
+    Skully: I'm sorry I dumped the whole mess of figuring out the band logistics.
+    Angles: It's ok, I get it.
+    Angles: You were very busy!
+    Skully: I was.
+    Angles: Plus it's all worked out!
+    Skully: ..Yeah {$smiley1}
+    Angles: !!!!!
+    Angles: A rare Skulls smile!!
+    Skully: I smile.
+    Angles: You do!
+    Angles: But not that often, ha ha!
+    Skully: ...
+    Angles: Anyway I guess we should be getting close to starting, eh..
+    Skully: Yeah, you did the final checks already.
+    <<if $harmony_player is "emilia">>
+        Skully: Are you ready to go on stage?
+        Skully: Though I don't see Emilia.
+        Angles: Oh yeah, they texted that they are super close!
+        Skully: Good.
+        Skully: You want to get on the stage now?
+        -> HELL YEAH!!!! 
+            //changing variables to section5 dialogues 
+            <<set $section5 to false>>
+            //load to performance
+        -> Oh no, give us all a few minutes more,,
+            Skully: Of course. 
+            Skully: Just tell me when you all are ready.
+    <<else>>
+            Skully: Are you ready to go on stage now?
+        -> HELL YEAH!!!! 
+            //changing variables to section5 dialogues 
+            <<set $section5 to false>>
+            //load to performance
+        -> Oh no, give us all a few minutes more,,
+            Skully: Of course. 
+            Skully: Just tell me when you all are ready.
+    <<endif>>
 <<endif>>
 ===
 title: EmiliaSection5_01
 tags:
 ---
 //depending on if they dating sasha, they will be in the cafe or park
-<<if $emilia4_04 is true and $$bunny4_02 is true>>
-//at park with sasha
-<<jump ParkDate1>>
+<<if $emilia4_04 is true and $bunny4_02 is true>>
+    //at park with sasha
+    <<jump ParkDate1>>
 <<else>>
-//cafe
-Emilia: I'm not talking to you.
-Angles: ...
-Angles: Oooohkaaay...
+    //cafe
+    Emilia: I'm not talking to you.
+    Angles: ...
+    Angles: Oooohkaaay...
 <<endif>>
 ===
 title: SashaSection5_01
@@ -368,21 +365,21 @@ tags:
 ---
 //
 <<if $bunny5_01 is true>>
-Angles: Well, I'm gonna go but I hope to see you!
-Sasha: $smiley2
-<<elseif $emilia4_04 is true and $$bunny4_02 is true and $bunny5_01 is false>>
-//with emilia
-<<jump ParkDate1>>
+    Angles: Well, I'm gonna go but I hope to see you!
+    Sasha: $smiley2
+<<elseif $emilia4_04 is true and $bunny4_02 is true and $bunny5_01 is false>>
+    //with emilia
+    <<jump ParkDate1>>
 <<else>>
-<<set $bunny5_01 to true>>
-//no emilia
-Angles: Are you going to stay in the park?
-Angles: Or are you coming to the party?
-Sasha: Ah, I'm not sure..
-Sasha: I don't actually have a costume.
-Angles: I'm sure that doesn't bar anyone from entry!
-Sasha: Mmm..
-Sasha: Then I might come around!
+    <<set $bunny5_01 to true>>
+    //no emilia
+    Angles: Are you going to stay in the park?
+    Angles: Or are you coming to the party?
+    Sasha: Ah, I'm not sure..
+    Sasha: I don't actually have a costume.
+    Angles: I'm sure that doesn't bar anyone from entry!
+    Sasha: Mmm..
+    Sasha: Then I might come around!
 <<endif>>
 ===
 title: ParkDate1
@@ -390,52 +387,52 @@ tags:
 ---
 <<if $harmony_player is "emilia">>
     <<if $date5_02 is true>>
-    Angles: Don't be late!
-    Sasha: We won't be!
-    Emilia: H-Hmmp!
+        Angles: Don't be late!
+        Sasha: We won't be!
+        Emilia: H-Hmmp!
     <<else>>
-    <<set $date5_02 to true>>
+        <<set $date5_02 to true>>
+        Angles: Oh hey!!
+        Sasha: Hey, Angles!
+        Emilia: Hmmp,,
+        Sasha: $smiley1
+        Emilia: ,,,
+        Emilia: ..Hey.
+        Emilia: Again.
+        Sasha: Oh yeah, you just saw each other at practice, eh..
+        Angles: Yep!
+        Sasha: The performance is gonna be real good!
+        Emilia: Y-You really think so?
+        Sasha: Of course!
+        Sasha: You're playing in it <3
+        Emilia: $blush
+        Angles: I'm gonna run now..
+        Angles: And leave you all alone~
+        Angles: But like the party will be starting soon..
+        Angles: So, Emilia..
+        Angles: Don't be late!!
+        Emilia: >.>
+        Sasha: She won't be!
+        Angles: Great!
+    <<endif>>
+<<elseif $date5_01 is true>>
+    Angles: I better see you at the party!
+    Sasha: You will $smiley1
+    Emilia: Maybe!
+<<else>>
+    <<set $date5_01 to true>>
     Angles: Oh hey!!
     Sasha: Hey, Angles!
     Emilia: Hmmp,,
     Sasha: $smiley1
     Emilia: ,,,
     Emilia: ..Hey.
-    Emilia: Again.
-    Sasha: Oh yeah, you just saw each other at practice, eh..
-    Angles: Yep!
-    Sasha: The performance is gonna be real good!
-    Emilia: Y-You really think so?
-    Sasha: Of course!
-    Sasha: You're playing in it <3
-    Emilia: $blush
-    Angles: I'm gonna run now..
-    Angles: And leave you all alone~
-    Angles: But like the party will be starting soon..
-    Angles: So, Emilia..
-    Angles: Don't be late!!
-    Emilia: >.>
-    Sasha: She won't be!
-    Angles: Great!
-    <<endif>>
-<<elseif $date5_01 is true>>
-Angles: I better see you at the party!
-Sasha: You will $smiley1
-Emilia: Maybe!
-<<else>>
-<<set $date5_01 to true>>
-Angles: Oh hey!!
-Sasha: Hey, Angles!
-Emilia: Hmmp,,
-Sasha: $smiley1
-Emilia: ,,,
-Emilia: ..Hey.
-Angles: You're coming to the party, right?
-Angles: It'll be fun!
-Sasha: Yeah, we'll come.
-Sasha: Though we might stay here for a little bit longer..
-Angles: It is rather nice..
-Emilia: Of course it is!
-Angles: Yeah, well I gotta run, but I'll be looking for you both!
+    Angles: You're coming to the party, right?
+    Angles: It'll be fun!
+    Sasha: Yeah, we'll come.
+    Sasha: Though we might stay here for a little bit longer..
+    Angles: It is rather nice..
+    Emilia: Of course it is!
+    Angles: Yeah, well I gotta run, but I'll be looking for you both!
 <<endif>>
 ===

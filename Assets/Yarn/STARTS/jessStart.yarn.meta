@@ -10,7 +10,5 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   LastImportHadImplicitStringIDs: 0
   LastImportHadAnyStrings: 0
-  isSuccessfullyParsed: 0
-  parseErrorMessages:
-  - "Assets/Yarn/STARTS/jessStart.yarn: 7:11: Error: Command text expected\r\n   
-    <<jump >>\r\r\n           ^^\r\n"
+  isSuccessfullyParsed: 1
+  parseErrorMessages: []

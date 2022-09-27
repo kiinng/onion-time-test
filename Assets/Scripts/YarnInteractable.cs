@@ -7,6 +7,8 @@ public class YarnInteractable : MonoBehaviour {
     // internal properties exposed to editor
     [SerializeField] private string conversationStartNode;
 
+    public bool canTalk;
+
     // internal properties not exposed to editor
     private DialogueRunner dialogueRunner;
     //private Light lightIndicatorObject = null;
@@ -15,7 +17,9 @@ public class YarnInteractable : MonoBehaviour {
     private float defaultIndicatorIntensity;
     
 
-    public void Start() {
+    public void Start()
+    {
+        canTalk = false;
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
         dialogueRunner.onDialogueComplete.AddListener(EndConversation);
         //lightIndicatorObject = GetComponentInChildren<Light>();
@@ -27,9 +31,14 @@ public class YarnInteractable : MonoBehaviour {
         //}
     }
 
-    public void OnMouseDown() {
-        if (interactable && !dialogueRunner.IsDialogueRunning) {
-            StartConversation();
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (interactable && !dialogueRunner.IsDialogueRunning && canTalk)
+            {
+                StartConversation();
+            }
         }
     }
 
@@ -57,5 +66,21 @@ public class YarnInteractable : MonoBehaviour {
 //    [YarnCommand("disable")]
     public void DisableConversation() {
         interactable = false;
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        //canTalk true when Player enters trigger area, talk indicator turned on
+        if (other.tag == "Player")
+        {
+            canTalk = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        //canTalk false when Player exits trigger area, talk indicator turned ff
+        if (other.tag == "Player")
+        {
+            canTalk = false;
+        }
     }
 }
