@@ -1,192 +1,122 @@
 title: MadelineSection1_01
 ---
 //gotten madeline meet node
-<<if $madeline1_01 is true and $pumpkin1_01 is false>>
-
+<<if $madeline1_01 is true>>
+    <<if visited("PumpkinSection1_01")>>
+    //if gotten madeline meet node and talked to pumpkin already
     Madeline: I said scram!! #cat
-
-    Madeline: They're just in the building next door, seriously, dude. #cat
-
-//if gotten madeline meet node and talked to pumpkin already
-<<elseif $madeline1_01 is true and $pumpkin1_01 is true>>
-
-    Madeline: I said scram!! #cat
-
     Angles: I'm going, I'm going!
-
-//talking to M first time but talked to Pumpkin already
-<<elseif $madeline1_01 is false and $pumpkin1_01 is true>>
-    <<set $madeline1_01 to true>>
-
-    Angles: ..What's with the outfit? #protag
-
-    Angles: Do you work here now? #protag
-
-    Madeline: Dude, they don't have such uniforms in this cafe. #cat
-
-    Angles: Well yeah, that's why I'm surprised! #protag
-
-    Madeline: I'm just dressed up for the party later tonight, silly. #cat
-
-    Angles: Oh.. Pumpkin didn't mention that.. #protag
-
-    Madeline: Angles..
-
-    Madeline: My guy, I say this with all my loving tender heart..
-
-    Madeline: But have you noticed how a lot of people seem to be dressed in costumes?
-
-    Madeline: And it's not even October.
-
-    Angles: ...
-
-    Madeline: Anyway I don't have time to chitchat with you.
-
-    Madeline: I need to finish writing this paper before the party, ugh.. #cat
-
-    Angles: Oof..
-
-    Madeline: Yep!
-
-    Madeline: Mmm..
-
-    Madeline: Do you think you can tell Skully I might be a little late to the party? #cat
-
-    Angles: Um, sure..
-
-    Madeline: Great! 
-
-    Madeline: Now scram! Go go! #cat
-
-    Madeline: Legit I got things to do, buster! #cat
-
-    Angles: Alright, alright! #protag
-
-//meeting first time, M is in costume, laughs at A's fashion sense
+    <<else>>
+    Madeline: I said scram!! #cat
+    Madeline: They're just in the building next door, seriously, dude. #cat
+    <<endif>>
 <<else>>
     <<set $madeline1_01 to true>>
-
     Angles: ..What's with the outfit? #protag
-
     Angles: Do you work here now? #protag
-
     Madeline: Dude, they don't have such uniforms in this cafe #cat
-
     Angles: Well yeah, that's why I'm surprised! #protag
-
     Madeline: I'm just dressed up for the party later tonight, silly. #cat
-
     Angles: Oh.. Pumpkin didn't mention that.. #protag
-
-    Madeline: I say this in the kindest way possible.. #cat
-
-    Madeline: But Angles, your whole like vibe and all.. #cat
-
-    Madeline: You're pretty much wearing a costume already ha ha #cat
-
-    Angles: ..What's wrong with what I wear?? #protag
-
-    Madeline: … #cat
-
-    Madeline: No comment. #cat
-
-    Angles: I hate you. #protag
-
-    Madeline: No, you don't! #cat
-
-    Angles: ..No, I don't. #protag
-
-    Madeline: Anyway, scram! #cat
-
-    Madeline: I need to finish writing this paper before the party, ugh.. #cat
-
-    Madeline: Can you tell Skully I might be a little late to the party? #cat
-
-    Madeline: They and Pumpkin are setting it all up in the Community Centre that's beside here. #cat
-
-    Angles: Ah, good to know. #protag
-
-    Angles: I'd thought Pumpkin would text me the details but… #protag
-
-    Madeline: Ha, that's Pumpkin for you, she probably wrote it but never sent it. #cat
-
-    Angles: Guess I'm lucky she didn't get too distracted to call me.. #protag
-
-    Madeline: Mmm.. #cat
-
-    Madeline: Okay so scram! Go go! #cat
-
-    Madeline: Legit I got things to do, buster! #cat
-
-    Angles: Alright, alright! #protag
+    <<if visited("PumpkinSection1_01")>>
+        //talking to M first time but talked to Pumpkin already
+        Madeline: Angles..
+        Madeline: My guy, I say this with all my loving tender heart..
+        Madeline: But have you noticed how a lot of people seem to be dressed in costumes?
+        Madeline: And it's not even October.
+        Angles: ...
+        Madeline: Anyway I don't have time to chitchat with you.
+        Madeline: I need to finish writing this paper before the party, ugh.. #cat
+        Angles: Oof..
+        Madeline: Yep!
+        Madeline: Mmm..
+        Madeline: Do you think you can tell Skully I might be a little late to the party? #cat
+        Angles: Um, sure..
+        Madeline: Great! 
+        Madeline: Now scram! Go go! #cat
+    <<else>>
+        //meeting first time, M is in costume, laughs at A's fashion sense
+        Madeline: I say this in the kindest way possible.. #cat
+        Madeline: But Angles, your whole like vibe and all.. #cat
+        Madeline: You're pretty much wearing a costume already ha ha #cat
+        Angles: ..What's wrong with what I wear?? #protag
+        Madeline: … #cat
+        Madeline: No comment. #cat
+        Angles: I hate you. #protag
+        Madeline: No, you don't! #cat
+        Angles: ..No, I don't. #protag
+        Madeline: Anyway, scram! #cat
+        Madeline: I need to finish writing this paper before the party, ugh.. #cat
+        Madeline: Can you tell Skully I might be a little late to the party? #cat
+        Madeline: They and Pumpkin are setting it all up in the Community Centre that's beside here. #cat
+        Angles: Ah, good to know. #protag
+        Angles: I'd thought Pumpkin would text me the details but… #protag
+        Madeline: Ha, that's Pumpkin for you, she probably wrote it but never sent it. #cat
+        Angles: Guess I'm lucky she didn't get too distracted to call me.. #protag
+        Madeline: Mmm.. #cat
+        Madeline: Okay so scram! Go go! #cat
+    <<endif>>
+Madeline: Legit I got things to do, buster! #cat
+Angles: Alright, alright! #protag
 <<endif>>
 ===
-
 title: PuppySection1_01
 tags:
 ---
 <<if $puppy1_01 is true>>
     Puppy: ...
-
     Angles: ...
-
     Puppy: ...
 <<else>>
     <<set $puppy1_01 to true>>
     Angles: Oh Pup..
-
     Angles: Are you going to be at the party?
-
     Puppy: ...
-
     Puppy: Maybe..
-
     Angles: ...
-
     Puppy: ...
 <<endif>>
 ===
-
 title: PumpkinSection1_01
 tags:
 ---
 //meeting first time in person, skully is further back, A's fashion sense dissed again
 <<if $pumpkin_01 is true>>
-    //talked to pumpkin already
-    Pumpkin: Really, really can't wait for your band to play~! #pumpkin
+//talked to pumpkin already
+Pumpkin: Really, really can't wait for your band to play~! #pumpkin
 <<else>>
-    <<set $pumpkin_01 to true>>
+<<set $pumpkin_01 to true>>
+Pumpkin: Well helloooo there! #pumpkin
+Angles: ..Hey #protag
+    <<if $madeline1_01 is true>>
+    //talked to madeline before
+    Angles: Is Skully here?
+    Pumpkin: Yeah, they are further in! #pumpkin
+    Angles: Thanks…
+    Angles: …
+    Angles: ..Couldn't you have mentioned it's a costume party #protag
+    Pumpkin: … #pumpkin
+    Angles: Really??? #protag
+    Angles: What's wrong with the way I dress?? #protag
+    Pumpkin: … #pumpkin
+    Pumpkin: Soooo yeah, we're still setting it all up but the stage will be further in! #pumpkin
+    Pumpkin: So far a lot of the equipment still needs unpacking but Fish Jr is helping out and you know he's good with that stuff! #pumpkin
+    Angles: … #protag
+    Pumpkin: Anyway, you're all set? #pumpkin
+    <<else>>
     //did not talk to madeline before
-    Pumpkin: Well helloooo there! #pumpkin
-    Angles: ..Hey #protag
-        <<if $madeline1_01 is true>>
-        Angles: Is Skully here?
-        Pumpkin: Yeah, they are further in! #pumpkin
-        Angles: Thanks…
-        Angles: …
-        Angles: ..Couldn't you have mentioned it's a costume party #protag
-        Pumpkin: … #pumpkin
-        Angles: Really??? #protag
-        Angles: What's wrong with the way I dress?? #protag
-        Pumpkin: … #pumpkin
-        Pumpkin: Soooo yeah, we're still setting it all up but the stage will be further in! #pumpkin
-        Pumpkin: So far a lot of the equipment still needs unpacking but Fish Jr is helping out and you know he's good with that stuff! #pumpkin
-        Angles: … #protag
-        Pumpkin: Anyway, you're all set? #pumpkin
-        <<else>>
-        Pumpkin: You made it!! #pumpkin
-        Pumpkin: You're all set for tonight, right?
-        <<endif>>
-    Pumpkin: Figured out the setlist and everything, yep~? #pumpkin
-    Angles: Actually— #protag
-    CRASH!! #gen
-    Skully: ..it's all fine! #Skully
-    Pumpkin: Okaay phew! #pumpkin
-    Pumpkin: So yeah great talk! #pumpkin
-    Pumpkin: Can't wait for tonight~! #pumpkin
+    Pumpkin: You made it!! #pumpkin
+    Pumpkin: You're all set for tonight, right?
+    <<endif>>
+Pumpkin: Figured out the setlist and everything, yep~? #pumpkin
+Angles: Actually— #protag
+CRASH!! #gen
+Skully: ..it's all fine! #Skully
+Pumpkin: Okaay phew! #pumpkin
+Pumpkin: So yeah great talk! #pumpkin
+Pumpkin: Can't wait for tonight~! #pumpkin
 <<endif>>
 ===
-
 title: SkullySection1_01
 tags:
 ---
@@ -218,9 +148,9 @@ Skully: There should be something that you can do, isn't there?
 Angles: Um.. well I might be able to find some temporary band members..
 Skully: Perfect.
 Skully: Are you proficient in the art of persuasion?
--> Yeah, I'm actually not that bad at it.
 -> Uh.. no...
     <<jump Skully_tutorial>>
+-> Yeah, I'm actually not that bad at it.
 Skully: Fantastic.
 Skully: Are you ready to go out into the world and find individuals?
 -> Yeah, I'll start now.
@@ -234,18 +164,30 @@ Skully: Are you ready to go out into the world and find individuals?
 Skully: No problem. 
 Skully: Speak to me again soon.
 ===
-
 title: Skully_tutorial
 tags:
 ---
-Skully: 
-
-//<<jump Done>>
+Skully: So what you need to do is challenge someone to a music battle.
+Skully: They play a note..
+Skully: Like this..
+Skully hums a little tune.
+Hum!
+Skully: And now you choice what note to play.
+Angles.. awkwardly plays their triangle.
+-> Ting ting!
+-> Cling cling!
+Skully: Good.
+Skully: So you do that for a while.
+Skully: The universe calculates your vibes..
+Skully: And then you get a feeling where you just know the outcome.
+Skully: ..And that's how it works.
+Angles: ..I see.
+<<jump SkullySection1_02>>
 ===
-
 title: SkullySection1_02
 tags:
 ---
+Skully: So.
 Skully: Are you ready to go out into the world and find individuals?
 -> Yeah, I'll start now.
     //load to A outside the party building door
@@ -253,102 +195,74 @@ Skully: Are you ready to go out into the world and find individuals?
     <<set $section1 to false>>
     <<set $section2 to true>>
 -> Ah, no, just give me another moment.
+    <<set $section1_1 to true>>
     Skully: No problem. 
     Skully: Speak to me again soon.
 ===
-
 title: PumpkinSection1_02
 tags:
 ---
-<<if $pumpkin1_01 is false>>
-    <<jump PumpkinSection1_01>>
-<<elseif $pumpkin1_02 is true>>
-    Angles: ...
-
-    Angles: You're hardcore.
-
-    Pumpkin: :3c
+<<if $pumpkin1_02 is true>>
+Angles: ...
+Angles: You're hardcore.
+Pumpkin: :3c
 <<else>>
+    <<if !visited("PumpkinSection1_01")>>
+    <<jump PumpkinSection1_01>>
+    <<else>>
     <<set $pumpkin1_02 to true>>
     Pumpkin: Still so much to do!
-
     Angles: I wish you luck.
-
     Pumpkin: Luck? LOL
-
     Pumpkin: I mixed some coffee with redbull earlieeeerr~
-
     Pumpkin: I'm either going to be juuuust fine!
-
     Pumpkin: Or I'll drop dead!
     <<set $smiley to ":)">>
     Pumpkin: {$smiley}
+    <<endif>>
 <<endif>>
 ===
-
 title: PuppySection1_02
 tags:
 ---
-<<if $puppy1_01 is false>>
-    <<jump PuppySection1_01>>
+<<if !visited("PuppySection1_01")>>
+<<jump PuppySection1_01>>
 <<elseif $puppy1_02 is true>>
-    Puppy: ...
-
-    Angles: I'll see you at the party then.
-
-    Puppy: Yeah..
+Puppy: ...
+Angles: I'll see you at the party then.
+Puppy: Yeah..
 <<else>>
-    <<set $puppy1_02 to true>>
-    Puppy: ...
-
-    Angles: Okay I'm not doing that again.
-
-    Angles: Are you thinking about going to the party?
-
-    Angles: My band was supposed to play but it's really just going to be me and I don't know who yet.
-
-    Puppy: ...
-
-    Puppy: I'll probably come.
-
-    Angles: Thanks, Pup.
-
+<<set $puppy1_02 to true>>
+Puppy: ...
+Angles: Okay I'm not doing that again.
+Angles: Are you thinking about going to the party?
+Angles: My band was supposed to play but it's really just going to be me and I don't know who yet.
+Puppy: ...
+Puppy: I'll probably come.
+Angles: Thanks, Pup.
 <<endif>>
 ===
-
 title: MadelineSection1_02
 tags:
 ---
-<<if $madeline1_01 is false>>
-    <<jump MadelineSection1_01>>
+<<if !visited("MadelineSection1_01")>>
+<<jump MadelineSection1_01>>
 <<elseif $madeline1_02 is true>>
-    Madeline: ..I really have to focus on this.
-
-    Angles: I'll let you get back to it.
+Madeline: ..I really have to focus on this.
+Angles: I'll let you get back to it.
 <<else>>
-    <<set $madeline1_02 to true>>
-    Angles: Still working hard?
-
-    Madeline: Of course..
-
-    Madeline: I can't flunk this.
-
-    Madeline: It's like half of my grade!
-
-    Angles: Ouch..
-
-    Madeline: Yeaaah.
-
-    Angles: You ever thought about just not procastinating?
-
-    Madeline: ...
-
-    Madeline: Friendship ended with Angles, now this half chewed pencil is my new best friend!
-
-    Angles: See if I ever let you borrow a pencil again.
-
-    Madeline: ...I didn't meaaaaan it!
-
-    Angles: Heh.
+<<set $madeline1_02 to true>>
+Angles: Still working hard?
+Madeline: Of course..
+Madeline: I can't flunk this.
+Madeline: It's like half of my grade!
+Angles: Ouch..
+Madeline: Yeaaah.
+Angles: You ever thought about just not procastinating?
+Madeline: ...
+Madeline: Friendship ended with Angles, now this half chewed pencil is my new best friend!
+Angles: See if I ever let you borrow a pencil again.
+Madeline: ...I didn't meaaaaan it!
+Angles: Heh.
 <<endif>>
 ===
