@@ -22,11 +22,11 @@ title: MadelineSection1_01
 
     Angles: Do you work here now? #protag
 
-    Madeline: Dude, they don't have such uniforms in this cafe #cat
+    Madeline: Dude, they don't have such uniforms in this cafe. #cat
 
     Angles: Well yeah, that's why I'm surprised! #protag
 
-    Madeline: I'm just dressed up for the party later tonight, silly #cat
+    Madeline: I'm just dressed up for the party later tonight, silly. #cat
 
     Angles: Oh.. Pumpkin didn't mention that.. #protag
 
@@ -74,7 +74,7 @@ title: MadelineSection1_01
 
     Angles: Well yeah, that's why I'm surprised! #protag
 
-    Madeline: I'm just dressed up for the party later tonight, silly #cat
+    Madeline: I'm just dressed up for the party later tonight, silly. #cat
 
     Angles: Oh.. Pumpkin didn't mention that.. #protag
 
@@ -151,80 +151,38 @@ title: PumpkinSection1_01
 tags:
 ---
 //meeting first time in person, skully is further back, A's fashion sense dissed again
-<<if $pumpkin1_01 is true>>
+<<if $pumpkin_01 is true>>
     //talked to pumpkin already
     Pumpkin: Really, really can't wait for your band to play~! #pumpkin
-<<elseif $madeline1_01 is true and $pumpkin1_01 is false>>
-    <<set $pumpkin_01 to true>>
-    //talked to madeline before
-    Pumpkin: Well helloooo there! #pumpkin
-
-    Pumpkin: You made it!! #pumpkin
-
-    Angles: ..Hey #protag
-
-    Angles: Is Skully here?
-
-    Pumpkin: Yeah, they are further in! #pumpkin
-
-    Angles: Thanks…
-
-    Angles: …
-
-    Angles: ..Couldn't you have mentioned it's a costume party #protag
-
-    Pumpkin: … #pumpkin
-
-    Angles: Really??? #protag
-
-    Angles: What's wrong with the way I dress?? #protag
-
-    Pumpkin: … #pumpkin
-
-    Pumpkin: Soooo yeah, we're still setting it all up but the stage will be further in! #pumpkin
-
-    Pumpkin: So far a lot of the equipment still needs unpacking but Fish Jr is helping out and you know he's good with that stuff! #pumpkin
-
-    Angles: … #protag
-
-    Pumpkin: Anyway, you're all set? #pumpkin
-
-    Pumpkin: Figured out the setlist and everything, yep~? #pumpkin
-
-    Angles: Actually— #protag
-
-    CRASH!! #gen
-
-    Skully: ..it's all fine! #Skully
-
-    Pumpkin: Okaay phew! #pumpkin
-
-    Pumpkin: So yeah great talk! #pumpkin
-
-    Pumpkin: Can't wait for tonight~! #pumpkin
 <<else>>
     <<set $pumpkin_01 to true>>
     //did not talk to madeline before
     Pumpkin: Well helloooo there! #pumpkin
-
     Angles: ..Hey #protag
-
-    Pumpkin: You made it!! #pumpkin
-
-    Pumpkin: You're all set for tonight, right?
-
+        <<if $madeline1_01 is true>>
+        Angles: Is Skully here?
+        Pumpkin: Yeah, they are further in! #pumpkin
+        Angles: Thanks…
+        Angles: …
+        Angles: ..Couldn't you have mentioned it's a costume party #protag
+        Pumpkin: … #pumpkin
+        Angles: Really??? #protag
+        Angles: What's wrong with the way I dress?? #protag
+        Pumpkin: … #pumpkin
+        Pumpkin: Soooo yeah, we're still setting it all up but the stage will be further in! #pumpkin
+        Pumpkin: So far a lot of the equipment still needs unpacking but Fish Jr is helping out and you know he's good with that stuff! #pumpkin
+        Angles: … #protag
+        Pumpkin: Anyway, you're all set? #pumpkin
+        <<else>>
+        Pumpkin: You made it!! #pumpkin
+        Pumpkin: You're all set for tonight, right?
+        <<endif>>
     Pumpkin: Figured out the setlist and everything, yep~? #pumpkin
-
     Angles: Actually— #protag
-
     CRASH!! #gen
-
     Skully: ..it's all fine! #Skully
-
     Pumpkin: Okaay phew! #pumpkin
-
     Pumpkin: So yeah great talk! #pumpkin
-
     Pumpkin: Can't wait for tonight~! #pumpkin
 <<endif>>
 ===
@@ -232,117 +190,49 @@ tags:
 title: SkullySection1_01
 tags:
 ---
+Angles: Hey Skulls..
 <<if $madeline1_01 is true>>
-    <<set $skully1_01 to true>>
-    Angles: Hey Skulls..
-
-    Skully: Mm #fairy
-
-    Angles: Madeline wanted you to know she might be late to the party
-
-    Skully: Mm..
-
-    Skully: She left her essay till the last moment.
-
-    Skully: Typical.
-
-    Angles: Well.. who hasn't?
-
-    Skully: ...
-
-    Skully: I have never and you cannot prove otherwise.
-
-    Skully: If this is all, then I must say it's been nice to see you but—
-
-    Angles: Ah no! I wanted to talk to you about the performance.
-
-    Skully: Yes?
-
-    Angles: Well my bandmates are all sick..
-
-    Skully: That is unfortunate.
-
-    Angles: I'm not sure if it's better to cancel and you can find another band—
-
-    Skully: Please no.
-
-    Skully: There are no other bands.
-
-    Angles: Oh..
-
-    Skully: There should be something that you can do, isn't there?
-
-    Angles: Um.. well I might be able to find some temporary band members..
-
-    Skully: Perfect.
-
-    Skully: Are you proficient in the art of persuasion?
-        -> Yeah, I'm actually not that bad at it.
-        -> Uh.. no...
-            <<jump Skully_tutorial>>
-
-    Skully: Fantastic.
-
-    Skully: Are you ready to go out into the world and find individuals?
-        -> Yeah, I'll start now.
-            //load to A outside the party building door
-            //changing variables to section2 dialogues 
-            <<set $section1 to false>>
-            <<set $section2 to true>>
-        -> Ah, no, just give me another moment.
-            <<set $section1 to false>>
-            <<set $section1_1 to true>>
-        Skully: No problem. 
-        Skully: Speak to me again soon.
+Skully: Mm. #fairy
+Angles: Madeline wanted you to know she might be late to the party
+Skully: Mm..
+Skully: She left her essay till the last moment.
+Skully: Typical.
+Angles: Well.. who hasn't?
+Skully: ...
+Skully: I have never and you cannot prove otherwise.
+Skully: If this is all, then I must say it's been nice to see you but—
+Angles: Ah no! I wanted to talk to you about the performance.
 <<else>>
-    <<set $skully1_01 to true>>
-    Angles: Hey Skulls..
-
-    Skully: Yes? #fairy
-
-    Angles: Uh..
-
-    Angles: I wanted to talk to you about the performance.
-
-    Skully: Yes?
-
-    Angles: Well my bandmates are all sick..
-
-    Skully: That is unfortunate.
-
-    Angles: I'm not sure if it's better to cancel and you can find another band—
-
-    Skully: Please no.
-
-    Skully: There are no other bands.
-
-    Angles: Oh..
-
-    Skully: There should be something that you can do, isn't there?
-
-    Angles: Um.. well I might be able to find some temporary band members..
-
-    Skully: Perfect.
-
-    Skully: Are you proficient in the art of persuasion?
-        -> Yeah, I'm actually not that bad at it.
-        -> Uh.. no...
-            <<jump Skully_tutorial>>
-
-    Skully: Fantastic.
-
-    Skully: Are you ready to go out into the world and find individuals?
-    -> Yeah, I'll start now.
-        //load to A outside the party building door
-        //changing variables to section2 dialogues 
-        <<set $section1 to false>>
-        <<set $section2 to true>>
-    -> Ah, no, just give me another moment.
-        <<set $section1 to false>>
-        <<set $section1_1 to true>>
-        Skully: No problem. 
-        Skully: Speak to me again soon.
+Skully: Yes? #fairy
+Angles: Uh..
 <<endif>>
+Angles: I wanted to talk to you about the performance.
+Skully: Yes?
+Angles: Well my bandmates are all sick..
+Skully: That is unfortunate.
+Angles: I'm not sure if it's better to cancel and you can find another band—
+Skully: Please no.
+Skully: There are no other bands.
+Angles: Oh..
+Skully: There should be something that you can do, isn't there?
+Angles: Um.. well I might be able to find some temporary band members..
+Skully: Perfect.
+Skully: Are you proficient in the art of persuasion?
+-> Yeah, I'm actually not that bad at it.
+-> Uh.. no...
+    <<jump Skully_tutorial>>
+Skully: Fantastic.
+Skully: Are you ready to go out into the world and find individuals?
+-> Yeah, I'll start now.
+    //load to A outside the party building door
+    //changing variables to section2 dialogues 
+    <<set $section1 to false>>
+    <<set $section2 to true>>
+-> Ah, no, just give me another moment.
+<<set $section1 to false>>
+<<set $section1_1 to true>>
+Skully: No problem. 
+Skully: Speak to me again soon.
 ===
 
 title: Skully_tutorial
