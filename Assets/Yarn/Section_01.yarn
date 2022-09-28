@@ -159,8 +159,8 @@ Skully: Are you ready to go out into the world and find individuals?
     <<set $section1 to false>>
     <<set $section2 to true>>
 -> Ah, no, just give me another moment.
-<<set $section1 to false>>
-<<set $section1_1 to true>>
+    <<set $section1 to false>>
+    <<set $section1_1 to true>>
 Skully: No problem. 
 Skully: Speak to me again soon.
 ===
@@ -195,6 +195,7 @@ Skully: Are you ready to go out into the world and find individuals?
     <<set $section1 to false>>
     <<set $section2 to true>>
 -> Ah, no, just give me another moment.
+    <<set $section1 to false>>
     <<set $section1_1 to true>>
     Skully: No problem. 
     Skully: Speak to me again soon.
