@@ -24,7 +24,7 @@ tags:
     Angles: We'll settle the book business later.
 <<else>>
     <<set $madeline3_01 to true>>
-    <<if visited ("MadelineSection2_01")>>
+    <<if visited("MadelineSection2_01")>>
         Angles: Hey again..
         Madeline: Mmm.
         Angles: So did you end up trying the new drink?
