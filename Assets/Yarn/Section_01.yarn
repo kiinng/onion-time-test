@@ -158,8 +158,6 @@ Skully: Are you ready to go out into the world and find individuals?
     //changing variables to section2 dialogues 
     <<set $section1 to false>>
     <<set $section2 to true>>
-    <<load_street>>
-    <<Street_Section2_Setup SceneChecker>>
 -> Ah, no, just give me another moment.
     <<set $section1 to false>>
     <<set $section1_1 to true>>
@@ -196,8 +194,6 @@ Skully: Are you ready to go out into the world and find individuals?
     //changing variables to section2 dialogues 
     <<set $section1 to false>>
     <<set $section2 to true>>
-    <<load_street>>
-    <<Street_Section2_Setup SceneChecker>>
 -> Ah, no, just give me another moment.
     <<set $section1 to false>>
     <<set $section1_1 to true>>
@@ -212,7 +208,7 @@ Angles: ...
 Angles: You're hardcore.
 Pumpkin: :3c
 <<else>>
-    <<if !visited("PumpkinSection1_01")>>
+    <<if visited("PumpkinSection1_01") == false>>
     <<jump PumpkinSection1_01>>
     <<else>>
     <<set $pumpkin1_02 to true>>
@@ -230,7 +226,7 @@ Pumpkin: :3c
 title: PuppySection1_02
 tags:
 ---
-<<if !visited("PuppySection1_01")>>
+<<if visited("PuppySection1_01") == false>>
 <<jump PuppySection1_01>>
 <<elseif $puppy1_02 is true>>
 Puppy: ...
@@ -250,7 +246,7 @@ Angles: Thanks, Pup.
 title: MadelineSection1_02
 tags:
 ---
-<<if !visited("MadelineSection1_01")>>
+<<if visited("MadelineSection1_01") == false>>
 <<jump MadelineSection1_01>>
 <<elseif $madeline1_02 is true>>
 Madeline: ..I really have to focus on this.
