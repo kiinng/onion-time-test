@@ -1,9 +1,7 @@
 title: sashaStart
 tracking: always
 ---
-<<if visited("sashaStart") == false>>
-    <<jump SashaSection2_01>>
-<<elseif $section2 is true>>
+<<if $section2 is true>>
     <<jump SashaSection2_01>>
 <<elseif $section3 is true>>
     <<jump SashaSection3_01>>

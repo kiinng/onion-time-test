@@ -1,9 +1,7 @@
 title: sammyStart
 tracking: always
 ---
-<<if visited("sammyStart") == false>>
-    <<jump SammySection2_01>>
-<<elseif $section2 is true>>
+<<if $section2 is true>>
     <<jump SammySection2_01>>
 <<elseif $section5 is true>>
     <<jump SammySection5_01>>

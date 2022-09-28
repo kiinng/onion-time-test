@@ -1,9 +1,7 @@
 title: freddieStart
 tracking: always
 ---
-<<if visited("freddieStart") == false>>
-    <<jump FreddieSection2_01>>
-<<elseif $section2 is true>>
+<<if $section2 is true>>
     <<jump FreddieSection2_01>>
 <<elseif $section3 is true>>
     <<jump FreddieSection3_01>>

@@ -1,9 +1,7 @@
 title: tommyTuppenceStart
 tracking: always
 ---
-<<if visited("tommyTuppenceStart") == false>>
-    <<jump TommySection3_01>>
-<<elseif $section3 is true and $tommyBattle_win_01 is false>>
+<<if $section3 is true and $tommyBattle_win_01 is false>>
     <<jump TommySection3_01>>
 <<elseif $tommyBattle_win_01 is true and $section3 is true>>
     <<jump TommySection3_02>>

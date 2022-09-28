@@ -1,9 +1,7 @@
 title: gabStart
 tracking: always
 ---
-<<if visited("gabStart") == false>>
-    <<jump GabSection2_01>>
-<<elseif $section2 is true>>
+<<if $section2 is true>>
     <<jump GabSection2_01>>
 <<elseif $gabBattle_win_01 is true and $section2 is true>>
     <<jump GabSection2_02>>

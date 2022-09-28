@@ -1,9 +1,7 @@
 title: jessStart
 tracking: always
 ---
-<<if visited("jessStart") == false>>
-    <<jump JessSection3_01>>
-<<elseif $section3 is true>>
+<<if $section3 is true>>
     <<jump JessSection3_01>>
 <<elseif $section5 is true>>
     <<jump JessSection5_01>>

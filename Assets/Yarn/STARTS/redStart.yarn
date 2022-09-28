@@ -1,9 +1,7 @@
 title: redStart
 tracking: always
 ---
-<<if visited("redStart") == false>>
-    <<jump RedSection2_01>>
-<<elseif $section2 is true>>
+<<if $section2 is true>>
     <<jump RedSection2_01>>
 <<elseif $section4 is true>>
     <<jump RedSection4_01>>

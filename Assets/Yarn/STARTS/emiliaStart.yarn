@@ -1,9 +1,7 @@
 title: emiliaStart
 tracking: always
 ---
-<<if visited("emiliaStart") is false>>
-    <<jump EmiliaSection3_01>>
-<<elseif $section3 is true>>
+<<if $section3 is true>>
     <<jump EmiliaSection3_01>>
 <<elseif $section4 is true and $emiliaBattle_win_01 is false>>
     <<jump EmiliaSection4_01>>

@@ -1,9 +1,7 @@
 title: skullyStart
 tracking: always
 ---
-<<if visited("skullyStart") == false>>
-    <<jump SkullySection1_01>>
-<<elseif $section1 is true>>
+<<if $section1 is true>>
     <<jump SkullySection1_01>>
 <<elseif $section1_1 is true>>
     <<jump SkullySection1_02>>

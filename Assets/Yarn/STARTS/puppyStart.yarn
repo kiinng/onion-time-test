@@ -1,9 +1,7 @@
 title: puppyStart
 tracking: always
 ---
-<<if visited("puppyStart") == false>>
-    <<jump PuppySection1_01>>
-<<elseif $section1 is true>>
+<<if $section1 is true>>
     <<jump PuppySection1_01>>
 <<elseif $section1_1 is true>>
     <<jump PuppySection1_02>>

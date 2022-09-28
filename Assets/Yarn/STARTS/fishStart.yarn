@@ -1,9 +1,7 @@
 title: fishStart
 tracking: always
 ---
-<<if visited("fishStart") == false>>
-    <<jump FishSection2_01>>
-<<elseif $section2 is true>>
+<<if $section2 is true>>
     <<jump FishSection2_01>>
 <<elseif $section3 is true>>
     <<jump FishSection3_01>>
