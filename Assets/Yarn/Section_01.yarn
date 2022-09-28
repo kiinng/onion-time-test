@@ -158,6 +158,8 @@ Skully: Are you ready to go out into the world and find individuals?
     //changing variables to section2 dialogues 
     <<set $section1 to false>>
     <<set $section2 to true>>
+    <<load_street>>
+    <<Street_Section2_Setup SceneChecker>>
 -> Ah, no, just give me another moment.
     <<set $section1 to false>>
     <<set $section1_1 to true>>
@@ -194,6 +196,8 @@ Skully: Are you ready to go out into the world and find individuals?
     //changing variables to section2 dialogues 
     <<set $section1 to false>>
     <<set $section2 to true>>
+    <<load_street>>
+    <<Street_Section2_Setup SceneChecker>>
 -> Ah, no, just give me another moment.
     <<set $section1 to false>>
     <<set $section1_1 to true>>
