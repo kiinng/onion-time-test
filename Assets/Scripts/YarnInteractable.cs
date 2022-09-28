@@ -15,10 +15,12 @@ public class YarnInteractable : MonoBehaviour {
     private bool interactable = true;
     private bool isCurrentConversation = false;
     private float defaultIndicatorIntensity;
-    
+
+    private Animator playerAnimator;
 
     public void Start()
     {
+        playerAnimator = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         canTalk = false;
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
         dialogueRunner.onDialogueComplete.AddListener(EndConversation);
@@ -37,6 +39,7 @@ public class YarnInteractable : MonoBehaviour {
         {
             if (interactable && !dialogueRunner.IsDialogueRunning && canTalk)
             {
+                playerAnimator.SetFloat("moveSpeed", 0);
                 StartConversation();
             }
         }
