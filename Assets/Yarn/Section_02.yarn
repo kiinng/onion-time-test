@@ -67,32 +67,13 @@ tags:
         <<jump PuppyBattle1>>
     -> ..Nah, if they aren't sure, maybe I should look for someone else..
         Angles: Alright, while it will probably work.. I guess I'll let it be.
-<<elseif $puppy1_01 is true and $puppy2_01 is false>>
-    <<set $puppy2_01 to true>>
-    Angles: ...
-    Puppy: ...
-    Angles: YOU PLAY THE CLARINET??
-    Puppy: ..Yes.
-    Angles: You never told me!
-    Puppy: I learned a bit in high school..
-    Puppy: Now I sometimes practice..
-    Angles: Okay, okay..
-    Angles: I can't blame you if I never told you..
-    Angles: But Spots, Willy, and Ben are sick!
-    Angles: I'm looking for band members that could just help me play at the park tonight.
-    Puppy: Oh..
-    Angles: Yeah, so if you could just help me out—
-    Puppy: Don't you play a triangle?
-    Angles: Ah yes—
-    Puppy: I'm not sure if it will work.
-    Angles: It definitely will!
-    -> Challenge Puppy to a music battle!
-        <<jump PuppyBattle1>>
-    -> ..Nah, if they aren't sure, maybe I should look for someone else..
-        Angles: Alright, while it will probably work.. I guess I'll let it be.
 <<else>>
-    <<set $puppy2_01 to true>>
-    Angles: Oh hey, Pup..
+<<set $puppy2_01 to true>>
+    <<if visited ("PuppySection1_01") == false>>
+        Angles: ...
+    <<else>>
+        Angles: Oh hey, Pup..
+    <<endif>>
     Puppy: ...
     Angles: ...
     Angles: YOU PLAY THE CLARINET??
@@ -374,10 +355,11 @@ tags:
     -> ..Or I can find someone else...
         Angles: Ah but if you don't want to, that's alright.
         Angles: I'll go look others.
-<<elseif $sammy2_01 is true and $angel2_01 is false>>
-//A remembers Sammy's instrument being fake and offends Angel that theirs is fake, then blackmails them into a music battle
-//saying they will tell Skully they broke Skully's fountain pen
-<<set $angel2_01 to true>>
+<<else>>
+    <<if visited ("SammySection2_01")>>
+    //A remembers Sammy's instrument being fake and offends Angel that theirs is fake, then blackmails them into a music battle
+    //saying they will tell Skully they broke Skully's fountain pen
+    <<set $angel2_01 to true>>
     Angles: ..Don't tell me the trumpet is just part of your costume...
     Angel: What? No.
     Angel: That's such a rude assumption to make!
@@ -412,7 +394,7 @@ tags:
         Angles: ..Ah.. I changed my mind..
         Angles: Sorry, I've been rude enough.
         Angles: I'll leave you alone..
-<<else>>
+    <<else>>
     //A meets Angel before sammy, just tells them their costume is cool, Angel doesn't think they will work out with the band
     <<set $angel2_02 to true>>
     Angles: Hey Angel.
@@ -440,6 +422,7 @@ tags:
     -> ..Or I can find someone else...
         Angles: Ah but if you don't want to, that's alright.
         Angles: I'll go look others.
+    <<endif>>
 <<endif>>
 ===
 title: AngelBattle1
@@ -468,7 +451,7 @@ Angles plays their triangle!
     <<set $angles1 = $angles1 + 2>>
 -> Ting ting!
 Angel plays their trumpet!
--> KKKKKKKKK!
+KKKKKKKKK!
 <<set $angel1 = $angel1 + 1>>
 Angles plays their triangle!
 -> Cling!
@@ -605,7 +588,7 @@ tags:
     Sammy: Ugh..
     Sammy: That would be the worst thing to ever happen to me..
     Angles: Agree..
-    Angles: ..Well I'm sorry, I gotta run
+    Angles: ..Well I'm sorry, I gotta run.
     Sammy: That's alright.
     Sammy: We can talk more tomorrow!
 <<endif>>
@@ -745,24 +728,43 @@ title: SkullySection2_01
 tags:
 ---
 <<if $skully2_01 is true>>
-    Skully: Ah, back already.
-    Skully: Great.
-    Skully: Do you have some time to help right now?
-    -> Yeah!
-        Skully: Perfect. So just—
+    Skully: You know who's joining your band now?
+    -> Yeah..
+        -> Puppy <<if $puppyBattle_win_01 is true>>
+            <<set $melody_player to "puppy">>
+            Skully: Nice.
+            Skully: They were quite good at the clarinet at school.
+        -> Gab <<if $gabBattle_win_01 is true>>
+            <<set $melody_player to "gab">>
+            Skully: I had no idea Gab played anything.
+            Angles: Oh.. they sing.
+            Skully: ..Your music has no lyrics?
+            Angles: They can hum real good!
+        -> Angel <<if $angelBattle_win_01 is true>>
+            <<set $melody_player to "angel">>
+            Skully: My sibling?
+            Skully: Did you blackmail them or something?
+            <<if $angel2_01 is true>>
+                Angles: H-Ha ha!
+                Angles: I would never do such a thing!
+            <<else>>
+                Angles: No..
+            <<endif>>
+        Skully: ...
+        Skully: Oh.
+        Skully: I was wondering— do you mind helping out a bit in here?
+        Skully: Nothing too major, I just need a few minutes of your time.
+        Angles: Yeah sure!
         //load to A outside the party building door
         //changing variables to section2 dialogues 
         <<set $section2 to false>>
         <<set $section3 to true>>
-        <<load_street>>
-        <<Street_Section3_Setup SceneChecker>>
-        <<wait .1>>
         <<disable_playercontrol>>
         10 MINS LATER
         <<enable_playercontrol>>
-    -> Ah, I promised to talk to someone just now but I'll be back real soon to help you!
-        Skully: No problem. 
-        Skully: It's not that time sensitive.
+    -> Uh.. Not yet..
+        Skully: No problem.
+        Skully: Just let me know soon.
 <<elseif $angelBattle_win_01 is true or $gabBattle_win_01 is true or $puppyBattle_win_01 is true>>
     <<set $skully2_01 to true>>
     Skully: Angles.
@@ -773,40 +775,43 @@ tags:
     Angles: It's a start...
     Skully: It is.
     Skully: So, who's joining you?
-    -> Puppy <<if $puppyBattle_win_01 is true>>
-        <<set $melody_player to "puppy">>
-        Skully: Nice.
-        Skully: They were quite good at the clarinet at school.
-    -> Gab <<if $gabBattle_win_01 is true>>
-        <<set $melody_player to "gab">>
-        Skully: I had no idea Gab played anything.
-        Angles: Oh.. they sing.
-        Skully: ..Your music has no lyrics?
-        Angles: They can hum real good!
-    -> Angel <<if $angelBattle_win_01 is true>>
-        <<set $melody_player to "angel">>
-        Skully: My sibling?
-        Skully: Did you blackmail them or something?
-        Angles: H-Ha ha!
-        Angles: I would never do such a thing!
+    Skully: Are you ready to tell me?
+    -> Yeah..
+        -> Puppy <<if $puppyBattle_win_01 is true>>
+            <<set $melody_player to "puppy">>
+            Skully: Nice.
+            Skully: They were quite good at the clarinet at school.
+        -> Gab <<if $gabBattle_win_01 is true>>
+            <<set $melody_player to "gab">>
+            Skully: I had no idea Gab played anything.
+            Angles: Oh.. they sing.
+            Skully: ..Your music has no lyrics?
+            Angles: They can hum real good!
+        -> Angel <<if $angelBattle_win_01 is true>>
+            <<set $melody_player to "angel">>
+            Skully: My sibling?
+            Skully: Did you blackmail them or something?
+            <<if $angel2_01 is true>>
+                Angles: H-Ha ha!
+                Angles: I would never do such a thing!
+            <<else>>
+                Angles: No..
+            <<endif>>
         Skully: ...
-    Skully: Oh.
-    Skully: I was wondering— do you mind helping out a bit in here?
-    Skully: Nothing too major, I just need a few minutes of your time.
-    -> Yeah, sure!
-        //load to A outside the party building door
-        //changing variables to section2 dialogues 
-        <<set $section2 to false>>
-        <<set $section3 to true>>
-        <<load_street>>
-        <<Street_Section3_Setup SceneChecker>>
-        <<wait .1>>
-        <<disable_playercontrol>>
-        10 MINS LATER
-        <<enable_playercontrol>>
-    -> Ah, I promised to talk to someone just now but I'll be back real soon to help you!
-        Skully: No problem. 
-        Skully: It's not that time sensitive.
+        Skully: Oh.
+        Skully: I was wondering— do you mind helping out a bit in here?
+        Skully: Nothing too major, I just need a few minutes of your time.
+        Angles: Yeah, sure!
+            //load to A outside the party building door
+            //changing variables to section2 dialogues 
+            <<set $section2 to false>>
+            <<set $section3 to true>>
+            <<disable_playercontrol>>
+            10 MINS LATER
+            <<enable_playercontrol>>
+    -> Uh.. Not yet..
+        Skully: No problem.
+        Skully: Just let me know soon.
 <<else>>
     Skully: Angles.
     Skully: How is it going?
