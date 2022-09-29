@@ -40,72 +40,76 @@ tags:
 ---
 //BANJO
 //if you talked to sasha previously, then you can skip battle by asking out sasha to the dance for emilia
-<<if $emilia4_02 is true>>
-    Emilia: D-Did you a-ask Sasha yet?
-    Angles: Not yet..
-    Emilia: W-Well what are you wasting time for?!!
-<<elseif $bunny3_02 is true and $emilia4_01 is false and $emilia4_02 is false>>
-    //if talked to sasha about emilia
-    <<set $emilia4_02 to true>>
-    Angles: Hey!
-    Emilia: No.
-    Angles: ...
-    Angles: Seriously, you're such a jerk.
-    Emilia: Yep.
-    Angles: I literally do not see what Sasha liked about you.
-    Emilia: !!
-    Emilia: W-what..?
-    Emilia: H-Ha ha.. d-did you say S-Sasha??
-    Emilia: T-They talk?? About,, m-me?
-    Angles: ...
-    Angles: They consider you a good friend I guess.
-    <<set $blush to "O////O">>
-    Emilia: {$blush}
-    Emilia: ..I.....
-    Emilia: Um,,,
-    Emilia: I-If..
-    Emilia: I want to ask Sasha out to the dance!!!!
-    Angles: ...
-    Angles: Ok.
-    Emilia: B-But I can't!
-    Angles: ...
-    Emilia: I-I want you to do it for me!!
-    Angles: .....Gurl
-    Emilia: P-Please!
-    Emilia: I'll play in your band if you do!
-    Angles: ...
-    Angles: Well alright.
-<<elseif $emilia4_01 is true>>
-    Angles: And I'm back!
-    Emilia: Ugggh..
-    Emilia: Seriously, just go away..
-    Angles: Nope!
-    -> Challenge Emilia to a music battle!
-        <<jump EmiliaBattle1>>
-    -> ..Or not...
-        Angles: ...Something has come up.. again...
-        Angles: But I will be back!
-        Emilia: Don't.
+<<if $bunny3_02 is true>>
+    <<if $emilia4_02 is true>>
+        Emilia: D-Did you a-ask Sasha yet?
+        Angles: Not yet..
+        Emilia: W-Well what are you wasting time for?!!
+    <<else>>
+        //if talked to sasha about emilia
+        <<set $emilia4_02 to true>>
+        Angles: Hey!
+        Emilia: No.
+        Angles: ...
+        Angles: Seriously, you're such a jerk.
+        Emilia: Yep.
+        Angles: I literally do not see what Sasha liked about you.
+        Emilia: !!
+        Emilia: W-what..?
+        Emilia: H-Ha ha.. d-did you say S-Sasha??
+        Emilia: T-They talk?? About,, m-me?
+        Angles: ...
+        Angles: They consider you a good friend I guess.
+        <<set $blush to "O////O">>
+        Emilia: {$blush}
+        Emilia: ..I.....
+        Emilia: Um,,,
+        Emilia: I-If..
+        Emilia: I want to ask Sasha out to the dance!!!!
+        Angles: ...
+        Angles: Ok.
+        Emilia: B-But I can't!
+        Angles: ...
+        Emilia: I-I want you to do it for me!!
+        Angles: .....Gurl
+        Emilia: P-Please!
+        Emilia: I'll play in your band if you do!
+        Angles: ...
+        Angles: Well alright.
+    <<endif>>
 <<else>>
-    <<set $emilia4_01 to true>>
-    Angles: Hey Emilia!
-    Angles: I'm looking for some temporary band members and I know you play the banjo..
-    Angles: So I wanted to ask if you wouldn't mind playing in my band?
-    Emilia: Hmmp!
-    Emilia: No.
-    Angles: ...
-    Angles: Well I challenge you to a music battle!!
-    Angles: If I win, you have to be in my band!
-    Emilia: ..And why would I agree to this?
-    Angles: Because I won't stop bothering you unless you agree!
-    Emilia: Ugh..
-    -> Challenge Emilia to a music battle!
-        <<jump EmiliaBattle1>>
-    -> ..Maybe I better not.. 
-        Angles: ...Something has come up..
-        Angles: But!
-        Angles: I will be back!
-        Emilia: Yeah, sure, you will.
+    <<if $emilia4_01 is true>>
+        Angles: And I'm back!
+        Emilia: Ugggh..
+        Emilia: Seriously, just go away..
+        Angles: Nope!
+        -> Challenge Emilia to a music battle!
+            <<jump EmiliaBattle1>>
+        -> ..Or not...
+            Angles: ...Something has come up.. again...
+            Angles: But I will be back!
+            Emilia: Don't.
+    <<else>>
+        <<set $emilia4_01 to true>>
+        Angles: Hey Emilia!
+        Angles: I'm looking for some temporary band members and I know you play the banjo..
+        Angles: So I wanted to ask if you wouldn't mind playing in my band?
+        Emilia: Hmmp!
+        Emilia: No.
+        Angles: ...
+        Angles: Well I challenge you to a music battle!!
+        Angles: If I win, you have to be in my band!
+        Emilia: ..And why would I agree to this?
+        Angles: Because I won't stop bothering you unless you agree!
+        Emilia: Ugh..
+        -> Challenge Emilia to a music battle!
+            <<jump EmiliaBattle1>>
+        -> ..Maybe I better not.. 
+            Angles: ...Something has come up..
+            Angles: But!
+            Angles: I will be back!
+            Emilia: Yeah, sure, you will.
+    <<endif>>
 <<endif>>
 ===
 title: EmiliaBattle1
@@ -691,42 +695,44 @@ tags:
 <<if $red4_01 is true>>
     Angles: Welp, I gotta run!
     Red: Okay, but I will get you to buy SquidSplat 3!
-<<elseif $red2_01 is true and $red4_01 is false>>
-    <<set $red4_01 to true>>
-    Angles: Hey again!!
-    Red: Hallo.
-    Angles: How's your novel going?
-    Red: ..Well I meant to write more but I...
-    Red: The new SquidSplat game came out and,,
-    Angles: You've been unable to put it down?
-    Red: Yeah,,
-    Red: I just really want some cute clothes in it.
-    Red: And they keep costing more coins than I have!
-    Red: And I keep losing matches.
-    Angles: Ah yeah..
-    Angles: I played a little bit of the second game and I kept losing a lot.
-    Red: I wasn't this bad in the second one!
-    Red: It feels like everyone just has a better strategy.
-    Red: I've even began to switch to different weapons.
-    Red: I prefer the roller but I've began to use a splatting gun so I could rush ahead..
-    Angles: Oh!
-    Angles: I love the roller!
-    Red: Me too!
-    Red: But I'm just getting irritated..
-    Red: Whenever I'm using it and someone else is trying to splat the base with their splatting gun..
-    Red: I'm like! I'm here!
-    Red: Go rush ahead!
-    Red: I'll ink the base!!
-    Angles: Sounds... frustrating.
-    Red: It is!
-    Red: I need to find some friends to team up with instead of strangers..
-    Angles: Yeah that sounds like a good idea!
-    Red: ...
-    Red: You should but the third game!
-    Red: Then we could team up.
-    Angles: ..I'll think about it.
 <<else>>
-    <<jump RedSection2_01>>
+    <<if visited("RedSection2_01") == false>>
+        <<jump RedSection2_01>>
+    <<else>>
+        <<set $red4_01 to true>>
+        Angles: Hey again!!
+        Red: Hallo.
+        Angles: How's your novel going?
+        Red: ..Well I meant to write more but I...
+        Red: The new SquidSplat game came out and,,
+        Angles: You've been unable to put it down?
+        Red: Yeah,,
+        Red: I just really want some cute clothes in it.
+        Red: And they keep costing more coins than I have!
+        Red: And I keep losing matches.
+        Angles: Ah yeah..
+        Angles: I played a little bit of the second game and I kept losing a lot.
+        Red: I wasn't this bad in the second one!
+        Red: It feels like everyone just has a better strategy.
+        Red: I've even began to switch to different weapons.
+        Red: I prefer the roller but I've began to use a splatting gun so I could rush ahead..
+        Angles: Oh!
+        Angles: I love the roller!
+        Red: Me too!
+        Red: But I'm just getting irritated..
+        Red: Whenever I'm using it and someone else is trying to splat the base with their splatting gun..
+        Red: I'm like! I'm here!
+        Red: Go rush ahead!
+        Red: I'll ink the base!!
+        Angles: Sounds... frustrating.
+        Red: It is!
+        Red: I need to find some friends to team up with instead of strangers..
+        Angles: Yeah that sounds like a good idea!
+        Red: ...
+        Red: You should but the third game!
+        Red: Then we could team up.
+        Angles: ..I'll think about it.
+    <<endif>>
 <<endif>>
 ===
 title: PumpkinSection4_01
@@ -762,18 +768,56 @@ title: SkullySection4_01
 tags:
 ---
 <<if $skully4_01 is true>>
-    Skully: Are you ready to practice using the stage now? 
-    -> Yep! I'm already making a group chat to let everyone know!
-        //load to A outside the party building door
-        //changing variables to section5 dialogues 
-        <<set $section4 to false>>
-        <<set $section5 to true>>
-        <<load_street>>
-        <<Street_Section5_Setup SceneChecker>>
-        <<wait .1>>
-        <<disable_playercontrol>>
-        HOURS LATER
-        <<enable_playercontrol>>
+    Skully: Are you ready to practice using the stage now?
+    Angles: Practically!
+    Skully: So you know who the last member is?
+    -> Yeah!
+        -> Emilia <<if $emiliaBattle_win_01 is true>>
+            //if u somehow manage to beat emilia in the music battle lol
+            <<set $harmony_player to "emilia">>
+            Angles: And god was that battle grueling!
+            Skully: I can imagine.
+            Skully: She can be very vindictive and stubborn.
+            Angles: ..Yeah.
+            Angles: Rude too.
+            Skully: And yet you got her to play in your band.
+            Angles: ...
+            Skully: Well.
+        -> Emilia <<if $emiliaBattle_win_02 is true>>
+            //if you set up the date with sasha
+            <<set $harmony_player to "emilia">>
+            Angles: Did you know they could be kinda cute?
+            Skully: Yeah.
+            Skully: It's very amusing to watch her interact with Sasha.
+            Angles: Ah, so you knew about her crush?
+            Skully: Yep.
+            Skully: They ain't subtle.
+            Angles: Oh.
+            Skully: So.
+        -> Christina <<if $christinaBattle_win_01 is true>>
+            <<set $harmony_player to "christina">>
+            Skully: How did you even convince Christina to go for it?
+            Angles: I won the music battle!
+            Angles: ..They really didn't want to do this.
+            Skully: I'm not surprised.
+            Skully: ...
+        -> Freddie <<if $freddieBattle_win_01 is true>>
+            <<set $harmony_player to "freddie">>
+            Skully: Oh.
+            Skully: I'm glad Freddie joined you.
+            Angles: Me too!
+            Angles: We're gonna have a lot of fun.
+            Skully: For sure.
+            Skully: ...
+        Skully: Are you ready to practice using the stage? 
+        Angles: Yeah! Just let me call everyone to let them know. 
+            //load to A outside the party building door
+            //changing variables to section5 dialogues 
+            <<set $section4 to false>>
+            <<set $section5 to true>>
+            <<disable_playercontrol>>
+            HOURS LATER
+            <<enable_playercontrol>>
     -> Oh, well.. almost! Just give me a bit of time..
         Skully: Sure.
         Skully: Just let me know when your band is ready.
@@ -782,56 +826,54 @@ tags:
     Angles: Skulls!
     Angles: I think I've found all the people I need..
     Skully: Fantastic.
-    Skully: Who's the last member?
-    -> Emilia <<if $emiliaBattle_win_01 is true>>
-        //if u somehow manage to beat emilia in the music battle lol
-        <<set $harmony_player to "emilia">>
-        Angles: And god was that battle grueling!
-        Skully: I can imagine.
-        Skully: She can be very vindictive and stubborn.
-        Angles: ..Yeah.
-        Angles: Rude too.
-        Skully: And yet you got her to play in your band.
-        Angles: ...
-        Skully: Well.
-    -> Emilia <<if $emiliaBattle_win_02 is true>>
-        //if you set up the date with sasha
-        <<set $harmony_player to "emilia">>
-        Angles: Did you know they could be kinda cute?
-        Skully: Yeah.
-        Skully: It's very amusing to watch her interact with Sasha.
-        Angles: Ah, so you knew about her crush?
-        Skully: Yep.
-        Skully: They ain't subtle.
-        Angles: Oh.
-        Skully: So.
-    -> Christina <<if $christinaBattle_win_01 is true>>
-        <<set $harmony_player to "christina">>
-        Skully: How did you even convince Christina to go for it?
-        Angles: I won the music battle!
-        Angles: ..They really didn't want to do this.
-        Skully: I'm not surprised.
-        Skully: ...
-    -> Freddie <<if $freddieBattle_win_01 is true>>
-        <<set $harmony_player to "freddie">>
-        Skully: Oh.
-        Skully: I'm glad Freddie joined you.
-        Angles: Me too!
-        Angles: We're gonna have a lot of fun.
-        Skully: For sure.
-        Skully: ...
-    Skully: Are you ready to practice using the stage? 
-    -> Yeah! Just let me call everyone to let them know. 
-        //load to A outside the party building door
-        //changing variables to section5 dialogues 
-        <<set $section4 to false>>
-        <<set $section5 to true>>
-        <<load_street>>
-        <<Street_Section5_Setup SceneChecker>>
-        <<wait .1>>
-        <<disable_playercontrol>>
-        HOURS LATER
-        <<enable_playercontrol>>
+    Skully: Do you know who the last member is?
+    -> Yep!
+        -> Emilia <<if $emiliaBattle_win_01 is true>>
+            //if u somehow manage to beat emilia in the music battle lol
+            <<set $harmony_player to "emilia">>
+            Angles: And god was that battle grueling!
+            Skully: I can imagine.
+            Skully: She can be very vindictive and stubborn.
+            Angles: ..Yeah.
+            Angles: Rude too.
+            Skully: And yet you got her to play in your band.
+            Angles: ...
+            Skully: Well.
+        -> Emilia <<if $emiliaBattle_win_02 is true>>
+            //if you set up the date with sasha
+            <<set $harmony_player to "emilia">>
+            Angles: Did you know they could be kinda cute?
+            Skully: Yeah.
+            Skully: It's very amusing to watch her interact with Sasha.
+            Angles: Ah, so you knew about her crush?
+            Skully: Yep.
+            Skully: They ain't subtle.
+            Angles: Oh.
+            Skully: So.
+        -> Christina <<if $christinaBattle_win_01 is true>>
+            <<set $harmony_player to "christina">>
+            Skully: How did you even convince Christina to go for it?
+            Angles: I won the music battle!
+            Angles: ..They really didn't want to do this.
+            Skully: I'm not surprised.
+            Skully: ...
+        -> Freddie <<if $freddieBattle_win_01 is true>>
+            <<set $harmony_player to "freddie">>
+            Skully: Oh.
+            Skully: I'm glad Freddie joined you.
+            Angles: Me too!
+            Angles: We're gonna have a lot of fun.
+            Skully: For sure.
+            Skully: ...
+        Skully: Are you ready to practice using the stage? 
+        Angles: Yeah! Just let me call everyone to let them know. 
+            //load to A outside the party building door
+            //changing variables to section5 dialogues 
+            <<set $section4 to false>>
+            <<set $section5 to true>>
+            <<disable_playercontrol>>
+            HOURS LATER
+            <<enable_playercontrol>>
     -> Oh, well.. almost! Just give me a bit of time..
         Skully: Sure.
         Skully: Just let me know when your band is ready.
@@ -851,10 +893,15 @@ tags:
 ---
 //either asking out for emilia, or hearing about how nice early morning in nature are
 <<if $bunny4_03 is true>>
+    <<if $bun5 is true>>
+    Sasha: I'm really looking forward to it!
+    <<else>>
+    <<set $bun5 to true>>
     Angles: Yes, yes, I told Emilia.
     Sasha: Yay!
     Angles: They are bluescreening right now but I'm sure will be fine by the time of the party..
     Sasha: I'm really looking forward to it!
+    <<endif>>
 <<elseif $bunny4_02 is true>>
     Sasha: Have you told Emilia, yet?
     Angles: Not yet..
@@ -866,92 +913,65 @@ tags:
     Angles: It sounds really special..
     Sasha: Glad I didn't end up boring you..
     Angles: Not at all!
-<<elseif $bunny4_01 is true and $emilia4_02 is true>>
-    <<set $bunny4_02 to true>>
-    //asking out sasha for emilia
-    Sasha: Oh hi again!
-    Angles: Hey...
-    Angles: ...
-    Sasha: Is something the matter?
-    Angles: ...
-    Angles: W-Well, not exactly..
-    Angles: Just a little awkward I guess.
-    Sasha: I'm all ears!
-    Sasha: Literally.
-    Angles: Ha..
-    Angles: You know Emilia is uh, one of your friends?
-    Sasha: Yes?
-    Angles: Well they want to ask you to the dance..
-    Sasha: Ah..
-    Angles: Like as a date, I think..?
-    Sasha: Oh!
-    Sasha: And they aren't.. asking themselves.. because?
-    Angles: Let's say it's because they are a gay mess.
-    Sasha: Hah ha..
-    Angles: Yeah, I'm not kidding..
-    Angles: Also say yes.
-    Angles: Totally not because they promised to play in my band for tonight if you did...
-    Sasha: Ha ha!
-    Sasha: I do say yes— but totally not because of that.
-    Angles: Great!
-    Angles: I'm going to go tell them!
-<<elseif $bunny4_01 is false and $emilia4_02 is true>>
-    <<set $bunny4_02 to true>>
-    Sasha: Oh hi again!
-    Angles: Hey...
-    Angles: ...
-    Sasha: Is something the matter?
-    Angles: ...
-    Angles: W-Well, not exactly..
-    Angles: Just a little awkward I guess.
-    Sasha: I'm all ears!
-    Sasha: Literally.
-    Angles: Ha..
-    Angles: You know Emilia is uh, one of your friends?
-    Sasha: Yes?
-    Angles: Well they want to ask you to the dance..
-    Sasha: Ah..
-    Angles: Like as a date, I think..?
-    Sasha: Oh!
-    Sasha: And they aren't.. asking themselves.. because?
-    Angles: Let's say it's because they are a gay mess.
-    Sasha: Hah ha..
-    Angles: Yeah, I'm not kidding..
-    Angles: Also say yes.
-    Angles: Totally not because they promised to play in my band for tonight if you did...
-    Sasha: Ha ha!
-    Sasha: I do say yes— but totally not because of that.
-    Angles: Great!
-    Angles: I'm going to go tell them!
 <<else>>
-    <<set $bunny4_01 to true>>
-    Angles: Still chilling here?
-    Sasha: Yeah, it's just really nice here.
-    Sasha: I can spend hours and hours taking in the nature.
-    Sasha: It's the fresh air and the sounds..
-    Sasha: Just very peaceful.
-    Angles: Yeah I get it..
-    Sasha: ..Have you ever gone camping?
-    Angles: Only when I was really little.
-    Sasha: I do it every couple of years with my family.
-    Sasha: We go to this festival of hobbyist bards at a camping ground and it's rather fun.
-    Sasha: But what I really love..
-    Sasha: Is waking up in the morning for the first time at about five in the morning..
-    Sasha: To go to the bathroom..
-    Sasha: And the sun is so pale..
-    Sasha: The nature feels so gentle even though it's a little cold..
-    Sasha: It just feels refreshing and like it's going to be a good day..
-    Angles: Whoa..
-    Sasha: Sometimes I come to the park really early as well..
-    Sasha: Just so I could recapture this feeling.
-    Angles: Dude..
-    Angles: That's really beautiful..
-    Sasha: It is!
-    Sasha: I hope you get to experience it too!
-    Angles: ..I don't think I could wake up that early,,
-    Sasha: ...
-    <<set $smiley1 to ":)">>
-    Sasha: You could do it on a morning after you stay up the whole night {$smiley1}
-    Angles: ..Ouch.
+    <<if $emilia4_02 is true>>
+        <<set $bunny4_02 to true>>
+        Sasha: Oh hi again!
+        Angles: Hey...
+        Angles: ...
+        Sasha: Is something the matter?
+        Angles: ...
+        Angles: W-Well, not exactly..
+        Angles: Just a little awkward I guess.
+        Sasha: I'm all ears!
+        Sasha: Literally.
+        Angles: Ha..
+        Angles: You know Emilia is uh, one of your friends?
+        Sasha: Yes?
+        Angles: Well they want to ask you to the dance..
+        Sasha: Ah..
+        Angles: Like as a date, I think..?
+        Sasha: Oh!
+        Sasha: And they aren't.. asking themselves.. because?
+        Angles: Let's say it's because they are a gay mess.
+        Sasha: Hah ha..
+        Angles: Yeah, I'm not kidding..
+        Angles: Also say yes.
+        Angles: Totally not because they promised to play in my band for tonight if you did...
+        Sasha: Ha ha!
+        Sasha: I do say yes— but totally not because of that.
+        Angles: Great!
+        Angles: I'm going to go tell them!
+    <<else>>
+        <<set $bunny4_01 to true>>
+        Angles: Still chilling here?
+        Sasha: Yeah, it's just really nice here.
+        Sasha: I can spend hours and hours taking in the nature.
+        Sasha: It's the fresh air and the sounds..
+        Sasha: Just very peaceful.
+        Angles: Yeah I get it..
+        Sasha: ..Have you ever gone camping?
+        Angles: Only when I was really little.
+        Sasha: I do it every couple of years with my family.
+        Sasha: We go to this festival of hobbyist bards at a camping ground and it's rather fun.
+        Sasha: But what I really love..
+        Sasha: Is waking up in the morning for the first time at about five in the morning..
+        Sasha: To go to the bathroom..
+        Sasha: And the sun is so pale..
+        Sasha: The nature feels so gentle even though it's a little cold..
+        Sasha: It just feels refreshing and like it's going to be a good day..
+        Angles: Whoa..
+        Sasha: Sometimes I come to the park really early as well..
+        Sasha: Just so I could recapture this feeling.
+        Angles: Dude..
+        Angles: That's really beautiful..
+        Sasha: It is!
+        Sasha: I hope you get to experience it too!
+        Angles: ..I don't think I could wake up that early,,
+        Sasha: ...
+        <<set $smiley1 to ":)">>
+        Sasha: You could do it on a morning after you stay up the whole night {$smiley1}
+        Angles: ..Ouch.
+    <<endif>>
 <<endif>>
 ===

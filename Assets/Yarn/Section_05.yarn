@@ -34,59 +34,63 @@ title: SammySection5_01
 tags:
 ---
 //fanfic update A cant read yet...
-<<if $sammy5_01 is true and $sammy5_01 is true>>
+<<if $sammy5_01 is true>>
     Sammy: Stay strong!!
     Angles: T_T
-<<elseif $sammy2_01 is true and $sammy5_01 is false>>
-    <<set $sammy5_01 to true>>
-    Sammy: Did you see??
-    Sammy: ShizunSlut69 dropped a new fanfic!
-    Angles: !!
-    Sammy: Yeah!
-    Sammy: It's a canon divergence of if the disciple never had to go into the abyss!
-    Angles: Oh I love their takes on those..
-    Angles: God I wanna read it right now!!
-    Sammy: Stay strong!
-    Sammy: It's 35k!
-    Angles: Hhhhhhhhhhh..
-    Sammy: In— very, very painful— solidarity, I'm also not reading it until tomorrow..
-    <<set $smileytear to ":')">>
-    Angles: You're an amazing friend {$smileytear}
 <<else>>
-    <<set $sammy5_01 to true>>
-    Sammy: Don't look at your email!!
-    Angles: ?
-    Sammy: A new fanfic dropped but I'm not telling you anything..
-    Sammy: Because then you'll want to read it!
-    Angles: Ah god.. 
-    Angles: Okay thanks.
-    Angles: This does make me wanna go look though...
-    Angles: But I really can't lose focus right now..
-    Sammy: Yeah, you can read it tomorrow!
-    <<set $frownie1 to ":(">>
-    Angles: ..Yeah {$frownie1}
+    <<if $sammy2_01 is true>>
+        <<set $sammy5_01 to true>>
+        Sammy: Did you see??
+        Sammy: ShizunSlut69 dropped a new fanfic!
+        Angles: !!
+        Sammy: Yeah!
+        Sammy: It's a canon divergence of if the disciple never had to go into the abyss!
+        Angles: Oh I love their takes on those..
+        Angles: God I wanna read it right now!!
+        Sammy: Stay strong!
+        Sammy: It's 35k!
+        Angles: Hhhhhhhhhhh..
+        Sammy: In— very, very painful— solidarity, I'm also not reading it until tomorrow..
+        <<set $smileytear to ":')">>
+        Angles: You're an amazing friend {$smileytear}
+    <<else>>
+        <<set $sammy5_01 to true>>
+        Sammy: Don't look at your email!!
+        Angles: ?
+        Sammy: A new fanfic dropped but I'm not telling you anything..
+        Sammy: Because then you'll want to read it!
+        Angles: Ah god.. 
+        Angles: Okay thanks.
+        Angles: This does make me wanna go look though...
+        Angles: But I really can't lose focus right now..
+        Sammy: Yeah, you can read it tomorrow!
+        <<set $frownie1 to ":(">>
+        Angles: ..Yeah {$frownie1}
+    <<endif>>
 <<endif>>
 ===
 title: GabSection5_01
 tags:
 ---
 //
-<<if $melody_player is "gab" and $gab5_01 is false>>
+<<if $melody_player is "gab">>
     Gab: Do you think I have time to go grab some coffee?
     Angles: No??!!
     Gab: ...Fine.
-<<elseif $gab5_01 is true>>
-    Angles: Well hurry if you don't want to be late!
-    Gab: I can't hurry that much, otherwise I'll be too sweaty!
-    Angles: Gross.. 
 <<else>>
-    <<set $gab5_01 to true>>
-    Gab: Do you think I have time to go grab some coffee?
-    Angles: I'm sure there's drinks at the party..
-    Gab: But no coffee.
-    Angles: Probably not..
-    Gab: ...
-    Gab: Okay, I'm gonna go!
+    <<if $gab5_01 is true>>
+        Angles: Well hurry if you don't want to be late!
+        Gab: I can't hurry that much, otherwise I'll be too sweaty!
+        Angles: Gross..
+    <<else>>
+        <<set $gab5_01 to true>>
+        Gab: Do you think I have time to go grab some coffee?
+        Angles: I'm sure there's drinks at the party..
+        Gab: But no coffee.
+        Angles: Probably not..
+        Gab: ...
+        Gab: Okay, I'm gonna go!
+    <<endif>>
 <<endif>>
 ===
 title: SevenSection5_01
@@ -130,17 +134,20 @@ tags:
 <<elseif $rat5_01 is true>>
     Rat: Squeak squeak!
     Angles: ...Cool.
-<<elseif $rat3_01 is true and $rat5_01 is false>>
+<<else>>
+    <<if visited("RatSection3_01") == false>>
+    <<set $rat5_01 to true>>
+    //never talked to the rat before lol
+    Rat: Squeak!
+    Angles: ..Seriously, why does this rat have a gameboy...?
+    <<else>>
+    <<set $rat5_01 to true>>
     Angles: Hey buddy..
     Rat: Squeak!
     Angles: Just chilling here..
     Angles: Seems nice..
     Rat: Squeak squeak!
-<<else>>
-    <<set $rat5_01 to true>>
-    //never talked to the rat before lol
-    Rat: Squeak!
-    Angles: ..Seriously, why does this rat have a gameboy...?
+    <<endif>>
 <<endif>>
 ===
 title: TommySection5_01
@@ -210,39 +217,41 @@ tags:
 //
 <<if $jess5_01 is true>>
     Jess: If you change your mind, I'm always here!
-<<elseif $jess3_01 is true and $jess5_01 is false>>
-    <<set $jess5_01 to true>>
-    Jess: Great, you're here!
-    Angles: ..I won't be in a moment.
-    Jess: Har har!
-    Jess: But like, come on, it's a good opportunity to find you a joyfriend.
-    Angles: Have I ever expressed that I want to date?
-    Jess: You read all that romance?
-    Angles: That doesn't count!
-    Jess: ..I mean you could make some new friends?
-    Angles: I'm friends with everyone??
-    Jess: ...
-    Jes: You really get around, huh..
-    Angles: Okay, I'm gonna go.
 <<else>>
-    <<set $jess5_01 to true>>
-    Jess: Great, you're here!
-    Angles: ..I won't be in a moment.
-    Jess: Har har!
-    Jess: But you are going to be at the party, right?
-    Angles: Yeah.
-    Jess: Good.
-    Jess: I'll need someone to fend off my admirers.
-    Angles: No.
-    Jess: It's a good opportunity to find you a joyfriend!
-    Angles: Have I ever expressed that I want to date?
-    Jess: You read all that romance?
-    Angles: That doesn't count!
-    Jess: ..I mean you could make some new friends?
-    Angles: I'm friends with everyone??
-    Jess: ...
-    Jes: You really get around, huh..
-    Angles: Okay, I'm gonna go.
+    <<if $jess3_01 is true>>
+        <<set $jess5_01 to true>>
+        Jess: Great, you're here!
+        Angles: ..I won't be in a moment.
+        Jess: Har har!
+        Jess: But like, come on, it's a good opportunity to find you a joyfriend.
+        Angles: Have I ever expressed that I want to date?
+        Jess: You read all that romance?
+        Angles: That doesn't count!
+        Jess: ..I mean you could make some new friends?
+        Angles: I'm friends with everyone??
+        Jess: ...
+        Jes: You really get around, huh..
+        Angles: Okay, I'm gonna go.
+    <<else>>
+        <<set $jess5_01 to true>>
+        Jess: Great, you're here!
+        Angles: ..I won't be in a moment.
+        Jess: Har har!
+        Jess: But you are going to be at the party, right?
+        Angles: Yeah.
+        Jess: Good.
+        Jess: I'll need someone to fend off my admirers.
+        Angles: No.
+        Jess: It's a good opportunity to find you a joyfriend!
+        Angles: Have I ever expressed that I want to date?
+        Jess: You read all that romance?
+        Angles: That doesn't count!
+        Jess: ..I mean you could make some new friends?
+        Angles: I'm friends with everyone??
+        Jess: ...
+        Jes: You really get around, huh..
+        Angles: Okay, I'm gonna go.
+    <<endif>>
 <<endif>>
 ===
 title: RedSection5_01
@@ -251,24 +260,27 @@ tags:
 //
 <<if $red5_01 is true>>
     Angles: See you around.. or at the party!
-<<elseif $red4_01 is true and $red5_01 is false>>
-    Red: The next SplattingFest has been announced~
-    Red: Come on, come on!
-    Red: You really should buy the game!
-    Angles: ..Still thinking about it.
-    Red: I could really use you on my team!
-    Angles: Let me get this party over and with first.
-    Angles: I'll think about it later, okay?
-    Red: You better!
 <<else>>
-    <<set $red5_01 to true>>
-    Angles: Oh hey!
-    Angles: We should talk more at the party later!
-    Red: Well maybe..
-    Angles: You are literally in costume.
-    Red: This is just my new aesthetic!
-    Angles: ..Damn, that's real good.
-    Red: Thanks!
+    <<if $red4_01 is true>>
+        <<set $red5_01 to true>>
+        Red: The next SplattingFest has been announced~
+        Red: Come on, come on!
+        Red: You really should buy the game!
+        Angles: ..Still thinking about it.
+        Red: I could really use you on my team!
+        Angles: Let me get this party over and with first.
+        Angles: I'll think about it later, okay?
+        Red: You better!
+    <<else>>
+        <<set $red5_01 to true>>
+        Angles: Oh hey!
+        Angles: We should talk more at the party later!
+        Red: Well maybe..
+        Angles: You are literally in costume.
+        Red: This is just my new aesthetic!
+        Angles: ..Damn, that's real good.
+        Red: Thanks!
+    <<endif>>
 <<endif>>
 ===
 title: ChristinaSection5_01
@@ -366,20 +378,22 @@ tags:
 //
 <<if $bunny5_01 is true>>
     Angles: Well, I'm gonna go but I hope to see you!
-    Sasha: $smiley2
-<<elseif $emilia4_04 is true and $bunny4_02 is true and $bunny5_01 is false>>
-    //with emilia
-    <<jump ParkDate1>>
+    Sasha: {$smiley2}
 <<else>>
-    <<set $bunny5_01 to true>>
-    //no emilia
-    Angles: Are you going to stay in the park?
-    Angles: Or are you coming to the party?
-    Sasha: Ah, I'm not sure..
-    Sasha: I don't actually have a costume.
-    Angles: I'm sure that doesn't bar anyone from entry!
-    Sasha: Mmm..
-    Sasha: Then I might come around!
+    <<if $emilia4_04 is true and $bunny4_02 is true>>
+        //with emilia
+        <<jump ParkDate1>>
+    <<else>>
+        <<set $bunny5_01 to true>>
+        //no emilia
+        Angles: Are you going to stay in the park?
+        Angles: Or are you coming to the party?
+        Sasha: Ah, I'm not sure..
+        Sasha: I don't actually have a costume.
+        Angles: I'm sure that doesn't bar anyone from entry!
+        Sasha: Mmm..
+        Sasha: Then I might come around!
+    <<endif>>
 <<endif>>
 ===
 title: ParkDate1
@@ -415,24 +429,26 @@ tags:
         Sasha: She won't be!
         Angles: Great!
     <<endif>>
-<<elseif $date5_01 is true>>
-    Angles: I better see you at the party!
-    Sasha: You will $smiley1
-    Emilia: Maybe!
 <<else>>
-    <<set $date5_01 to true>>
-    Angles: Oh hey!!
-    Sasha: Hey, Angles!
-    Emilia: Hmmp,,
-    Sasha: $smiley1
-    Emilia: ,,,
-    Emilia: ..Hey.
-    Angles: You're coming to the party, right?
-    Angles: It'll be fun!
-    Sasha: Yeah, we'll come.
-    Sasha: Though we might stay here for a little bit longer..
-    Angles: It is rather nice..
-    Emilia: Of course it is!
-    Angles: Yeah, well I gotta run, but I'll be looking for you both!
+    <<if $date5_01 is true>>
+        Angles: I better see you at the party!
+        Sasha: You will {$smiley1}
+        Emilia: Maybe!
+    <<else>>
+        <<set $date5_01 to true>>
+        Angles: Oh hey!!
+        Sasha: Hey, Angles!
+        Emilia: Hmmp,,
+        Sasha: {$smiley1}
+        Emilia: ,,,
+        Emilia: ..Hey.
+        Angles: You're coming to the party, right?
+        Angles: It'll be fun!
+        Sasha: Yeah, we'll come.
+        Sasha: Though we might stay here for a little bit longer..
+        Angles: It is rather nice..
+        Emilia: Of course it is!
+        Angles: Yeah, well I gotta run, but I'll be looking for you both!
+    <<endif>>
 <<endif>>
 ===
