@@ -14,7 +14,7 @@ title: MadelineSection1_01
     <<set $madeline1_01 to true>>
     Angles: ..What's with the outfit? #protag
     Angles: Do you work here now? #protag
-    Madeline: Dude, they don't have such uniforms in this cafe #cat
+    Madeline: Dude, they don't have such uniforms in this cafe. #cat
     Angles: Well yeah, that's why I'm surprised! #protag
     Madeline: I'm just dressed up for the party later tonight, silly. #cat
     Angles: Oh.. Pumpkin didn't mention that.. #protag
