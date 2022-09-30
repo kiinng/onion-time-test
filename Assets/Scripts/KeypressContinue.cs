@@ -23,5 +23,9 @@ public class KeypressContinue : MonoBehaviour
         {
             continueButton.onClick.Invoke();
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            continueButton.onClick.Invoke();
+        }
     }
 }
