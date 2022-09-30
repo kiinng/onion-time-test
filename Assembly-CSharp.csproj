@@ -73,7 +73,6 @@
     <Compile Include="Assets\Scripts\BeatObject.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\Samples\Yarn Spinner\2.2.1\Phone Chat\Scripts\PhoneChatDialogueHelper.cs" />
-    <Compile Include="Assets\Scripts\Keypresscontinue2.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\CharacterInteract1.cs" />
@@ -85,6 +84,7 @@
     <Compile Include="Assets\Scripts\KeypressContinue.cs" />
     <Compile Include="Assets\Scripts\MotionBob.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\Scripts\SceneHaver.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Scripts\SceneControlParty.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
@@ -118,7 +118,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Samples\Yarn Spinner\2.2.1\Space\Scripts\PlayerCharacter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\Scripts\SceneHaver.cs" />
+    <Compile Include="Assets\Scripts\RawImageLoopUV.cs" />
+    <Compile Include="Assets\Scripts\TriggerIndicator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

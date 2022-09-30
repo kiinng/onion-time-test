@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MotionBob : MonoBehaviour
 {
+    public float startOffset;
     public float bobRangeY = 1f;
     public float bobSpeed = 1f;
     private Transform myTransform;
@@ -19,6 +20,6 @@ public class MotionBob : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myTransform.position = new Vector2(initialPos.x, initialPos.y + bobRangeY * (Mathf.Sin(Time.time * bobSpeed)));
+        myTransform.position = new Vector2(initialPos.x, initialPos.y + bobRangeY * (Mathf.Sin((Time.time + startOffset) * bobSpeed)));
     }
 }
