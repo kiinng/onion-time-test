@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Yarn.Unity;
 
 public class SceneControlStreet : MonoBehaviour
 {
     public GameObject puppy, puppyInst, gab, gabInst, angel, angelInst, sammy, sammyInst, red, gameboyRat, tommyTup, tommyTupInst, sevenInst, eight, emiliaInst, christinaInst, freddieInst;
+    private SceneHaver theSceneHaver;
 
     private void Awake()
     {
@@ -27,20 +27,45 @@ public class SceneControlStreet : MonoBehaviour
         christinaInst.SetActive(false);
         freddieInst.SetActive(false);
     }
+    private void Start()
+    {
+        theSceneHaver = FindObjectOfType<SceneHaver>().GetComponent<SceneHaver>();
+        if (theSceneHaver.section1 == true)
+        {
+            StreetSetup1();
+        }
+        if (theSceneHaver.section1_1 == true)
+        {
+            StreetSetup1_1();
+        }
+        if (theSceneHaver.section2 == true)
+        {
+            StreetSetup2();
+        }
+        if (theSceneHaver.section3 == true)
+        {
+            StreetSetup3();
+        }
+        if (theSceneHaver.section4 == true)
+        {
+            StreetSetup4();
+        }
+        if (theSceneHaver.section5 == true)
+        {
+            StreetSetup5();
+        }
+    }
 
-    [YarnCommand("Street_Section1_Setup")]
     public void StreetSetup1()
     {
         puppy.SetActive(true);
     }
 
-    [YarnCommand("Street_Section1_1_Setup")]
     public void StreetSetup1_1()
     {
         puppy.SetActive(true);
     }
 
-    [YarnCommand("Street_Section2_Setup")]
     public void StreetSetup2()
     {
         puppyInst.SetActive(true);
@@ -50,7 +75,6 @@ public class SceneControlStreet : MonoBehaviour
         red.SetActive(true);
     }
 
-    [YarnCommand("Street_Section3_Setup")]
     public void StreetSetup3()
     {
         gameboyRat.SetActive(true);
@@ -59,7 +83,6 @@ public class SceneControlStreet : MonoBehaviour
         eight.SetActive(true);
     }
 
-    [YarnCommand("Street_Section4_Setup")]
     public void StreetSetup4()
     {
         emiliaInst.SetActive(true);
@@ -68,7 +91,6 @@ public class SceneControlStreet : MonoBehaviour
         red.SetActive(true);
     }
 
-    [YarnCommand("Street_Section5_Setup")]
     public void StreetSetup5()
     {
         puppy.SetActive(true);

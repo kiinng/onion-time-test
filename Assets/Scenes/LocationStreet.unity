@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: ratStart
+  canTalk: 0
 --- !u!114 &104431873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +170,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 2086138831}
-  canTalk: 0
   yarnInteract: {fileID: 104431872}
 --- !u!61 &104431874
 BoxCollider2D:
@@ -420,6 +420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: angelStart
+  canTalk: 0
 --- !u!114 &226882890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,7 +434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 514962371}
-  canTalk: 0
   yarnInteract: {fileID: 226882889}
 --- !u!61 &226882891
 BoxCollider2D:
@@ -568,7 +568,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 279592913}
-  - component: {fileID: 279592912}
   - component: {fileID: 279592914}
   m_Layer: 0
   m_Name: SceneChecker
@@ -577,19 +576,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &279592912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279592911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9afd7936d42fe714fb45f1ed007f6f06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneCheckNode: CheckStreet
 --- !u!4 &279592913
 Transform:
   m_ObjectHideFlags: 0
@@ -1089,6 +1075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: gabStart
+  canTalk: 0
 --- !u!114 &421036159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1102,7 +1089,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 784841129}
-  canTalk: 0
   yarnInteract: {fileID: 421036158}
 --- !u!61 &421036160
 BoxCollider2D:
@@ -1802,6 +1788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: gabStart
+  canTalk: 0
 --- !u!114 &619543099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1815,7 +1802,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1734766523}
-  canTalk: 0
   yarnInteract: {fileID: 619543098}
 --- !u!61 &619543100
 BoxCollider2D:
@@ -2849,6 +2835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: angelStart
+  canTalk: 0
 --- !u!114 &836453359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2862,7 +2849,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1824773138}
-  canTalk: 0
   yarnInteract: {fileID: 836453358}
 --- !u!61 &836453360
 BoxCollider2D:
@@ -3285,6 +3271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: tommyTuppenceStart
+  canTalk: 0
 --- !u!114 &858572601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3298,7 +3285,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 303642705}
-  canTalk: 0
   yarnInteract: {fileID: 858572600}
 --- !u!61 &858572602
 BoxCollider2D:
@@ -3425,6 +3411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: christinaStart
+  canTalk: 0
 --- !u!114 &920267569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3438,7 +3425,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1206048281}
-  canTalk: 0
   yarnInteract: {fileID: 920267568}
 --- !u!61 &920267570
 BoxCollider2D:
@@ -3565,6 +3551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: sammyStart
+  canTalk: 0
 --- !u!114 &966860384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3578,7 +3565,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1275528291}
-  canTalk: 0
   yarnInteract: {fileID: 966860383}
 --- !u!61 &966860385
 BoxCollider2D:
@@ -3802,6 +3788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: redStart
+  canTalk: 0
 --- !u!114 &1003124192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3815,7 +3802,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1668046028}
-  canTalk: 0
   yarnInteract: {fileID: 1003124191}
 --- !u!61 &1003124193
 BoxCollider2D:
@@ -3942,6 +3928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: eightStart
+  canTalk: 0
 --- !u!114 &1004228021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3955,7 +3942,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1527789748}
-  canTalk: 0
   yarnInteract: {fileID: 1004228020}
 --- !u!61 &1004228022
 BoxCollider2D:
@@ -4809,6 +4795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: sevenStart
+  canTalk: 0
 --- !u!114 &1380475187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4822,7 +4809,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1770613778}
-  canTalk: 0
   yarnInteract: {fileID: 1380475186}
 --- !u!61 &1380475188
 BoxCollider2D:
@@ -5046,6 +5032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: puppyStart
+  canTalk: 0
 --- !u!114 &1465206449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5059,7 +5046,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1570075800}
-  canTalk: 0
   yarnInteract: {fileID: 1465206448}
 --- !u!61 &1465206450
 BoxCollider2D:
@@ -5414,6 +5400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: freddieStart
+  canTalk: 0
 --- !u!114 &1547722822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5427,7 +5414,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 308264128}
-  canTalk: 0
   yarnInteract: {fileID: 1547722821}
 --- !u!61 &1547722823
 BoxCollider2D:
@@ -6275,6 +6261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: emiliaStart
+  canTalk: 0
 --- !u!114 &1882281951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6288,7 +6275,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 813423643}
-  canTalk: 0
   yarnInteract: {fileID: 1882281950}
 --- !u!61 &1882281952
 BoxCollider2D:
@@ -6940,6 +6926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: tommyTuppenceStart
+  canTalk: 0
 --- !u!114 &2055571256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6953,7 +6940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 591255610}
-  canTalk: 0
   yarnInteract: {fileID: 2055571255}
 --- !u!61 &2055571257
 BoxCollider2D:
@@ -7080,6 +7066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: sammyStart
+  canTalk: 0
 --- !u!114 &2072210090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7093,7 +7080,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 393633913}
-  canTalk: 0
   yarnInteract: {fileID: 2072210089}
 --- !u!61 &2072210091
 BoxCollider2D:
@@ -7317,6 +7303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: puppyStart
+  canTalk: 0
 --- !u!114 &2087770259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7330,7 +7317,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1002282346}
-  canTalk: 0
   yarnInteract: {fileID: 2087770258}
 --- !u!61 &2087770260
 BoxCollider2D:

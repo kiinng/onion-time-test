@@ -1,5 +1,4 @@
 using UnityEngine;
-using Yarn.Unity;
 
 public class SceneControlPark : MonoBehaviour
 {
@@ -7,64 +6,80 @@ public class SceneControlPark : MonoBehaviour
     public GameObject sasha1;
     public GameObject sasha2;
 
+    private SceneHaver theSceneHaver;
+
     private void Awake()
     {
         emilia.SetActive(false);
         sasha1.SetActive(false);
         sasha2.SetActive(false);
     }
+    private void Start()
+    {
+        theSceneHaver = FindObjectOfType<SceneHaver>().GetComponent<SceneHaver>();
+        if(theSceneHaver.section1 == true)
+        {
+            ParkSetup1();
+        }
+        if (theSceneHaver.section1_1 == true)
+        {
+            ParkSetup1_1();
+        }
+        if (theSceneHaver.section2 == true)
+        {
+            ParkSetup2();
+        }
+        if (theSceneHaver.section3 == true)
+        {
+            ParkSetup3();
+        }
+        if (theSceneHaver.section4 == true)
+        {
+            ParkSetup4();
+        }
+        if (theSceneHaver.section5 == true && theSceneHaver.emiliaDate == false)
+        {
+            ParkSetup5A();
+        }
+        if (theSceneHaver.section5 == true && theSceneHaver.emiliaDate == true)
+        {
+            ParkSetup5B();
+        }
+    }
 
-    public void EmiliaOn()
-    {
-        emilia.SetActive(true);
-    }
-    public void Sasha1On()
-    {
-        sasha1.SetActive(true);
-    }
-    public void Sasha2On()
-    {
-        sasha2.SetActive(true);
-    }
 
-    [YarnCommand("Park_Section1_Setup")]
+   
     public void ParkSetup1()
     {
     }
 
-    [YarnCommand("Park_Section1_1_Setup")]
     public void ParkSetup1_1()
     {
     }
 
-    [YarnCommand("Park_Section2_Setup")]
     public void ParkSetup2()
     {
-        Sasha1On();
+        sasha1.SetActive(true);
     }
 
-    [YarnCommand("Park_Section3_Setup")]
     public void ParkSetup3()
     {
-        Sasha1On();
+        sasha1.SetActive(true);
     }
 
-    [YarnCommand("Park_Section4_Setup")]
     public void ParkSetup4()
     {
-        Sasha1On();
+        sasha1.SetActive(true);
     }
 
-    [YarnCommand("Park_Section5a_Setup")]
     public void ParkSetup5A()
     {
-        Sasha1On();
+        sasha1.SetActive(true);
     }
 
-    [YarnCommand("Park_Section5b_Setup")]
     public void ParkSetup5B()
     {
-        Sasha2On();
-        EmiliaOn();
+        sasha2.SetActive(true);
+        emilia.SetActive(true);
     }
 }

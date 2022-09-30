@@ -513,6 +513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: emiliaStart
+  canTalk: 0
 --- !u!114 &773381907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +527,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1499079099}
-  canTalk: 0
   yarnInteract: {fileID: 773381906}
 --- !u!61 &773381908
 BoxCollider2D:
@@ -735,6 +735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: sashaStart
+  canTalk: 0
 --- !u!114 &995011334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,7 +749,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1321184225}
-  canTalk: 0
   yarnInteract: {fileID: 995011333}
 --- !u!61 &995011335
 BoxCollider2D:
@@ -1808,6 +1808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: sashaStart
+  canTalk: 0
 --- !u!114 &1668484067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1821,7 +1822,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 372096674}
-  canTalk: 0
   yarnInteract: {fileID: 1668484066}
 --- !u!61 &1668484068
 BoxCollider2D:
@@ -2519,7 +2519,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2113211675}
-  - component: {fileID: 2113211674}
   - component: {fileID: 2113211676}
   m_Layer: 0
   m_Name: SceneChecker
@@ -2528,19 +2527,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2113211674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113211673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9afd7936d42fe714fb45f1ed007f6f06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneCheckNode: CheckPark
 --- !u!4 &2113211675
 Transform:
   m_ObjectHideFlags: 0

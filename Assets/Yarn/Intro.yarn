@@ -1,6 +1,7 @@
 title: Pumpkin_phonecall
 ---
 <<set $section1 to true>>
+<<section1_on DialogueSystem1>>
 <<load_cafe>>
 <<wait .5>>
 //phonecall where pumpkin asks for angles band to play

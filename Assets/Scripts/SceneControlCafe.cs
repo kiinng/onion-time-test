@@ -6,7 +6,7 @@ using Yarn.Unity;
 public class SceneControlCafe : MonoBehaviour
 {
     public GameObject madeline, freddie, emilia, jess, red, seven, eight;
-
+    private SceneHaver theSceneHaver;
 
     private void Awake()
     {
@@ -18,7 +18,38 @@ public class SceneControlCafe : MonoBehaviour
         seven.SetActive(false);
         eight.SetActive(false);
     }
-
+    private void Start()
+    {
+        theSceneHaver = FindObjectOfType<SceneHaver>().GetComponent<SceneHaver>();
+        if (theSceneHaver.section1 == true)
+        {
+            CafeSetup1();
+        }
+        if (theSceneHaver.section1_1 == true)
+        {
+            CafeSetup1_1();
+        }
+        if (theSceneHaver.section2 == true)
+        {
+            CafeSetup2();
+        }
+        if (theSceneHaver.section3 == true)
+        {
+            CafeSetup3();
+        }
+        if (theSceneHaver.section4 == true)
+        {
+            CafeSetup4();
+        }
+        if (theSceneHaver.section5 == true && theSceneHaver.emiliaDate == true)
+        {
+            CafeSetup5A();
+        }
+        if (theSceneHaver.section5 == true && theSceneHaver.emiliaDate == false)
+        {
+            CafeSetup5B();
+        }
+    }
     public void MadelineOn()
     {
         madeline.SetActive(true);
@@ -48,26 +79,22 @@ public class SceneControlCafe : MonoBehaviour
         eight.SetActive(true);
     }
 
-    [YarnCommand("Cafe_Section1_Setup")]
     public void CafeSetup1()
     {
         MadelineOn();
     }
 
-    [YarnCommand("Cafe_Section1_1_Setup")]
     public void CafeSetup1_1()
     {
         MadelineOn();
     }
 
-    [YarnCommand("Cafe_Section2_Setup")]
     public void CafeSetup2()
     {
         MadelineOn();
         FreddieOn();
     }
 
-    [YarnCommand("Cafe_Section3_Setup")]
     public void CafeSetup3()
     {
         MadelineOn();
@@ -75,13 +102,11 @@ public class SceneControlCafe : MonoBehaviour
         JessOn();
     }
 
-    [YarnCommand("Cafe_Section4_Setup")]
     public void CafeSetup4()
     {
         MadelineOn();
     }
 
-    [YarnCommand("Cafe_Section5a_Setup")]
     public void CafeSetup5A()
     {
         MadelineOn();
@@ -90,7 +115,6 @@ public class SceneControlCafe : MonoBehaviour
         RedOn();
     }
 
-    [YarnCommand("Cafe_Section5b_Setup")]
     public void CafeSetup5B()
     {
         MadelineOn();

@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2460068943526407248, guid: 8aade018c05064c4f9c08aca90bf1416, type: 3}
       propertyPath: m_Name
-      value: Dialogue System 1
+      value: DialogueSystem1
       objectReference: {fileID: 0}
     - target: {fileID: 2898625135944244782, guid: 8aade018c05064c4f9c08aca90bf1416, type: 3}
       propertyPath: m_RootOrder

@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: skullyStart
+  canTalk: 0
 --- !u!114 &198238913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +170,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1716284559}
-  canTalk: 0
   yarnInteract: {fileID: 198238912}
 --- !u!61 &198238914
 BoxCollider2D:
@@ -678,6 +678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: fishStart
+  canTalk: 0
 --- !u!114 &423590766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,7 +692,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 826423639}
-  canTalk: 0
   yarnInteract: {fileID: 423590765}
 --- !u!61 &423590767
 BoxCollider2D:
@@ -818,6 +818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: jessStart
+  canTalk: 0
 --- !u!114 &482040165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -831,7 +832,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1687386067}
-  canTalk: 0
   yarnInteract: {fileID: 482040164}
 --- !u!61 &482040166
 BoxCollider2D:
@@ -958,6 +958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: freddieStart
+  canTalk: 0
 --- !u!114 &484614242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,7 +972,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1733564393}
-  canTalk: 0
   yarnInteract: {fileID: 484614241}
 --- !u!61 &484614243
 BoxCollider2D:
@@ -1334,6 +1334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: pumpkinStart
+  canTalk: 0
 --- !u!114 &976594072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1347,7 +1348,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 371886728}
-  canTalk: 0
   yarnInteract: {fileID: 976594071}
 --- !u!61 &976594073
 BoxCollider2D:
@@ -1722,6 +1722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: christinaStart
+  canTalk: 0
 --- !u!114 &1270190079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1735,7 +1736,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkIndicator: {fileID: 1246514712}
-  canTalk: 0
   yarnInteract: {fileID: 1270190078}
 --- !u!61 &1270190080
 BoxCollider2D:
@@ -2304,7 +2304,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1671059339}
-  - component: {fileID: 1671059338}
   - component: {fileID: 1671059337}
   m_Layer: 0
   m_Name: SceneChecker
@@ -2331,19 +2330,6 @@ MonoBehaviour:
   freddie: {fileID: 484614240}
   jess: {fileID: 482040163}
   christina: {fileID: 1270190077}
---- !u!114 &1671059338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671059336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9afd7936d42fe714fb45f1ed007f6f06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneCheckNode: CheckParty
 --- !u!4 &1671059339
 Transform:
   m_ObjectHideFlags: 0
