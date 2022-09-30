@@ -159,9 +159,15 @@ Skully: Are you ready to go out into the world and find individuals?
     <<set $section1 to false>>
     <<set $section1_1 to false>>
     <<set $section2 to true>>
+    //the actual script w these commands is called SceneHaver
+    <<section1_off DialogueSystem1>>
+    <<section1_1_off DialogueSystem1>>
+    <<section2_on DialogueSystem1>>
 -> Ah, no, just give me another moment.
     <<set $section1 to false>>
     <<set $section1_1 to true>>
+    <<section1_off DialogueSystem1>>
+    <<section1_1_on DialogueSystem1>>
     Skully: No problem. 
     Skully: Speak to me again soon.
 ===
@@ -196,9 +202,15 @@ Skully: Are you ready to go out into the world and find individuals?
     <<set $section1 to false>>
     <<set $section1_1 to false>>
     <<set $section2 to true>>
+    //the actual script w these commands is called SceneHaver
+    <<section1_off DialogueSystem1>>
+    <<section1_1_off DialogueSystem1>>
+    <<section2_on DialogueSystem1>>
 -> Ah, no, just give me another moment.
     <<set $section1 to false>>
     <<set $section1_1 to true>>
+    <<section1_off DialogueSystem1>>
+    <<section1_1_on DialogueSystem1>>
     Skully: No problem. 
     Skully: Speak to me again soon.
 ===

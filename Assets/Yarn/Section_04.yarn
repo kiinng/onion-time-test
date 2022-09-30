@@ -361,6 +361,7 @@ tags:
     Angles: ...I don't know if I regret this or not.......
 <<else>>
     <<set $emilia4_04 to true>>
+    <<emiliaDate_on DialogueSystem1>>
     <<set $bunny4_03 to true>>
     <<set $emiliaBattle_win_02 to true>>
     Angles: Hey—
@@ -815,6 +816,8 @@ tags:
             //changing variables to section5 dialogues 
             <<set $section4 to false>>
             <<set $section5 to true>>
+            <<section4_off DialogueSystem1>>
+            <<section5_on DialogueSystem1>>
             <<disable_playercontrol>>
             HOURS LATER
             <<enable_playercontrol>>
@@ -871,6 +874,8 @@ tags:
             //changing variables to section5 dialogues 
             <<set $section4 to false>>
             <<set $section5 to true>>
+            <<section4_off DialogueSystem1>>
+            <<section5_on DialogueSystem1>>
             <<disable_playercontrol>>
             HOURS LATER
             <<enable_playercontrol>>

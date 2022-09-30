@@ -20,6 +20,12 @@ public class YarnFunctions1 : MonoBehaviour
         SceneManager.LoadScene("LocationStreet");
     }
 
+    [YarnCommand("LoadEndMenu")]
+    public static void LoadEndMenu()
+    {
+        SceneManager.LoadScene("EndMenu");
+    }
+
     //disable and enable player controller, only for intro sections (otherwise YarnInteractable script handles it)
     [YarnCommand("disable_playercontrol")]
     public static void DisablePlayer()

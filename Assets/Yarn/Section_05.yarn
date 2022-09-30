@@ -307,6 +307,8 @@ tags:
     -> HELL YEAH!!!! 
         //changing variables to section5 dialogues 
         <<set $section5 to false>>
+        <<section5_off DialogueSystem1>>
+        <<LoadEndMenu>>
         //load to performance
         
     -> Oh no, give us all a few minutes more,,

@@ -674,6 +674,8 @@ tags:
         //changing variables to section3 dialogues 
         <<set $section3 to false>>
         <<set $section4 to true>>
+        <<section3_off DialogueSystem1>>
+        <<section4_on DialogueSystem1>>
         <<disable_playercontrol>>
         15 MINS LATER
         <<enable_playercontrol>>
@@ -717,6 +719,8 @@ tags:
         //changing variables to section3 dialogues 
         <<set $section3 to false>>
         <<set $section4 to true>>
+        <<section3_off DialogueSystem1>>
+        <<section4_on DialogueSystem1>>
         <<disable_playercontrol>>
         15 MINS LATER
         <<enable_playercontrol>>
