@@ -6,6 +6,7 @@ using Yarn.Unity;
 public class SceneControlCafe : MonoBehaviour
 {
     public GameObject madeline, freddie, emilia, jess, red, seven, eight;
+    public GameObject bgDay, bgNight;
     private SceneHaver theSceneHaver;
 
     private void Awake()
@@ -105,6 +106,8 @@ public class SceneControlCafe : MonoBehaviour
     public void CafeSetup4()
     {
         MadelineOn();
+        bgDay.SetActive(false);
+        bgNight.SetActive(true);
     }
 
     public void CafeSetup5A()
@@ -113,6 +116,9 @@ public class SceneControlCafe : MonoBehaviour
         SevenOn();
         EightOn();
         RedOn();
+        bgDay.SetActive(false);
+        bgNight.SetActive(true);
+
     }
 
     public void CafeSetup5B()
@@ -122,5 +128,8 @@ public class SceneControlCafe : MonoBehaviour
         EightOn();
         RedOn();
         EmiliaOn();
+        bgDay.SetActive(false);
+        bgNight.SetActive(true);
+
     }
 }

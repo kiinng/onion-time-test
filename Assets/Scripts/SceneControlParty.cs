@@ -63,36 +63,36 @@ public class SceneControlParty : MonoBehaviour
 
     public void PartySetup1()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("PartyBGState1"));
     }
 
     public void PartySetup1_1()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("PartyBGState1"));
+
     }
 
     public void PartySetup2()
     {
-        FishJrOn();
-        skully.transform.position = new Vector2(-5.3f, 1.9f);
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("PartyBGState2"));
+
     }
 
     public void PartySetup3()
     {
-        FreddieOn();
-        FishJrOn();
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("PartyBGState3"));
     }
 
 
     public void PartySetup4()
     {
-        
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("PartyBGState4"));
+
     }
 
     public void PartySetup5()
     {
-        FishJrOn();
-        FreddieOn();
-        JessOn();
-        ChristinaOn();
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("PartyBGState5"));
     }
 
 }

@@ -51,29 +51,37 @@ public class SceneControlPark : MonoBehaviour
    
     public void ParkSetup1()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("ParkBGState1"));
     }
 
     public void ParkSetup1_1()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("ParkBGState1"));
+
     }
 
     public void ParkSetup2()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("ParkBGState2"));
         sasha1.SetActive(true);
     }
 
     public void ParkSetup3()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("ParkBGState3"));
+
         sasha1.SetActive(true);
     }
 
     public void ParkSetup4()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("ParkBGState4"));
         sasha1.SetActive(true);
     }
 
     public void ParkSetup5A()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("ParkBGState5"));
         sasha1.SetActive(true);
     }
 

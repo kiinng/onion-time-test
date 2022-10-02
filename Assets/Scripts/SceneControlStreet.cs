@@ -58,16 +58,20 @@ public class SceneControlStreet : MonoBehaviour
 
     public void StreetSetup1()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("StreetBGState1"));
         puppy.SetActive(true);
     }
 
     public void StreetSetup1_1()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("StreetBGState1"));
+
         puppy.SetActive(true);
     }
 
     public void StreetSetup2()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("StreetBGState1"));
         puppyInst.SetActive(true);
         gabInst.SetActive(true);
         angelInst.SetActive(true);
@@ -77,6 +81,7 @@ public class SceneControlStreet : MonoBehaviour
 
     public void StreetSetup3()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("StreetBGState3"));
         gameboyRat.SetActive(true);
         tommyTupInst.SetActive(true);
         sevenInst.SetActive(true);
@@ -85,6 +90,7 @@ public class SceneControlStreet : MonoBehaviour
 
     public void StreetSetup4()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("StreetBGState4"));
         emiliaInst.SetActive(true);
         christinaInst.SetActive(true);
         freddieInst.SetActive(true);
@@ -93,6 +99,7 @@ public class SceneControlStreet : MonoBehaviour
 
     public void StreetSetup5()
     {
+        GameObject PartyBackground = (GameObject)Instantiate(Resources.Load("StreetBGState5"));
         puppy.SetActive(true);
         sammy.SetActive(true);
         gab.SetActive(true);
