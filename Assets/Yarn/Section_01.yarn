@@ -154,6 +154,8 @@ Skully: Are you proficient in the art of persuasion?
 Skully: Fantastic.
 Skully: Are you ready to go out into the world and find individuals?
 -> Yeah, I'll start now.
+    Skully: Thank you. Now, Begone.
+    <<load_street>>
     //load to A outside the party building door
     //changing variables to section2 dialogues 
     <<set $section1 to false>>
@@ -202,10 +204,12 @@ Skully: Are you ready to go out into the world and find individuals?
     <<set $section1 to false>>
     <<set $section1_1 to false>>
     <<set $section2 to true>>
+    Skully: Thank you. Now, Begone.
     //the actual script w these commands is called SceneHaver
     <<section1_off DialogueSystem1>>
     <<section1_1_off DialogueSystem1>>
     <<section2_on DialogueSystem1>>
+    <<load_street>>
 -> Ah, no, just give me another moment.
     <<set $section1 to false>>
     <<set $section1_1 to true>>

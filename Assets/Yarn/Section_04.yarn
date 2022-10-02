@@ -818,6 +818,7 @@ tags:
             <<set $section5 to true>>
             <<section4_off DialogueSystem1>>
             <<section5_on DialogueSystem1>>
+            <<load_street>>
             <<disable_playercontrol>>
             HOURS LATER
             <<enable_playercontrol>>
@@ -876,6 +877,7 @@ tags:
             <<set $section5 to true>>
             <<section4_off DialogueSystem1>>
             <<section5_on DialogueSystem1>>
+            <<load_street>>
             <<disable_playercontrol>>
             HOURS LATER
             <<enable_playercontrol>>
