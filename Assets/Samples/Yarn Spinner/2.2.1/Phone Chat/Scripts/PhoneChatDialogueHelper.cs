@@ -163,6 +163,7 @@ namespace Yarn.Unity.Example
 
                 optionView.Option = option;
 
+                //auto select the first option in the list
                 if (i == 0)
                 {
                     optionView.Select();
