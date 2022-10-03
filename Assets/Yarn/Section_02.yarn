@@ -104,41 +104,51 @@ tags:
 Angles: Let's do this!
 <<set $pup1 to 0>>
 <<set $angles1 to 0>>
+Puppy plays a clarinet note!
+Ttttt! 
+<<set $pup1 = $pup1 + 1>>
 Angles plays their triangle!
 -> Ting ting! 
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Cling cling!
+    ...oh no..
 Puppy plays a clarinet note!
 Mmmmmmmm!
 <<set $pup1 = $pup1 + 1>>
 Angles plays their triangle!
 -> Ting ting! 
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Ting ting ting!
+    ...oof..
 Puppy plays a clarinet note!
 <<set $pup1 = $pup1 + 1>>
 Ttttttt!
 Angles plays their triangle!
 -> Cling!
+    ...oh no..
 -> Ting! 
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Puppy plays a clarinet note!
 MMMMMMMMmmm!
 <<set $pup1 = $pup1 + 1>>
 Angles plays their triangle!
 -> Cling ting!
+    ...oof..
 -> Ting cling! 
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Puppy plays a clarinet note!
 MMMmmmmmmm! 
 <<set $pup1 = $pup1 + 1>>
 Angles plays their triangle!
 -> Ting ting! 
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Cling!
-Puppy plays a clarinet note!
-Ttttt! 
-<<set $pup1 = $pup1 + 1>>
+    ...oof..
 <<jump PuppyBattle1_result>>
 ===
 title: PuppyBattle1_result
@@ -239,55 +249,70 @@ tags:
 Angles: ..Well okay, here we go..
 <<set $gab1 to 0>>
 <<set $angles1 to 0>>
+Gab hums!
+Hummm!
+<<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
 -> Ting cling! 
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Cling cling!
+    ...oof..
 Gab hums!
 Huuummmm! 
 <<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
 -> Cling cling!
+    ...oh no..
 -> Ting ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Gab hums!
 Hmmmmmmmmm!
 <<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
 -> Ting cling!
+    ...oh no..
 -> Cling ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Gab hums!
 Mmmmm!
 <<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
 -> Ting ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+        ...oof..
 -> Ting ting ting!
+    ...oof..
 Gab hums!
 Mmmmhh!
 <<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
 -> Cling!
+    ...oh no..
 -> Cling cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Gab hums!
 MMmmmmmmMMmmmm!
 <<set $gab1 = $gab1 + 1>>
 Angles plays their triangle!
 -> Cling!
+    ...oof..
 -> Ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Gab hums!
 <<set $gab1 = $gab1 + 1>>
 HHHHuuummmmmmm!
 Angles plays their triangle!
 -> Ting ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Ting cling!
-Gab hums!
-Hummm!
-<<set $gab1 = $gab1 + 1>>
+    ...oof..
 <<jump GabBattle1_result>>
 ===
 title: GabBattle1_result
@@ -432,62 +457,78 @@ tags:
 Angles: Okay!!!
 <<set $angel1 to 0>>
 <<set $angles1 to 0>>
+Angel plays their trumpet!
+<<set $angel1 = $angel1 + 1>>
+HHHHHHHHHHHHH!
 Angles plays their triangle!
 -> Cling cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Cling!
+    ...oh no..
 Angel plays their trumpet!
 HHHHHHHHHHH!
 <<set $angel1 = $angel1 + 1>>
 Angles plays their triangle!
 -> Ting ting!
+    ...oh no..
 -> Ting cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Angel plays their trumpet!
 HHHHHHHMMM!
 <<set $angel1 = $angel1 + 1>>
 Angles plays their triangle!
 -> Chink ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Ting ting!
+    ...oof..
 Angel plays their trumpet!
 KKKKKKKKK!
 <<set $angel1 = $angel1 + 1>>
 Angles plays their triangle!
 -> Cling!
+    ...oh no..
 -> Ting cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Angel plays their trumpet!
 MMMMMMMMM!
 <<set $angel1 = $angel1 + 1>>
 Angles plays their triangle!
 -> Ting ting!
+    ...oof..
 -> Ting ting cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Angel plays their trumpet!
 HHHHMMMM!
 <<set $angel1 = $angel1 + 1>>
 Angles plays their triangle!
 -> Cling ting ting!
+    ...oof..
 -> Ting cling cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Angel plays their trumpet!
 <<set $angel1 = $angel1 + 1>>
 KKKHHHK!
 Angles plays their triangle!
 -> Ting!
+    ...oh no..
 -> Ting ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Angel plays their trumpet!
 <<set $angel1 = $angel1 + 1>>
 MMMMMMMMMKKK!
 Angles plays their triangle!
 -> Ting cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Cling cling!
-Angel plays their trumpet!
-<<set $angel1 = $angel1 + 1>>
-HHHHHHHHHHHHH!
+    ...oh no..
 <<jump AngelBattle1_result>>
 ===
 title: AngelBattle1_result

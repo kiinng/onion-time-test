@@ -1,0 +1,17 @@
+title: puppyStart
+tracking: always
+---
+<<if $section1 is true>>
+    <<jump PuppySection1_01>>
+<<elseif $section1_1 is true>>
+    <<jump PuppySection1_02>>
+<<elseif $section2 is true>>
+    <<if $puppyBattle_win_01 is true>>
+        <<jump PuppySection2_02>>
+    <<else>>
+        <<jump PuppySection2_01>>
+    <<endif>>
+<<elseif $section5 is true>>
+    <<jump PuppySection5_01>>
+<<endif>>
+===
