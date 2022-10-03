@@ -1,0 +1,17 @@
+title: emiliaStart
+tracking: always
+---
+<<if $section3 is true>>
+    <<jump EmiliaSection3_01>>
+<<elseif $section4 is true>>
+    <<if $emiliaBattle_win_01 is true and $bunny4_02 is false>>
+        <<jump EmiliaSection4_02>>
+    <<elseif $bunny4_02 is true and $emiliaBattle_win_01 is false>>
+        <<jump EmiliaSection4_03>>
+    <<else>>
+        <<jump EmiliaSection4_01>>
+    <<endif>>
+<<elseif $section5 is true>>
+    <<jump EmiliaSection5_01>>
+<<endif>>
+===

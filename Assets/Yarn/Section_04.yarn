@@ -119,202 +119,258 @@ tags:
 Angles: I'll show you!
 <<set $emilia1 to 0>>
 <<set $angles1 to 0>>
+Emilia plays a note on the banjo!
+Bring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Ting!
+    ...oh no..
 Emilia plays a note on the banjo!
 Tring tring tring!
-<<set $emilia1 = $emilia1 + 2>>
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting ting!
+    ...oh no..
 -> Cling cling ting!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays a note on the banjo!
 Bring bring!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling ting!
+    ...oof..
 -> Cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays a note on the banjo!
 Briing briing!
-<<set $emilia1 = $emilia1 + 2>>
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling cling cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Ting ting ting!
+    ...oh no..
 Emilia plays a note on the banjo!
 Brumg brumg!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Ting ting!
+    ...oof..
 Emilia plays some notes on the banjo!
 Tring tring! Brumg!
-<<set $emilia1 = $emilia1 + 2>>
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting cling!
+    ...oof..
 -> Cling cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays some notes on the banjo!
 Bring! Briing! Brumg!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling ting!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Ting ting ting!
+    ...oof..
 Emilia plays a note on the banjo!
 Tring tring tring!
-<<set $emilia1 = $emilia1 + 2>>
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting ting cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Cling cling!
+    ...oh no..
 Emilia plays some notes on the banjo!
 Bring! Briing briing!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting cling ting!
+    ...oh no..
 -> Ting cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays a note on the banjo!
 Tring! Bring bring!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling!
+    ...oof..
 -> Ting cling cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays a note on the banjo!
 Brumg brumg!
-<<set $emilia1 = $emilia1 + 2>>
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting ting!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Cling ting!
+    ...oh no..
 Emilia plays a note on the banjo!
 Bring! Briing! Brumg!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Cling cling cling!
+    ...oof..
 Emilia plays a note on the banjo!
 Tring tring tring!
-<<set $emilia1 = $emilia1 + 2>>
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling cling ting!
+    ...oof..
 -> Cling cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays a note on the banjo!
 Bring bring bring!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling ting!
+    ...oh no..
 -> Ting ting!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays a note on the banjo!
 Bring! Briing! Brumg!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting ting cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Cling cling!
+    ...oh no..
 Emilia plays a note on the banjo!
 Tring! Briing! Brumg!
-<<set $emilia1 = $emilia1 + 2>>
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting ting!
+    ...oh no..
 -> Cling cling cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays a note on the banjo!
 Bring bring bring!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling ting!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Ting!
+    ...oof..
 Emilia plays a note on the banjo!
 Bring! Briing! Bring!
-<<set $emilia1 = $emilia1 + 2>>
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting cling!
+    ...oof..
 -> Cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays a note on the banjo!
 Brumg brumg!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting ting ting!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Cling ting!
+    ...oh no..
 Emilia plays a note on the banjo!
 Tring! Brumg!
-<<set $emilia1 = $emilia1 + 2>>
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting ting!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Cling cling ting!
+    ...oh no..
 Emilia plays a note on the banjo!
 Tring! Bring bring!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting!
+    ...oof..
 -> Ting cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays a note on the banjo!
 Briing briing!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling cling!
+    ...oh no..
 -> Ting ting!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays a note on the banjo!
 Tring tring tring!
-<<set $emilia1 = $emilia1 + 2>>
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Cling cling ting!
+    ...oof..
 Emilia plays a note on the banjo!
 Bring! Briing! Brumg!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting ting ting!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Ting ting cling!
+    ...oof..
 Emilia plays a note on the banjo!
 Brumg brumg!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Ting!
+    ...oh no..
 Emilia plays a note on the banjo!
 Tring! Briing! Brumg!
-<<set $emilia1 = $emilia1 + 2>>
+<<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Ting ting!
+    ...oh no..
 -> Cling cling cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 Emilia plays a note on the banjo!
 Tring! Bring bring!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Cling ting!
+    ...oh no..
 Emilia plays a note on the banjo!
 Briing briing!
 <<set $emilia1 = $emilia1 + 1>>
 Angles plays their triangle!
 -> Cling!
     <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
 -> Ting ting!
-Emilia plays a note on the banjo!
-Bring! Briing! Brumg!
-<<set $emilia1 = $emilia1 + 2>>
+    ...oof..
 <<jump EmiliaBattle1_result>>
 ===
 title: EmiliaBattle1_result
@@ -434,76 +490,96 @@ tags:
 Angles: This will be good!
 <<set $christina1 to 0>>
 <<set $angles1 to 0>>
+Christina plays a note on the harp!
+Tiiing! Biiiing! Kliiiing!
+<<set $christina1 = $christina1 + 1>>
 Angles plays their triangle!
 -> Ting ting!
+    ...oh no..
 -> Cling cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Christina plays a note on the harp!
 Tiiiing!
 <<set $christina1 = $christina1 + 1>>
 Angles plays their triangle!
 -> Ting ting ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Cling cling ting!
+    ...oof..
 Christina plays a note on the harp!
 Biiiiing!
 <<set $christina1 = $christina1 + 1>>
 Angles plays their triangle!
 -> Cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Cling cling!
+    ...oh no..
 Christina plays a note on the harp!
 Tiiiing!
 <<set $christina1 = $christina1 + 1>>
 Angles plays their triangle!
 -> Ting!
+    ...oof..
 -> Ting ting ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Christina plays a note on the harp!
 Kliiiiing!
 <<set $christina1 = $christina1 + 1>>
 Angles plays their triangle!
 -> Cling cling ting!
+    ...oof..
 -> Ting cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Christina plays a note on the harp!
 Tiiing! Kliiing!
 <<set $christina1 = $christina1 + 1>>
 Angles plays their triangle!
 -> Cling cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Cling ting!
+    ...oh no..
 Christina plays a note on the harp!
 Biiiing!
 <<set $christina1 = $christina1 + 1>>
 Angles plays their triangle!
 -> Ting ting cling!
+    ...oh no..
 -> Ting ting ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Christina plays a note on the harp!
 Kliiing! Biiing!
 <<set $christina1 = $christina1 + 1>>
 Angles plays their triangle!
 -> Ting cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Ting!
+    ...oof..
 Christina plays a note on the harp!
 Tiiiiiing!
 <<set $christina1 = $christina1 + 1>>
 Angles plays their triangle!
 -> Cling ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Ting ting cling!
+    ...oh no..
 Christina plays a note on the harp!
 Kliiiing!
 <<set $christina1 = $christina1 + 1>>
 Angles plays their triangle!
 -> Cling cling!
+    ...oof..
 -> Ting ting!
     <<set $angles1 = $angles1 + 2>>
-Christina plays a note on the harp!
-Tiiing! Biiiing! Kliiiing!
-<<set $christina1 = $christina1 + 1>>
+    Vibes.... good!
 <<jump ChristinaBattle1_result>>
 ===
 title: ChristinaBattle1_result
@@ -588,69 +664,87 @@ tags:
 Angles: I'll show you!
 <<set $freddie1 to 0>>
 <<set $angles1 to 0>>
+Freddie plays a note on the ukulele!
+Bling! Brung! Tiing!
+<<set $freddie1 = $freddie1 + 1>>
 Angles plays their triangle!
 -> Ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Cling!
+    ...oof..
 Freddie plays a note on the ukulele!
 Bling! Bling! 
 <<set $freddie1 = $freddie1 + 1>> 
 Angles plays their triangle!
 -> Ting cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Cling cling ting!
+    ...oof..
 Freddie plays a note on the ukulele!
 Tiing! Tiing!
 <<set $freddie1 = $freddie1 + 1>>
 Angles plays their triangle!
 -> Ting ting cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Cling cling!
+    ...oh no..
 Freddie plays a note on the ukulele!
 Brung! Brung!
 <<set $freddie1 = $freddie1 + 1>>
 Angles plays their triangle!
 -> Ting ting ting!
+    ...oh no..
 -> Ting cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Freddie plays a note on the ukulele!
 Tiing! Tiing! Brung!
 <<set $freddie1 = $freddie1 + 1>>
 Angles plays their triangle!
 -> Cling cling ting!
+    ...oof..
 -> Ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Freddie plays a note on the ukulele!
 Bling! Bling! Brung!
 <<set $freddie1 = $freddie1 + 1>>
 Angles plays their triangle!
 -> Cling cling!
+    ...oh no..
 -> Ting cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Freddie plays a note on the ukulele!
 Tiing! Tiing!
 <<set $freddie1 = $freddie1 + 1>>
 Angles plays their triangle!
 -> Cling ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Ting ting!
+    ...oof..
 Freddie plays a note on the ukulele!
 Bling! Bling! Bling!
 <<set $freddie1 = $freddie1 + 1>>
 Angles plays their triangle!
 -> Ting!
+    ...oh no..
 -> Ting ting cling!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 Freddie plays a note on the ukulele!
 Brung! Brung!
 <<set $freddie1 = $freddie1 + 1>>
 Angles plays their triangle!
 -> Cling cling ting!
     <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
 -> Ting cling!
-Freddie plays a note on the ukulele!
-Bling! Brung! Tiing!
-<<set $freddie1 = $freddie1 + 1>>
+    ...oof..
 <<jump FreddieBattle1_result>>
 ===
 title: FreddieBattle1_result

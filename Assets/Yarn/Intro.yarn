@@ -8,9 +8,9 @@ title: Pumpkin_phonecall
 //phonecall where pumpkin asks for angles band to play
 <<disable_playercontrol>>
 Phone: RING RING RIIIIING! #gen_phone
-->pick up
+->Pick up!
 	it's Pumpkin!
-->ignore
+->Ignore..
 	no,, it's Pumpkin, she'd get mad...
 Angles: ...Hello? #protag
 Pumpkin: Heyyyy!!! #phone_pumpkin

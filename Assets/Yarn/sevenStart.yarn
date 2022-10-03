@@ -1,0 +1,13 @@
+title: sevenStart
+tracking: always
+---
+<<if $section3 is true and $sevenBattle_win_01 is false>>
+    <<if $sevenBattle_win_01 is true>>
+        <<jump SevenSection3_02>>
+    <<else>>
+        <<jump SevenSection3_01>>
+    <<endif>>
+<<elseif $section5 is true>>
+    <<jump SevenSection5_01>>
+<<endif>>
+===
