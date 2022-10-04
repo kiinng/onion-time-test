@@ -1,9 +1,0 @@
-title: sammyStart
-tracking: always
----
-<<if $section2 is true>>
-    <<jump SammySection2_01>>
-<<elseif $section5 is true>>
-    <<jump SammySection5_01>>
-<<endif>>
-===
