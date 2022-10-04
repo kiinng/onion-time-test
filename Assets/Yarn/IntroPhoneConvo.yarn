@@ -1,0 +1,39 @@
+﻿title: Rats_chat
+tags:
+---
+//the chat at the start with the rats
+<<disable_playercontrol>>
+<<Me>>
+->dudes!!
+dudes!! 
+we've been asked to play at the party tonite! #protag
+<<Them>>
+sick #bandrats
+<<Me>>
+yeah!! #protag
+<<Them>>
+no bro
+we are sick #bandrats
+<<Me>>
+…
+well shite 
+what am i gonna do now  #protag
+<<Them>>
+uh cancel? #bandrats
+<<Me>>
+its pumpkin tho..
+she might not take it well  #protag
+<<Them>>
+…
+you could find some temp band peeps for the party ? #bandrats
+<<Me>>
+that's a thought..
+you'd be ok wit hthat?  #protag
+<<Them>>
+yeah bro xD its chill #bandrats
+<<Me>>
+aight thnx!!  #protag
+->close chat and go find Pumpkin
+<<enable_playercontrol>>
+<<text_rats_off>>
+===

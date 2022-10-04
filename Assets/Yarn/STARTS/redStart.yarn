@@ -1,0 +1,11 @@
+title: redStart
+tracking: always
+---
+<<if $section2 is true>>
+    <<jump RedSection2_01>>
+<<elseif $section4 is true>>
+    <<jump RedSection4_01>>
+<<elseif $section5 is true>>
+    <<jump RedSection5_01>>
+<<endif>>
+===

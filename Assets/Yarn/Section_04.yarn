@@ -1,0 +1,1078 @@
+title: MadelineSection4_01
+tags:
+---
+//talk about how easier writing fics is than hw, M has written 100k fics before, also spend time at the hospital
+<<if $madeline4_01 is true>>
+    Madeline: Alright, I'm really going to just focus and write!
+    Madeline: I'm soooo close to finishing it..
+<<else>>
+    <<set $madeline4_01 to true>>
+    Angles: How's it going?
+    Madeline: Blerghhhh..
+    Angles: That bad?
+    Madeline: Well no, but I'm soooo tired.
+    Angles: Well maybe it's best to take another break.
+    Madeline: ...
+    Angles: You just took a break?
+    Madeline: ..Yeah.
+    Madeline: I just hate how I can barely write three thousand words for this stupid paper..
+    Madeline: Yet I can easily write fifty thousand words in like two weeks for a fanfic...
+    Angles: Damn!
+    Angles: I've only tried writing my original ideas but I never even got further than maybe five thousand words..
+    Angles: And that's only one NaNoWriMo year.. but others have been abandoned at maybe like a thousand words..
+    Madeline: Ah.. NaNoWriMo...
+    Madeline: I think I did win it one year but I used it to push myself to finish my Big Bang event fic.
+    Madeline: It was fun.
+    Madeline: I think the fic ended up being a hundred thousand words or something.
+    Angles: ...
+    Angles: You're so casual about this!!
+    Angles: That's so much!
+    Madeline: Eh.. I had to split it into two parts because the editing was taking forever.
+    Angles: No seriously that's just unreal.
+    Madeline: I just had nothing else to do at the hospital LOL
+    Angles: You could have been resting more.
+    Madeline: Nah, what's living for if not to make your otp kiss after chapters and chapters of slow burn sexual tension.
+    Angles: ..Well I can't argue with that.
+<<endif>>
+===
+title: EmiliaSection4_01
+tags:
+---
+//BANJO
+//if you talked to sasha previously, then you can skip battle by asking out sasha to the dance for emilia
+<<if $bunny3_02 is true>>
+    <<if $emilia4_02 is true>>
+        Emilia: D-Did you a-ask Sasha yet?
+        Angles: Not yet..
+        Emilia: W-Well what are you wasting time for?!!
+    <<else>>
+        //if talked to sasha about emilia
+        <<set $emilia4_02 to true>>
+        Angles: Hey!
+        Emilia: No.
+        Angles: ...
+        Angles: Seriously, you're such a jerk.
+        Emilia: Yep.
+        Angles: I literally do not see what Sasha liked about you.
+        Emilia: !!
+        Emilia: W-what..?
+        Emilia: H-Ha ha.. d-did you say S-Sasha??
+        Emilia: T-They talk?? About,, m-me?
+        Angles: ...
+        Angles: They consider you a good friend I guess.
+        <<set $blush to "O////O">>
+        Emilia: {$blush}
+        Emilia: ..I.....
+        Emilia: Um,,,
+        Emilia: I-If..
+        Emilia: I want to ask Sasha out to the dance!!!!
+        Angles: ...
+        Angles: Ok.
+        Emilia: B-But I can't!
+        Angles: ...
+        Emilia: I-I want you to do it for me!!
+        Angles: .....Gurl
+        Emilia: P-Please!
+        Emilia: I'll play in your band if you do!
+        Angles: ...
+        Angles: Well alright.
+    <<endif>>
+<<else>>
+    <<if $emilia4_01 is true>>
+        Angles: And I'm back!
+        Emilia: Ugggh..
+        Emilia: Seriously, just go away..
+        Angles: Nope!
+        -> Challenge Emilia to a music battle!
+            <<jump EmiliaBattle1>>
+        -> ..Or not...
+            Angles: ...Something has come up.. again...
+            Angles: But I will be back!
+            Emilia: Don't.
+    <<else>>
+        <<set $emilia4_01 to true>>
+        Angles: Hey Emilia!
+        Angles: I'm looking for some temporary band members and I know you play the banjo..
+        Angles: So I wanted to ask if you wouldn't mind playing in my band?
+        Emilia: Hmmp!
+        Emilia: No.
+        Angles: ...
+        Angles: Well I challenge you to a music battle!!
+        Angles: If I win, you have to be in my band!
+        Emilia: ..And why would I agree to this?
+        Angles: Because I won't stop bothering you unless you agree!
+        Emilia: Ugh..
+        -> Challenge Emilia to a music battle!
+            <<jump EmiliaBattle1>>
+        -> ..Maybe I better not.. 
+            Angles: ...Something has come up..
+            Angles: But!
+            Angles: I will be back!
+            Emilia: Yeah, sure, you will.
+    <<endif>>
+<<endif>>
+===
+title: EmiliaBattle1
+tags:
+---
+//action to move to npc battle room?
+Angles: I'll show you!
+<<set $emilia1 to 0>>
+<<set $angles1 to 0>>
+Emilia plays a note on the banjo!
+Bring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Ting!
+    ...oh no..
+Emilia plays a note on the banjo!
+Tring tring tring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+    ...oh no..
+-> Cling cling ting!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays a note on the banjo!
+Bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+    ...oof..
+-> Cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays a note on the banjo!
+Briing briing!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling cling cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Ting ting ting!
+    ...oh no..
+Emilia plays a note on the banjo!
+Brumg brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Ting ting!
+    ...oof..
+Emilia plays some notes on the banjo!
+Tring tring! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting cling!
+    ...oof..
+-> Cling cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays some notes on the banjo!
+Bring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Ting ting ting!
+    ...oof..
+Emilia plays a note on the banjo!
+Tring tring tring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Cling cling!
+    ...oh no..
+Emilia plays some notes on the banjo!
+Bring! Briing briing!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting cling ting!
+    ...oh no..
+-> Ting cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays a note on the banjo!
+Tring! Bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling!
+    ...oof..
+-> Ting cling cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays a note on the banjo!
+Brumg brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Cling ting!
+    ...oh no..
+Emilia plays a note on the banjo!
+Bring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Cling cling cling!
+    ...oof..
+Emilia plays a note on the banjo!
+Tring tring tring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling cling ting!
+    ...oof..
+-> Cling cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays a note on the banjo!
+Bring bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+    ...oh no..
+-> Ting ting!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays a note on the banjo!
+Bring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Cling cling!
+    ...oh no..
+Emilia plays a note on the banjo!
+Tring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+    ...oh no..
+-> Cling cling cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays a note on the banjo!
+Bring bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Ting!
+    ...oof..
+Emilia plays a note on the banjo!
+Bring! Briing! Bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting cling!
+    ...oof..
+-> Cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays a note on the banjo!
+Brumg brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting ting!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Cling ting!
+    ...oh no..
+Emilia plays a note on the banjo!
+Tring! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Cling cling ting!
+    ...oh no..
+Emilia plays a note on the banjo!
+Tring! Bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting!
+    ...oof..
+-> Ting cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays a note on the banjo!
+Briing briing!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+    ...oh no..
+-> Ting ting!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays a note on the banjo!
+Tring tring tring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Cling cling ting!
+    ...oof..
+Emilia plays a note on the banjo!
+Bring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting ting!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Ting ting cling!
+    ...oof..
+Emilia plays a note on the banjo!
+Brumg brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Ting!
+    ...oh no..
+Emilia plays a note on the banjo!
+Tring! Briing! Brumg!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+    ...oh no..
+-> Cling cling cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+Emilia plays a note on the banjo!
+Tring! Bring bring!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Cling ting!
+    ...oh no..
+Emilia plays a note on the banjo!
+Briing briing!
+<<set $emilia1 = $emilia1 + 1>>
+Angles plays their triangle!
+-> Cling!
+    <<set $angles1 = $angles1 + 1>>
+    Vibes.... good!
+-> Ting ting!
+    ...oof..
+<<jump EmiliaBattle1_result>>
+===
+title: EmiliaBattle1_result
+tags:
+---
+<<if $angles1 >= $emilia1>>
+    //win
+    <<set $emiliaBattle_win_01 to true>>
+    <<set $emilia3_01 to false>>
+    <<set $emilia1 to 0>>
+    <<set $angles1 to 0>>
+    ANGLES WON!
+    <<jump EmiliaSection4_02>>
+<<else>>
+    //lose
+    <<set $emilia1 to 0>>
+    <<set $angles1 to 0>>
+    ANGLES..... LOST!
+    Angles: ..Somehow I don't think I could win this....
+<<endif>>
+===
+title: EmiliaSection4_02
+tags:
+---
+//won the battle
+<<if $emilia4_03 is true>>
+    Emilia: Stop bugging me!
+    Emilia: I said I might help you, okay!
+<<else>>
+    <<set $emilia4_03 to true>>
+    Emilia: ...
+    Emilia: I can't believe you won.
+    Angles: I did!
+    Angles: Now you have to play in my band tonight.
+    Emilia: Ugh.. Maybe I will..
+<<endif>>
+===
+title: EmiliaSection4_03
+tags:
+---
+//asked out Sasha for E
+<<if $emilia4_04 is true>>
+    Emilia: JKGHGKHDSSDGKJHFGJKHGHGHKJGkfdjhdgkjhETJKFHdFGHfdhfdkjhgdfkjfdh!
+    Angles: ...I don't know if I regret this or not.......
+<<else>>
+    <<set $emilia4_04 to true>>
+    <<emiliaDate_on DialogueSystem1>>
+    <<set $bunny4_03 to true>>
+    <<set $emiliaBattle_win_02 to true>>
+    Angles: Hey—
+    Emilia: D-Did you ask??!!
+    Angles: Yes—
+    Emilia: What did she say??!!
+    Angles: ...
+    Emilia: T E L L  M E ! !
+    Angles: If you will let me speak!
+    Emilia: ...Sorry.
+    Angles: Thank you.
+    Angles: She's agreed to go to the dance with you.
+    Emilia: B-But maybe she misunderstood—
+    Angles: I specified it would be a date.
+    Emilia: JGHGJHHGHHHhHjHHHHHHHHHHH!!
+    Angles: ...Anyway thanks for helping out my band tonight.
+    Angles: I'll let you know when the practice is..
+    Angles: Once you're brain comes back online.
+<<endif>>
+===
+title: ChristinaSection4_01
+tags:
+---
+//HARP
+//A reveals they did artistic gymnastics lol
+<<if $christina4_01 is true>>
+    Angles: So did you change your mind?
+    Christina: ...
+    Christina: No.
+    Angles: Eh...
+    -> Challenge Christina to a music battle!
+        <<jump ChristinaBattle1>>
+    -> ..Leave them alone.
+        Angles: Oh well...
+        Angles: But think it over.
+        Angles: Again.
+<<else>>
+    <<set $christina4_01 to true>>
+    Angles: Oh cool!
+    Angles: That's a ballerina costume, right?
+    Angles: I actually did some ballet when I was little..
+    Angles: But like it was just something the artistic gymnastics club I belonged to had me do as supliments....
+    Christina: ..You really just spill your life story to anyone huh.
+    Christina: And it's a RAT ballerina costume.
+    Angles: Neat.
+    Angles: I dunno.
+    Angles: I just suddenly remembered that.
+    Angles: It almost feels like it happened to someone else actually.
+    Angles: The passage of time is bonkers.
+    Christina: ...
+    Angles: Anyway you play a harp?
+    Christina: ...
+    Christina: Yes..
+    Angles: Great!
+    Angles: How would you like to temporarily play in my band for the party tonight?
+    Angles: It's gonna be great!
+    Christina: ...I really don't want to.
+    Angles: Aw come on!
+    -> Challenge Christina to a music battle!
+        <<jump ChristinaBattle1>>
+    -> ..Leave them alone.
+        Angles: Alright, I won't make you..
+        Angles: But think it over.
+<<endif>>
+===
+title: ChristinaBattle1
+tags:
+---
+//action to move to npc battle room?
+Angles: This will be good!
+<<set $christina1 to 0>>
+<<set $angles1 to 0>>
+Christina plays a note on the harp!
+Tiiing! Biiiing! Kliiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Ting ting!
+    ...oh no..
+-> Cling cling!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+Christina plays a note on the harp!
+Tiiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Ting ting ting!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+-> Cling cling ting!
+    ...oof..
+Christina plays a note on the harp!
+Biiiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Cling!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+-> Cling cling!
+    ...oh no..
+Christina plays a note on the harp!
+Tiiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Ting!
+    ...oof..
+-> Ting ting ting!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+Christina plays a note on the harp!
+Kliiiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Cling cling ting!
+    ...oof..
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+Christina plays a note on the harp!
+Tiiing! Kliiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+-> Cling ting!
+    ...oh no..
+Christina plays a note on the harp!
+Biiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Ting ting cling!
+    ...oh no..
+-> Ting ting ting!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+Christina plays a note on the harp!
+Kliiing! Biiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+-> Ting!
+    ...oof..
+Christina plays a note on the harp!
+Tiiiiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+-> Ting ting cling!
+    ...oh no..
+Christina plays a note on the harp!
+Kliiiing!
+<<set $christina1 = $christina1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+    ...oof..
+-> Ting ting!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+<<jump ChristinaBattle1_result>>
+===
+title: ChristinaBattle1_result
+tags:
+---
+<<if $angles1 >= $christina1>>
+    //win
+    <<set $christinaBattle_win_01 to true>>
+    <<set $christina3_01 to false>>
+    <<set $christina1 to 0>>
+    <<set $angles1 to 0>>
+    ANGLES WON!
+    <<jump ChristinaSection4_02>>
+<<else>>
+    //lose
+    <<set $christina1 to 0>>
+    <<set $angles1 to 0>>
+    ANGLES..... LOST!
+    Angles: ..I guess I'm not sure what I expected...
+    Christina: Well, this has been a waste of time.
+<<endif>>
+===
+title: ChristinaSection4_02
+tags:
+---
+//won the battle
+<<if $christina4_02 is true>>
+    Angles: I'll let you know when it's time for practice.
+    Christina: Fine.. 
+<<else>>
+    <<set $christina4_02 to true>>
+    Angles: I won!
+    Angles: Now you have to join my band!
+    Christina: ..Really.
+    Angles: Yep.
+    Angles: Those are the rules of the music battles.
+    Christina: ...Fine.
+<<endif>>
+===
+title: FreddieSection4_01
+tags:
+---
+//UKULELE
+//why did F mention they play an isntrument
+<<if $freddie4_01 is true>>
+    Angles: I'm back and I will prove we sound good together!
+    -> Challenge Freddie to a music battle!
+        <<jump FreddieBattle1>>
+    -> ..Maybe not.
+        Angles: Ah.. sorry, I need another moment,,
+        Freddie: ..Alright.
+<<else>>
+    <<set $freddie4_01 to true>>
+    Angles: ...Freddie.
+    Freddie: Yeah?
+    Angles: You play a ukulele...
+    Angles: Hasn't Skully told you I'm looking for temp band members for the party??
+    Freddie: ...
+    Freddie: ..Maybe?
+    Angles: And you didn't think to tell me you play?!
+    Freddie: I didn't think!
+    Freddie: And I don't know if I'm even good enough to play with you..
+    Angles: Freddie... I play a triangle...
+    Freddie: You're very good with it!!
+    Freddie: Best I've ever seen!
+    Angles: Oh.. Thanks!
+    Angles: That really means a lot to me.
+    Angles: Anyway!
+    Angles: I think we would play really well together.
+    Angles: I'll prove it!
+    -> Challenge Freddie to a music battle!
+        <<jump FreddieBattle1>>
+    -> ..Maybe not.
+        Angles: Ah actually just give me a moment!
+        Angles: I'll be back in a bit.
+<<endif>>
+===
+title: FreddieBattle1
+tags:
+---
+//action to move to npc battle room?
+Angles: I'll show you!
+<<set $freddie1 to 0>>
+<<set $angles1 to 0>>
+Freddie plays a note on the ukulele!
+Bling! Brung! Tiing!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Ting!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+-> Cling!
+    ...oof..
+Freddie plays a note on the ukulele!
+Bling! Bling! 
+<<set $freddie1 = $freddie1 + 1>> 
+Angles plays their triangle!
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+-> Cling cling ting!
+    ...oof..
+Freddie plays a note on the ukulele!
+Tiing! Tiing!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+-> Cling cling!
+    ...oh no..
+Freddie plays a note on the ukulele!
+Brung! Brung!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Ting ting ting!
+    ...oh no..
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+Freddie plays a note on the ukulele!
+Tiing! Tiing! Brung!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Cling cling ting!
+    ...oof..
+-> Ting!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+Freddie plays a note on the ukulele!
+Bling! Bling! Brung!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Cling cling!
+    ...oh no..
+-> Ting cling!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+Freddie plays a note on the ukulele!
+Tiing! Tiing!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Cling ting!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+-> Ting ting!
+    ...oof..
+Freddie plays a note on the ukulele!
+Bling! Bling! Bling!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Ting!
+    ...oh no..
+-> Ting ting cling!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+Freddie plays a note on the ukulele!
+Brung! Brung!
+<<set $freddie1 = $freddie1 + 1>>
+Angles plays their triangle!
+-> Cling cling ting!
+    <<set $angles1 = $angles1 + 2>>
+    Vibes.... good!
+-> Ting cling!
+    ...oof..
+<<jump FreddieBattle1_result>>
+===
+title: FreddieBattle1_result
+tags:
+---
+<<if $angles1 >= $freddie1>>
+    //win
+    <<set $freddieBattle_win_01 to true>>
+    <<set $freddie3_01 to false>>
+    <<set $freddie1 to 0>>
+    <<set $angles1 to 0>>
+    ANGLES WON!
+    <<jump FreddieSection4_02>>
+<<else>>
+    //lose
+    <<set $freddie1 to 0>>
+    <<set $angles1 to 0>>
+    ANGLES..... LOST!
+    Angles: ..Well drats..
+    Angles: Come on, let's just go again!
+    Freddie: ...
+<<endif>>
+===
+title: FreddieSection4_02
+tags:
+---
+//won the battle
+<<if $freddie4_02 is true>>
+    Freddie: I'm so excited!
+<<else>>
+    <<set $freddie4_02 to true>>
+    Freddie: YESSS!!
+    Freddie: We do sound real cool!
+    Angles: I told you!
+    Freddie: It's gonna be a real good perforance!
+    Angles: That's the spirit!
+<<endif>>
+===
+title: RedSection4_01
+tags:
+---
+//red has frustrations about SquidSplat 3
+<<if $red4_01 is true>>
+    Angles: Welp, I gotta run!
+    Red: Okay, but I will get you to buy SquidSplat 3!
+<<else>>
+    <<if visited("RedSection2_01") == false>>
+        <<jump RedSection2_01>>
+    <<else>>
+        <<set $red4_01 to true>>
+        Angles: Hey again!!
+        Red: Hallo.
+        Angles: How's your novel going?
+        Red: ..Well I meant to write more but I...
+        Red: The new SquidSplat game came out and,,
+        Angles: You've been unable to put it down?
+        Red: Yeah,,
+        Red: I just really want some cute clothes in it.
+        Red: And they keep costing more coins than I have!
+        Red: And I keep losing matches.
+        Angles: Ah yeah..
+        Angles: I played a little bit of the second game and I kept losing a lot.
+        Red: I wasn't this bad in the second one!
+        Red: It feels like everyone just has a better strategy.
+        Red: I've even began to switch to different weapons.
+        Red: I prefer the roller but I've began to use a splatting gun so I could rush ahead..
+        Angles: Oh!
+        Angles: I love the roller!
+        Red: Me too!
+        Red: But I'm just getting irritated..
+        Red: Whenever I'm using it and someone else is trying to splat the base with their splatting gun..
+        Red: I'm like! I'm here!
+        Red: Go rush ahead!
+        Red: I'll ink the base!!
+        Angles: Sounds... frustrating.
+        Red: It is!
+        Red: I need to find some friends to team up with instead of strangers..
+        Angles: Yeah that sounds like a good idea!
+        Red: ...
+        Red: You should but the third game!
+        Red: Then we could team up.
+        Angles: ..I'll think about it.
+    <<endif>>
+<<endif>>
+===
+title: PumpkinSection4_01
+tags:
+---
+//
+<<if $pumpkin4_01 is true>>
+    Pumpkin: All you listen to is old punk bands!
+    Pumpkin: Your opinions mean noooooothing to me!!!!
+<<else>>
+    <<set $pumpkin4_01 to true>>
+    Angles: Mm.. It's starting to look rather nice in here.
+    Pumpkin: Thanks!!!
+    Pumpkin: We've all been trying very hard!
+    Pumpkin: Hard— Ha ha!
+    Angles: I love the stars..
+    Angles: They will look real nice once the lights are dim.
+    Pumpkin: Oh yeah!!
+    Pumpkin: We had Fish get those from a dollar store!
+    Pumpkin: They have setup the stage and made it so Skully can hook up her phone to play music!
+    Angles: Nice.
+    Angles: She has good taste in music.
+    Pumpkin: I do too!!
+    Angles: You listen to 1000Geckos.
+    Pumpkin: Hyper pop is fun!
+    Pumpkin: It's all about the experimention!
+    Angles: You can self delude that music that makes your ears bleed is anything but that..
+    Angles: But you can't make me agree with you.
+    Pumpkin: I think you just have bad taste in music!
+<<endif>>
+===
+title: SkullySection4_01
+tags:
+---
+<<if $skully4_01 is true>>
+    Skully: Are you ready to practice using the stage now?
+    Angles: Practically!
+    Skully: So you know who the last member is?
+    -> Yeah!
+        -> Emilia <<if $emiliaBattle_win_01 is true>>
+            //if u somehow manage to beat emilia in the music battle lol
+            <<set $harmony_player to "emilia">>
+            Angles: And god was that battle grueling!
+            Skully: I can imagine.
+            Skully: She can be very vindictive and stubborn.
+            Angles: ..Yeah.
+            Angles: Rude too.
+            Skully: And yet you got her to play in your band.
+            Angles: ...
+            Skully: Well.
+        -> Emilia <<if $emiliaBattle_win_02 is true>>
+            //if you set up the date with sasha
+            <<set $harmony_player to "emilia">>
+            Angles: Did you know they could be kinda cute?
+            Skully: Yeah.
+            Skully: It's very amusing to watch her interact with Sasha.
+            Angles: Ah, so you knew about her crush?
+            Skully: Yep.
+            Skully: They ain't subtle.
+            Angles: Oh.
+            Skully: So.
+        -> Christina <<if $christinaBattle_win_01 is true>>
+            <<set $harmony_player to "christina">>
+            Skully: How did you even convince Christina to go for it?
+            Angles: I won the music battle!
+            Angles: ..They really didn't want to do this.
+            Skully: I'm not surprised.
+            Skully: ...
+        -> Freddie <<if $freddieBattle_win_01 is true>>
+            <<set $harmony_player to "freddie">>
+            Skully: Oh.
+            Skully: I'm glad Freddie joined you.
+            Angles: Me too!
+            Angles: We're gonna have a lot of fun.
+            Skully: For sure.
+            Skully: ...
+        Skully: Are you ready to practice using the stage? 
+        Angles: Yeah! Just let me call everyone to let them know. 
+            //load to A outside the party building door
+            //changing variables to section5 dialogues 
+            <<set $section4 to false>>
+            <<set $section5 to true>>
+            <<section4_off DialogueSystem1>>
+            <<section5_on DialogueSystem1>>
+            <<load_street>>
+            <<disable_playercontrol>>
+            HOURS LATER
+            <<enable_playercontrol>>
+    -> Oh, well.. almost! Just give me a bit of time..
+        Skully: Sure.
+        Skully: Just let me know when your band is ready.
+<<elseif $emiliaBattle_win_01 is true or $christinaBattle_win_01 is true or $freddieBattle_win_01 is true>>
+    <<set $skully4_01 to true>>
+    Angles: Skulls!
+    Angles: I think I've found all the people I need..
+    Skully: Fantastic.
+    Skully: Do you know who the last member is?
+    -> Yep!
+        -> Emilia <<if $emiliaBattle_win_01 is true>>
+            //if u somehow manage to beat emilia in the music battle lol
+            <<set $harmony_player to "emilia">>
+            Angles: And god was that battle grueling!
+            Skully: I can imagine.
+            Skully: She can be very vindictive and stubborn.
+            Angles: ..Yeah.
+            Angles: Rude too.
+            Skully: And yet you got her to play in your band.
+            Angles: ...
+            Skully: Well.
+        -> Emilia <<if $emiliaBattle_win_02 is true>>
+            //if you set up the date with sasha
+            <<set $harmony_player to "emilia">>
+            Angles: Did you know they could be kinda cute?
+            Skully: Yeah.
+            Skully: It's very amusing to watch her interact with Sasha.
+            Angles: Ah, so you knew about her crush?
+            Skully: Yep.
+            Skully: They ain't subtle.
+            Angles: Oh.
+            Skully: So.
+        -> Christina <<if $christinaBattle_win_01 is true>>
+            <<set $harmony_player to "christina">>
+            Skully: How did you even convince Christina to go for it?
+            Angles: I won the music battle!
+            Angles: ..They really didn't want to do this.
+            Skully: I'm not surprised.
+            Skully: ...
+        -> Freddie <<if $freddieBattle_win_01 is true>>
+            <<set $harmony_player to "freddie">>
+            Skully: Oh.
+            Skully: I'm glad Freddie joined you.
+            Angles: Me too!
+            Angles: We're gonna have a lot of fun.
+            Skully: For sure.
+            Skully: ...
+        Skully: Are you ready to practice using the stage? 
+        Angles: Yeah! Just let me call everyone to let them know. 
+            //load to A outside the party building door
+            //changing variables to section5 dialogues 
+            <<set $section4 to false>>
+            <<set $section5 to true>>
+            <<section4_off DialogueSystem1>>
+            <<section5_on DialogueSystem1>>
+            <<load_street>>
+            <<disable_playercontrol>>
+            HOURS LATER
+            <<enable_playercontrol>>
+    -> Oh, well.. almost! Just give me a bit of time..
+        Skully: Sure.
+        Skully: Just let me know when your band is ready.
+<<else>>
+    Skully: Progress?
+    Angles: Well I definitely have at least two people willing to help.
+    Skully: That's great.
+    Angles: Yeah just need at least another person and then will have a good diversity of instruments!
+    Angles: Then we'll be practicing.
+    Skully: Good. 
+    Skully: You can use the stage for that.
+    Angles: Thanks!
+<<endif>>
+===
+title: SashaSection4_01
+tags:
+---
+//either asking out for emilia, or hearing about how nice early morning in nature are
+<<if $bunny4_03 is true>>
+    <<if $bun5 is true>>
+    Sasha: I'm really looking forward to it!
+    <<else>>
+    <<set $bun5 to true>>
+    Angles: Yes, yes, I told Emilia.
+    Sasha: Yay!
+    Angles: They are bluescreening right now but I'm sure will be fine by the time of the party..
+    Sasha: I'm really looking forward to it!
+    <<endif>>
+<<elseif $bunny4_02 is true>>
+    Sasha: Have you told Emilia, yet?
+    Angles: Not yet..
+    Angles: ..You didn't change your mind, did you?
+    Sasha: No!
+    Angles: Good..
+<<elseif $bunny4_01 is true>>
+    Angles: Gotta run now, but thanks for sharing that with me.
+    Angles: It sounds really special..
+    Sasha: Glad I didn't end up boring you..
+    Angles: Not at all!
+<<else>>
+    <<if $emilia4_02 is true>>
+        <<set $bunny4_02 to true>>
+        Sasha: Oh hi again!
+        Angles: Hey...
+        Angles: ...
+        Sasha: Is something the matter?
+        Angles: ...
+        Angles: W-Well, not exactly..
+        Angles: Just a little awkward I guess.
+        Sasha: I'm all ears!
+        Sasha: Literally.
+        Angles: Ha..
+        Angles: You know Emilia is uh, one of your friends?
+        Sasha: Yes?
+        Angles: Well they want to ask you to the dance..
+        Sasha: Ah..
+        Angles: Like as a date, I think..?
+        Sasha: Oh!
+        Sasha: And they aren't.. asking themselves.. because?
+        Angles: Let's say it's because they are a gay mess.
+        Sasha: Hah ha..
+        Angles: Yeah, I'm not kidding..
+        Angles: Also say yes.
+        Angles: Totally not because they promised to play in my band for tonight if you did...
+        Sasha: Ha ha!
+        Sasha: I do say yes— but totally not because of that.
+        Angles: Great!
+        Angles: I'm going to go tell them!
+    <<else>>
+        <<set $bunny4_01 to true>>
+        Angles: Still chilling here?
+        Sasha: Yeah, it's just really nice here.
+        Sasha: I can spend hours and hours taking in the nature.
+        Sasha: It's the fresh air and the sounds..
+        Sasha: Just very peaceful.
+        Angles: Yeah I get it..
+        Sasha: ..Have you ever gone camping?
+        Angles: Only when I was really little.
+        Sasha: I do it every couple of years with my family.
+        Sasha: We go to this festival of hobbyist bards at a camping ground and it's rather fun.
+        Sasha: But what I really love..
+        Sasha: Is waking up in the morning for the first time at about five in the morning..
+        Sasha: To go to the bathroom..
+        Sasha: And the sun is so pale..
+        Sasha: The nature feels so gentle even though it's a little cold..
+        Sasha: It just feels refreshing and like it's going to be a good day..
+        Angles: Whoa..
+        Sasha: Sometimes I come to the park really early as well..
+        Sasha: Just so I could recapture this feeling.
+        Angles: Dude..
+        Angles: That's really beautiful..
+        Sasha: It is!
+        Sasha: I hope you get to experience it too!
+        Angles: ..I don't think I could wake up that early,,
+        Sasha: ...
+        <<set $smiley1 to ":)">>
+        Sasha: You could do it on a morning after you stay up the whole night {$smiley1}
+        Angles: ..Ouch.
+    <<endif>>
+<<endif>>
+===

@@ -1,0 +1,70 @@
+﻿title: CheckCafe
+tags:
+---
+<<if $section1 is true>>
+    <<Cafe_Section1_Setup SceneChecker>>
+<<elseif $section1_1 is true>>
+    <<Cafe_Section1_1_Setup SceneChecker>>
+<<elseif $section2 is true>>
+    <<Cafe_Section2_Setup SceneChecker>>
+<<elseif $section3 is true>>
+    <<Cafe_Section3_Setup SceneChecker>>
+<<elseif $section4 is true>>
+    <<Cafe_Section4_Setup SceneChecker>>
+<<elseif $section5 is true>>
+    <<Cafe_Section5_Setup SceneChecker>>
+<<endif>>
+===
+
+title: CheckStreet
+---
+<<if $section1 is true>>
+    <<Street_Section1_Setup SceneChecker>>
+<<elseif $section1_1 is true>>
+    <<Street_Section1_1_Setup SceneChecker>>
+<<elseif $section2 is true>>
+    <<Street_Section2_Setup SceneChecker>>
+<<elseif $section3 is true>>
+    <<Street_Section3_Setup SceneChecker>>
+<<elseif $section4 is true>>
+    <<Street_Section4_Setup SceneChecker>>
+<<elseif $section5 is true>>
+    <<Street_Section5_Setup SceneChecker>>
+<<endif>>
+===
+title: CheckParty
+tags:
+---
+<<if $section1 is true>>
+    <<Party_Section1_Setup SceneChecker>>
+<<elseif $section1_1 is true>>
+    <<Party_Section1_1_Setup SceneChecker>>
+<<elseif $section2 is true>>
+    <<Party_Section2_Setup SceneChecker>>
+<<elseif $section3 is true>>
+    <<Party_Section3_Setup SceneChecker>>
+<<elseif $section4 is true>>
+    <<Party_Section4_Setup SceneChecker>>
+<<elseif $section5 is true>>
+    <<Party_Section5_Setup SceneChecker>>
+<<endif>>
+===
+title: CheckPark
+tags:
+---
+<<if $section1 is true>>
+    <<Park_Section1_Setup SceneChecker>>
+<<elseif $section1_1 is true>>
+    <<Park_Section1_1_Setup SceneChecker>>
+<<elseif $section2 is true>>
+    <<Park_Section2_Setup SceneChecker>>
+<<elseif $section3 is true>>
+    <<Park_Section3_Setup SceneChecker>>
+<<elseif $section4 is true>>
+    <<Park_Section4_Setup SceneChecker>>
+<<elseif $section5 is true and $bunny4_02 is false>>
+    <<Park_Section5a_Setup SceneChecker>>
+<<elseif $section5 is true and $bunny4_02 is true>>
+    <<Park_Section5b_Setup SceneChecker>>
+<<endif>>
+===

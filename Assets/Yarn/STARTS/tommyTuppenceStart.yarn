@@ -1,0 +1,13 @@
+title: tommyTuppenceStart
+tracking: always
+---
+<<if $section3 is true>>
+    <<if $tommyBattle_win_01 is true>>
+        <<jump TommySection3_02>>
+    <<else>>
+        <<jump TommySection3_01>>
+    <<endif>>
+<<elseif $section5 is true>>
+    <<jump TommySection5_01>>
+<<endif>>
+===

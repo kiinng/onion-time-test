@@ -1,0 +1,11 @@
+title: fishStart
+tracking: always
+---
+<<if $section2 is true>>
+    <<jump FishSection2_01>>
+<<elseif $section3 is true>>
+    <<jump FishSection3_01>>
+<<elseif $section5 is true>>
+    <<jump FishSection5_01>>
+<<endif>>
+===

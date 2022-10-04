@@ -1,0 +1,13 @@
+title: angelStart
+tracking: always
+---
+<<if $section2 is true>>
+    <<if $angelBattle_win_01 is true>>
+        <<jump AngelSection2_02>>
+    <<else>>
+        <<jump AngelSection2_01>>
+    <<endif>>
+<<elseif $section5 is true>>
+    <<jump AngelSection5_01>>
+<<endif>>
+===

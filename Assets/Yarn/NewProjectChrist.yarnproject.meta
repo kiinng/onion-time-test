@@ -1,0 +1,820 @@
+fileFormatVersion: 2
+guid: e269a52c17b86dd4d96df1de580da59e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 053561912b1654d80a424bb0696a74ae, type: 3}
+  sourceScripts:
+  - {fileID: 6391573757903218779, guid: e13867859a1b51b40adff3e864f32710, type: 3}
+  - {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - {fileID: 6391573757903218779, guid: 756021a6622990843a8c3bdb9ac4e4e9, type: 3}
+  - {fileID: 6391573757903218779, guid: d4a617b1c1dfd4245ad4d0b0dc51097c, type: 3}
+  - {fileID: 6391573757903218779, guid: a9036c5fb0b5d8d4f91b61cab0ba52cc, type: 3}
+  - {fileID: 6391573757903218779, guid: 42f0635538fa3dd43909f1982e3e95d6, type: 3}
+  - {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - {fileID: 6391573757903218779, guid: 773e2a4e8cf04154e87029269ffb7b2a, type: 3}
+  - {fileID: 6391573757903218779, guid: d8a1c87a704600e4d8e6cfc7593d2b91, type: 3}
+  - {fileID: 6391573757903218779, guid: be55a8033f069a44980299b73b00de3f, type: 3}
+  - {fileID: 6391573757903218779, guid: 7da5a63dd65586543bb42ae3cf2761c1, type: 3}
+  - {fileID: 6391573757903218779, guid: 684dda8b64aa043438cfdc3c981590c0, type: 3}
+  - {fileID: 6391573757903218779, guid: ba39b7bb54b1265469823ccec369ce49, type: 3}
+  - {fileID: 6391573757903218779, guid: 679be437b277b8a47924d17005824fb8, type: 3}
+  - {fileID: 6391573757903218779, guid: 95f9ab9209d346e4c95a42913dfa9110, type: 3}
+  - {fileID: 6391573757903218779, guid: 4d277bfbae54c754188b26eb7df7a664, type: 3}
+  - {fileID: 6391573757903218779, guid: fa660d7a48256c94f80f4e120ede841f, type: 3}
+  - {fileID: 6391573757903218779, guid: 5048b5faca4df024bb07701574c81866, type: 3}
+  - {fileID: 6391573757903218779, guid: 8462c9c0e08e6ef4b9cfd9149c6676d7, type: 3}
+  - {fileID: 6391573757903218779, guid: 13d4178de5c6e514fa8ad1104de1f16a, type: 3}
+  - {fileID: 6391573757903218779, guid: 19227b3609020d841bdc4d099f62d842, type: 3}
+  - {fileID: 6391573757903218779, guid: fc0de43b8871c38409cdd83ec36e22e0, type: 3}
+  - {fileID: 6391573757903218779, guid: e2af7a744b2a2f04c9ddd90278c31014, type: 3}
+  compileErrors: []
+  serializedDeclarations:
+  - name: $section1
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Intro.yarn, node Pumpkin_phonecall
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e13867859a1b51b40adff3e864f32710, type: 3}
+  - name: $madeline1_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_01.yarn, node MadelineSection1_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - name: $puppy1_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_01.yarn, node PuppySection1_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - name: $pumpkin_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_01.yarn, node PumpkinSection1_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - name: $section2
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_01.yarn, node SkullySection1_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - name: $section1_1
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_01.yarn, node SkullySection1_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - name: $pumpkin1_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_01.yarn, node PumpkinSection1_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - name: $smiley
+    typeName: String
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_01.yarn, node PumpkinSection1_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - name: $puppy1_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_01.yarn, node PuppySection1_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - name: $madeline1_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_01.yarn, node MadelineSection1_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: e78a2d803643cd244866f874095da519, type: 3}
+  - name: $section3
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in madelineStart.yarn, node madelineStart
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 756021a6622990843a8c3bdb9ac4e4e9, type: 3}
+  - name: $section4
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in madelineStart.yarn, node madelineStart
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 756021a6622990843a8c3bdb9ac4e4e9, type: 3}
+  - name: $section5
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in madelineStart.yarn, node madelineStart
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 756021a6622990843a8c3bdb9ac4e4e9, type: 3}
+  - name: $bunny4_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in CheckSection.yarn, node CheckPark
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: d4a617b1c1dfd4245ad4d0b0dc51097c, type: 3}
+  - name: $emilia3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node EmiliaSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $madeline3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node MadelineSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $madeline2_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node MadelineSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $jess3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node JessSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $rat3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node RatSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $rat1
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node RatBattle1
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $angles1
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node RatBattle1
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $ratBattle_win_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node RatBattle1_result
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $rat3_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node RatSection3_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $tommy3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node TommySection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $tommy1
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node TommyBattle1
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $tommyBattle_win_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node TommyBattle1_result
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $tommy3_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node TommySection3_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $seven3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node SevenSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $eight3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node SevenSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $smiley2
+    typeName: String
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node SevenSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $seven1
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node SevenBattle1
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $sevenBattle_win_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node SevenBattle1_result
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $seven3_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node SevenSection3_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $pumpkin3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node PumpkinSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $freddie3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node FreddieSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $fish3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node FishSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $skully3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node SkullySection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $beat_player
+    typeName: String
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node SkullySection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $bunny3_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node SashaSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $bunny3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_03.yarn, node SashaSection3_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 43a5c5951900e16499ee8b56353589f1, type: 3}
+  - name: $madeline4_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node MadelineSection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $emilia4_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node EmiliaSection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $emilia4_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node EmiliaSection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $blush
+    typeName: String
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node EmiliaSection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $emilia1
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node EmiliaBattle1
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $emiliaBattle_win_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node EmiliaBattle1_result
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $emilia4_03
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node EmiliaSection4_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $emilia4_04
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node EmiliaSection4_03
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $bunny4_03
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node EmiliaSection4_03
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $emiliaBattle_win_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node EmiliaSection4_03
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $christina4_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node ChristinaSection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $christina1
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node ChristinaBattle1
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $christinaBattle_win_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node ChristinaBattle1_result
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $christina3_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node ChristinaBattle1_result
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $christina4_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node ChristinaSection4_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $freddie4_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node FreddieSection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $freddie1
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node FreddieBattle1
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $freddieBattle_win_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node FreddieBattle1_result
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $freddie4_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node FreddieSection4_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $red4_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node RedSection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $red2_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node RedSection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $pumpkin4_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node PumpkinSection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $skully4_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node SkullySection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $harmony_player
+    typeName: String
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node SkullySection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $bunny4_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node SashaSection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $smiley1
+    typeName: String
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_04.yarn, node SashaSection4_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 84c94f83107f9be4889e7e67835b6ab7, type: 3}
+  - name: $freddie2_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node FreddieSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $puppy2_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node PuppySection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $pup1
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node PuppyBattle1
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $puppyBattle_win_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node PuppyBattle1_result
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $angles1_1
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node PuppyBattle1_result
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $puppy2_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node PuppySection2_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $gab2_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node GabSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $gab1
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node GabBattle1
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $gabBattle_win_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node GabBattle1_result
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $gab2_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node GabSection2_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $angel2_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node AngelSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $angel2_02
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node AngelSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $sammy2_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node AngelSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $angel1
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node AngelBattle1
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $angelBattle_win_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node AngelBattle1_result
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $angel2_03
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node AngelSection2_02
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $bunny2_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node SashaSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $bun1
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node SashaSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $bun2
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node SashaSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $bun3
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node SashaSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $evil_smiley
+    typeName: String
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node SashaSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $pumpkin2_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node PumpkinSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $fish2_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node FishSection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $skully2_01
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node SkullySection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  - name: $melody_player
+    typeName: String
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: Implicitly declared in Section_02.yarn, node SkullySection2_01
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 450c493c664aa1046b8afea93ec11f09, type: 3}
+  defaultLanguage: en-US
+  languagesToSourceAssets: []
+  useAddressableAssets: 0
+  searchAllAssembliesForActions: 1
+  assembliesToSearch: []
+  ListOfFunctions:
+  - Name: Random
+    ReturnType: -> Single
+    Parameters: []
+  - Name: RandomRange
+    ReturnType: -> Single
+    Parameters:
+    - minInclusive
+    - maxInclusive
+  - Name: Dice
+    ReturnType: -> Int32
+    Parameters:
+    - sides
+  - Name: Round
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: RoundPlaces
+    ReturnType: -> Single
+    Parameters:
+    - num
+    - places
+  - Name: Floor
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: Ceil
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: Inc
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: Dec
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: Decimal
+    ReturnType: -> Single
+    Parameters:
+    - num
+  - Name: Int
+    ReturnType: -> Int32
+    Parameters:
+    - num
+  - Name: CoolFunction
+    ReturnType: -> Int32
+    Parameters: []
